@@ -1,0 +1,57 @@
+# Dependencias y builds
+node_modules/
+.pnp.*
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Pruebas
+playwright-report/
+test-results/
+blob-report/
+.lighthouseci/
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+*.pem
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+*.auto.tfvars
+*.auto.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl.bak
+
+# Documentos con datos personales (se generan en OneDrive, no aquí)
+*.docx
+*.pptx
+~$*
+
+# Video (renders pesados)
+video/**/renders/
+video/**/*.mov
+video/**/*.mp4
+video/**/*.wav
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
