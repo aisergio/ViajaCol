@@ -60,6 +60,9 @@ jobs:
           tflint --init --config "$GITHUB_WORKSPACE/infra/.tflint.hcl"
           tflint --recursive --chdir infra --config "$GITHUB_WORKSPACE/infra/.tflint.hcl" --format compact
 
+      - name: Pruebas del Worker de Cloudflare
+        run: node --test infra/live/edge/worker.test.mjs
+
       - name: Checkov
         uses: bridgecrewio/checkov-action@d4770c1ac4a966d8c3305b79c348c26232123aa1 # v12.3146.0
         with:
