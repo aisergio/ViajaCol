@@ -54,13 +54,26 @@ curl -s -o /dev/null -w '%{http_code}\n' <web_function_url>                     
 
 ## 3. Publicación real (requiere la aprobación del dueño)
 
-1. En `infra/live/terraform.auto.tfvars`, pon `enable_public_routes = true` y
+1. Toma la foto del dominio antes del cambio (SC-002):
+
+   ```powershell
+   node scripts/infra/domain-snapshot.mjs snapshot "$env:TEMP\antes.json"
+   ```
+
+2. En `infra/live/terraform.auto.tfvars`, pon `enable_public_routes = true` y
    `enable_deploy_runner = true`. Luego ejecuta plan y apply.
-2. Ejecuta `./scripts/infra/sync-deploy-secrets.ps1`. Guarda los seis secretos `DEPLOY_*` del entorno
+3. Compara el dominio. Debe dar 0 cambios fuera de `/ViajaCol`:
+
+   ```powershell
+   node scripts/infra/domain-snapshot.mjs snapshot "$env:TEMP\despues.json"
+   node scripts/infra/domain-snapshot.mjs compare "$env:TEMP\antes.json" "$env:TEMP\despues.json"
+   ```
+
+4. Ejecuta `./scripts/infra/sync-deploy-secrets.ps1`. Guarda los seis secretos `DEPLOY_*` del entorno
    `production` sin mostrarlos.
-3. Fusiona en `main`.
-4. En Actions → Despliegue, aprueba `production`.
-5. Revisa el resumen: commit, versión de Lambda y prueba de humo.
+5. Fusiona en `main`.
+6. En Actions → Despliegue, aprueba `production`.
+7. Revisa el resumen: commit, versión de Lambda y prueba de humo.
 
 ## 4. Restaurar
 

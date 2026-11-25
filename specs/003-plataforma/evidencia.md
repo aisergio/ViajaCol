@@ -46,6 +46,29 @@ secreto del origen, como lo haría el Worker.
 
 El alias `live` quedó en la versión 2.
 
+## Dominio antes de activar las rutas (SC-002, línea base)
+
+Foto del 2026-11-25 a las 21:48 UTC con
+[`scripts/infra/domain-snapshot.mjs`](../../scripts/infra/domain-snapshot.mjs). Guarda el estado, las
+cabeceras estables y el hash del cuerpo de cada ruta.
+
+| Ruta | Estado |
+|---|---|
+| `/`, `/robots.txt`, `/sitemap.xml`, `/favicon.ico` y una ruta inexistente | 522 |
+| `/PlanEstudio` y `/MediPoli` | 308 hacia la misma ruta con `/` al final |
+| `/PlanEstudio/` y `/MediPoli/` | 200 |
+| `/ViajaCol`, `/viajacol`, `/ViajaColombia` y `/viajacolombia` | 522 |
+
+- **La raíz ya respondía 522** antes de cualquier cambio: Cloudflare no logra conectar con el origen
+  de la raíz. No depende de esta spec.
+- **Variación propia:** dos fotos seguidas dan 0 diferencias. Para eso se normalizan el Ray ID, la hora
+  y la IP de la página de error, y se ignoran las cabeceras de caché (`via`, `x-amz-cf-id`, `x-cache`).
+- **Zona:**
+  - plan Free;
+  - siete rutas de Workers, de los otros dos proyectos;
+  - sin dominios personalizados;
+  - sin regla de tasa previa, así que la de ViajaCol ocupará la única que admite el plan.
+
 ## Pendiente con aprobación del dueño
 
 - `enable_public_routes`: las rutas del Worker y la regla de tasa en la zona.

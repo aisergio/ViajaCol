@@ -37,7 +37,7 @@ description: "Lista de tareas de la spec 003-plataforma"
 - [X] T007 [P] [US1] `apps/web/src/app/api/health/route.ts` con pruebas en `route.test.ts` y `e2e/salud.spec.ts`; `APP_VERSION` en `next.config.ts`
 - [X] T008 [US1] Worker `infra/live/edge/worker.mjs` (canonización, secreto, hash, 413, `Location`), con 11 pruebas en `worker.test.mjs` y `infra/live/edge.tf` (script, sin `workers.dev`, rutas condicionadas)
 - [ ] T009 [US1] Activar las rutas públicas y la regla de tasa (`enable_public_routes = true`) **con la aprobación del dueño**
-- [ ] T010 [US1] Verificar SC-001, SC-002 (raíz del dominio antes y después) y SC-006 (Lighthouse sobre la dirección pública)
+- [ ] T010 [US1] Verificar SC-001, SC-002 (raíz del dominio antes y después, con `scripts/infra/domain-snapshot.mjs`; línea base en la [evidencia](evidencia.md)) y SC-006 (Lighthouse sobre la dirección pública)
 
 ## Phase 4: User Story 2 - Publicar sin pasos manuales (Priority: P1)
 
