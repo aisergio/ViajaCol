@@ -1,0 +1,23 @@
+name: Funcionalidad
+description: Propón una funcionalidad (se convierte en una spec de Spec Kit)
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: necesidad
+    attributes:
+      label: ¿Qué necesita la persona usuaria y por qué?
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      placeholder: Dado … cuando … entonces …
+  - type: dropdown
+    id: entrega
+    attributes:
+      label: Entrega
+      options:
+        - Entrega 2
+        - Entrega 3
+        - Sin definir

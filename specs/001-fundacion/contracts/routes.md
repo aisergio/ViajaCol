@@ -1,6 +1,6 @@
 # Contrato de rutas públicas (UI)
 
-Base pública: `https://aisergio.dev/ViajaCol`. En local: `http://localhost:3000/ViajaCol`.
+Base pública: `https://aisergio.dev/ViajaCol`. En local: `http://localhost:3030/ViajaCol`.
 
 | Sección | Español | Inglés | Estado HTTP | `lang` |
 |---|---|---|---|---|

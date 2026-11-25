@@ -1,0 +1,12 @@
+# Configuración de Checkov para infra/. Cada excepción lleva su motivo (constitución: principio V).
+framework:
+  - terraform
+skip-check:
+  # Replicación entre regiones del bucket: la SCP de la nueva experiencia de AWS la prohíbe (una sola región).
+  - CKV_AWS_144
+  # Logging de acceso del bucket de estado: exige un segundo bucket; costo y poco valor en un prototipo académico.
+  - CKV_AWS_18
+  # Cifrado con KMS administrado por el cliente: SSE-S3 (AES-256) es suficiente; una CMK cuesta US$1 al mes.
+  - CKV_AWS_145
+  # Notificaciones de eventos del bucket: no aplican al estado de Terraform.
+  - CKV2_AWS_62
