@@ -50,12 +50,12 @@ description: "Lista de tareas de la spec 003-plataforma"
 ## Phase 5: User Story 3 - Volver a la versión anterior (Priority: P2)
 
 - [X] T016 [US3] `scripts/deploy/rollback.sh` y el job «restaurar» de `deploy.yml`
-- [ ] T017 [US3] Restauración medida: menos de 1 min hasta que `/api/health` muestra el commit anterior (SC-005)
+- [X] T017 [US3] Restauración medida: el alias cambia en 8–9 s y todo toma unos 35 s con la invalidación (SC-005, [evidencia](evidencia.md))
 
 ## Phase 6: User Story 4 - Proteger el origen (Priority: P2)
 
 - [X] T018 [US4] `infra/live/functions/origin-guard.js` + KeyValueStore + `random_password` con rotación (`origin_secret_version`, `origin_secret_previous`)
-- [ ] T019 [US4] Verificar el 403 directo (CloudFront, Function URL, S3) y el POST por el borde (SC-003, FR-008)
+- [X] T019 [US4] Verificar el 403 directo (CloudFront, Function URL, S3) y el POST con hash a través de CloudFront (SC-003, FR-008, [evidencia](evidencia.md))
 
 ## Phase 7: User Story 5 - Presupuesto y alertas (Priority: P3)
 
@@ -66,8 +66,9 @@ description: "Lista de tareas de la spec 003-plataforma"
 
 - [X] T022 Pruebas del Worker en `iac.yml`. Checkov 3.4.10: 0 fallas y 20 excepciones con motivo. TFLint limpio.
 - [X] T023 `terraform apply` sin rutas públicas ni webhook. El primer intento falló en CodeBuild por la propagación de IAM y el segundo terminó bien.
-- [ ] T024 Despliegue de prueba con el paquete del PR, verificado a través de CloudFront con el secreto
-- [ ] T025 ADR 0003 (Lambda Web Adapter), 0004 (borde en Cloudflare con OAC) y 0005 (runner de CodeBuild); README y guía `docs/aprendizaje/nextjs-en-lambda.md`
+- [X] T024 Despliegue de prueba con el paquete del PR, verificado a través de CloudFront con el secreto. Corrigió `HOSTNAME=0.0.0.0` ([evidencia](evidencia.md))
+- [X] T025 ADR 0003 (Lambda Web Adapter), 0004 (borde en Cloudflare con OAC) y 0005 (runner de CodeBuild)
+- [X] T026 README: sección «Despliegue» con diagrama y enlaces (la guía `docs/aprendizaje/nextjs-en-lambda.md` queda para la fase de documentos de la E2)
 
 ## Dependencies
 

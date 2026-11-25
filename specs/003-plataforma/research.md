@@ -8,7 +8,11 @@ Terraform, y con llamadas de solo lectura a las cuentas.
 - **Decisión:** servidor *standalone* de Next.js en Lambda arm64 (`nodejs24.x`, 1 GB), con el Lambda
   Web Adapter 1.1.0 como capa.
   - `AWS_LWA_INVOKE_MODE=response_stream` y Function URL `RESPONSE_STREAM`;
-  - arranque con `run.sh` (`HOSTNAME=127.0.0.1 node server.js`) y `.next/cache` enlazado a `/tmp`;
+  - arranque con `run.sh` (`HOSTNAME=0.0.0.0 node server.js`) y `.next/cache` enlazado a `/tmp`;
+  - **ojo:** con `HOSTNAME=127.0.0.1`, Next 16 toma por externas las reescrituras de idioma de
+    next-intl y responde 500 (*«Failed to proxy https://localhost:8080/ViajaCol/es»*). La causa es
+    que compara la URL interna con `localhost`. Se reprodujo en local con el paquete de CI el
+    2026-11-25, y con `0.0.0.0` (lo que usa el ejemplo oficial) responde 200;
   - comprobación de arranque en `/ViajaCol/api/health`.
 - **Por qué:**
   - es el servidor oficial de Next.js, sin adaptaciones: RSC, *streaming*, Route Handlers y Server
