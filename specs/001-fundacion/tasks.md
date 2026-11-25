@@ -23,21 +23,21 @@ separado.
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 Crear `package.json` raíz con workspaces (`apps/*`, `packages/*`), `tsconfig.base.json`, `.npmrc` (`save-exact=true`) y `engines.node >= 22.13`
-- [ ] T002 Crear `apps/web` con Next.js 16.4, React 19.3 y TypeScript estricto; `apps/web/next.config.ts` con `basePath: '/ViajaCol'`, `output: 'standalone'`, `reactCompiler: true` y el plugin de next-intl
-- [ ] T003 [P] Configurar ESLint 9 (configuración plana con `eslint-config-next`) y Prettier en la raíz (`eslint.config.mjs`, `.prettierrc.json`) con scripts `lint` y `format`
-- [ ] T004 [P] Configurar Vitest (`apps/web/vitest.config.ts`, jsdom, Testing Library) y Playwright (`apps/web/playwright.config.ts`, servidor de producción, `baseURL` con `/ViajaCol`)
-- [ ] T005 [P] Crear `packages/ui` (`tokens.css` OKLCH claro/oscuro, `cn()`, `Button`) y `packages/i18n` (`messages/es.json`, `messages/en.json`)
+- [X] T001 Crear `package.json` raíz con workspaces (`apps/*`, `packages/*`), `tsconfig.base.json`, `.npmrc` (`save-exact=true`) y `engines.node >= 22.13`
+- [X] T002 Crear `apps/web` con Next.js 16.4, React 19.3 y TypeScript estricto; `apps/web/next.config.ts` con `basePath: '/ViajaCol'`, `output: 'standalone'`, `reactCompiler: true` y el plugin de next-intl
+- [X] T003 [P] Configurar ESLint 9 (configuración plana con `eslint-config-next`) y Prettier en la raíz (`eslint.config.mjs`, `.prettierrc.json`) con scripts `lint` y `format`
+- [X] T004 [P] Configurar Vitest (`apps/web/vitest.config.ts`, jsdom, Testing Library) y Playwright (`apps/web/playwright.config.ts`, servidor de producción, `baseURL` con `/ViajaCol`)
+- [X] T005 [P] Crear `packages/ui` (`tokens.css` OKLCH claro/oscuro, `cn()`, `Button`) y `packages/i18n` (`messages/es.json`, `messages/en.json`)
 
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-- [ ] T006 [P] Prueba de completitud del catálogo de textos en `packages/i18n/messages.test.ts` (mismas claves en `es` y `en`)
-- [ ] T007 Configurar next-intl: `apps/web/src/i18n/routing.ts` (`es` predeterminado, `as-needed`, `localeDetection: false`), `request.ts` y `navigation.ts`
-- [ ] T008 Crear `apps/web/proxy.ts` con el middleware de next-intl y su matcher (excluye `_next`, `api` y archivos)
-- [ ] T009 Crear `apps/web/src/styles/globals.css` (Tailwind 4, `@theme` con los tokens, foco visible, `prefers-reduced-motion`)
-- [ ] T010 Crear `apps/web/src/app/layout.tsx` (raíz mínima) y `apps/web/src/app/[locale]/layout.tsx` (`<html lang>`, fuentes con `next/font`, `generateStaticParams`, `setRequestLocale`)
+- [X] T006 [P] Prueba de completitud del catálogo de textos en `packages/i18n/messages.test.ts` (mismas claves en `es` y `en`)
+- [X] T007 Configurar next-intl: `apps/web/src/i18n/routing.ts` (`es` predeterminado, `as-needed`, `localeDetection: false`), `request.ts` y `navigation.ts`
+- [X] T008 Crear `apps/web/proxy.ts` con el middleware de next-intl y su matcher (excluye `_next`, `api` y archivos)
+- [X] T009 Crear `apps/web/src/styles/globals.css` (Tailwind 4, `@theme` con los tokens, foco visible, `prefers-reduced-motion`)
+- [X] T010 Crear `apps/web/src/app/layout.tsx` (raíz mínima) y `apps/web/src/app/[locale]/layout.tsx` (`<html lang>`, fuentes con `next/font`, `generateStaticParams`, `setRequestLocale`)
 
 **Checkpoint**: la app compila y sirve `/ViajaCol` y `/ViajaCol/en`.
 
@@ -51,16 +51,16 @@ separado.
 
 ### Tests for User Story 1
 
-- [ ] T011 [P] [US1] E2E en `apps/web/e2e/navegacion.spec.ts`: marco común, Guías deshabilitada, `aria-current` en la sección actual, enlace directo y axe
-- [ ] T012 [P] [US1] Prueba de `useNavigationViewModel` en `apps/web/src/features/navigation/viewmodel/useNavigationViewModel.test.ts` (sección activa derivada de la ruta)
+- [X] T011 [P] [US1] E2E en `apps/web/e2e/navegacion.spec.ts`: marco común, Guías deshabilitada, `aria-current` en la sección actual, enlace directo y axe
+- [X] T012 [P] [US1] Prueba de `useNavigationViewModel` en `apps/web/src/features/navigation/viewmodel/useNavigationViewModel.test.ts` (sección activa derivada de la ruta)
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Modelo de secciones en `apps/web/src/features/navigation/model/sections.ts`
-- [ ] T014 [US1] ViewModel `useNavigationViewModel` y vista `MainNav` (cliente) en `apps/web/src/features/navigation/`
-- [ ] T015 [US1] Componentes del marco en `apps/web/src/components/layout/`: `TricolorStrip`, `SiteHeader`, `SiteFooter`, `SkipLink`, `SectionIntro`
-- [ ] T016 [US1] Páginas `apps/web/src/app/[locale]/page.tsx`, `sitios/page.tsx`, `fiestas/page.tsx` y `platos/page.tsx` con `generateMetadata` por idioma
-- [ ] T017 [US1] Textos de navegación, secciones, pie y metadatos en `packages/i18n/messages/{es,en}.json`
+- [X] T013 [US1] Modelo de secciones en `apps/web/src/features/navigation/model/sections.ts`
+- [X] T014 [US1] ViewModel `useNavigationViewModel` y vista `MainNav` (cliente) en `apps/web/src/features/navigation/`
+- [X] T015 [US1] Componentes del marco en `apps/web/src/components/layout/`: `TricolorStrip`, `SiteHeader`, `SiteFooter`, `SkipLink`, `SectionIntro`
+- [X] T016 [US1] Páginas `apps/web/src/app/[locale]/page.tsx`, `sitios/page.tsx`, `fiestas/page.tsx` y `platos/page.tsx` con `generateMetadata` por idioma
+- [X] T017 [US1] Textos de navegación, secciones, pie y metadatos en `packages/i18n/messages/{es,en}.json`
 
 **Checkpoint**: HU1 funciona y pasa sus pruebas.
 
@@ -74,13 +74,13 @@ separado.
 
 ### Tests for User Story 2
 
-- [ ] T018 [P] [US2] E2E en `apps/web/e2e/idioma.spec.ts`: cambio ES↔EN conserva la sección, atributo `lang`, redirección del prefijo `/es` redundante
-- [ ] T019 [P] [US2] Prueba de `useLanguageSwitcherViewModel` en `apps/web/src/features/language/viewmodel/useLanguageSwitcherViewModel.test.ts`
+- [X] T018 [P] [US2] E2E en `apps/web/e2e/idioma.spec.ts`: cambio ES↔EN conserva la sección, atributo `lang`, redirección del prefijo `/es` redundante
+- [X] T019 [P] [US2] Prueba de `useLanguageSwitcherViewModel` en `apps/web/src/features/language/viewmodel/useLanguageSwitcherViewModel.test.ts`
 
 ### Implementation for User Story 2
 
-- [ ] T020 [US2] ViewModel y vista `LanguageSwitcher` (cliente) en `apps/web/src/features/language/`
-- [ ] T021 [US2] Alternativas `hreflang` y `lang` por idioma en los metadatos del layout
+- [X] T020 [US2] ViewModel y vista `LanguageSwitcher` (cliente) en `apps/web/src/features/language/`
+- [X] T021 [US2] Alternativas `hreflang` y `lang` por idioma en los metadatos del layout
 
 **Checkpoint**: HU1 + HU2 = MVP bilingüe.
 
@@ -94,13 +94,13 @@ separado.
 
 ### Tests for User Story 3
 
-- [ ] T022 [P] [US3] Pruebas del store y del ViewModel en `apps/web/src/features/theme/model/themeStore.test.ts` y `viewmodel/useThemeViewModel.test.ts`
-- [ ] T023 [P] [US3] E2E en `apps/web/e2e/tema.spec.ts`: persistencia tras recargar y primera visita con esquema oscuro emulado
+- [X] T022 [P] [US3] Pruebas del store y del ViewModel en `apps/web/src/features/theme/model/themeStore.test.ts` y `viewmodel/useThemeViewModel.test.ts`
+- [X] T023 [P] [US3] E2E en `apps/web/e2e/tema.spec.ts`: persistencia tras recargar y primera visita con esquema oscuro emulado
 
 ### Implementation for User Story 3
 
-- [ ] T024 [US3] Store Zustand persistente en `apps/web/src/features/theme/model/themeStore.ts` (clave `viajacol:theme`)
-- [ ] T025 [US3] `ThemeScript` (anti-destello en `<head>`), `useThemeViewModel` y `ThemeToggle` en `apps/web/src/features/theme/`
+- [X] T024 [US3] Store Zustand persistente en `apps/web/src/features/theme/model/themeStore.ts` (clave `viajacol:theme`)
+- [X] T025 [US3] `ThemeScript` (anti-destello en `<head>`), `useThemeViewModel` y `ThemeToggle` en `apps/web/src/features/theme/`
 
 ---
 
@@ -108,11 +108,11 @@ separado.
 
 ### Tests for User Story 4
 
-- [ ] T026 [P] [US4] E2E en `apps/web/e2e/errores.spec.ts`: 404 en ambos idiomas con estado 404
+- [X] T026 [P] [US4] E2E en `apps/web/e2e/errores.spec.ts`: 404 en ambos idiomas con estado 404
 
 ### Implementation for User Story 4
 
-- [ ] T027 [US4] `apps/web/src/app/[locale]/not-found.tsx`, `[locale]/[...rest]/page.tsx`, `app/not-found.tsx` y `[locale]/error.tsx`
+- [X] T027 [US4] `apps/web/src/app/[locale]/not-found.tsx`, `[locale]/[...rest]/page.tsx`, `app/not-found.tsx` y `[locale]/error.tsx`
 
 ---
 
@@ -120,20 +120,20 @@ separado.
 
 ### Tests for User Story 5
 
-- [ ] T028 [P] [US5] E2E en `apps/web/e2e/accesibilidad.spec.ts`: primer Tab en «Saltar al contenido», regiones y axe sin violaciones en todas las rutas de ambos idiomas
+- [X] T028 [P] [US5] E2E en `apps/web/e2e/accesibilidad.spec.ts`: primer Tab en «Saltar al contenido», regiones y axe sin violaciones en todas las rutas de ambos idiomas
 
 ### Implementation for User Story 5
 
-- [ ] T029 [US5] Menú móvil accesible (cliente) con su ViewModel y verificación de tamaños de objetivo
+- [X] T029 [US5] Menú móvil accesible (cliente) con su ViewModel y verificación de tamaños de objetivo
 
 ---
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
-- [ ] T030 Transiciones con `<ViewTransition>` y CSS de movimiento reducido
-- [ ] T031 [P] ADR `docs/adr/0001-nextjs-en-lugar-de-astro.md` y `docs/adr/0002-mvvm-con-store-compartido.md`
-- [ ] T032 [P] README: sección «Cómo correrlo»
-- [ ] T033 Validar con [quickstart.md](quickstart.md): lint, tipos, pruebas con cobertura, build y E2E; registrar resultados en el PR
+- [X] T030 Transiciones con `<ViewTransition>` y CSS de movimiento reducido
+- [X] T031 [P] ADR `docs/adr/0001-nextjs-en-lugar-de-astro.md` y `docs/adr/0002-mvvm-con-store-compartido.md`
+- [X] T032 [P] README: sección «Cómo correrlo»
+- [X] T033 Validar con [quickstart.md](quickstart.md): lint, tipos, pruebas con cobertura, build y E2E; registrar resultados en el PR
 
 ---
 

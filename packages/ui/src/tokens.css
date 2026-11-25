@@ -1,0 +1,40 @@
+/*
+ * Tokens de diseño de Viaja Colombia (Entrega 1) expresados en OKLCH.
+ * Contrastes verificados (texto normal ≥ 4,5:1):
+ *   claro  — ink/fondo 16,1 · muted/fondo 10,3 · muted/surface 9,4 · primary/fondo 10,6 · link/surface 4,9
+ *   oscuro — texto/fondo 16,3 · muted 9,9 · primary 7,1 · accent 6,4 · link 9,5
+ * Los colores de la bandera (flag-*) no cambian con el tema.
+ */
+:root {
+  --vc-flag-yellow: oklch(87.24% 0.1757 93.47); /* #FCD116 */
+  --vc-flag-blue: oklch(37.49% 0.159 260.69); /* #003893 */
+  --vc-flag-red: oklch(54.12% 0.2127 24.79); /* #CE1126 */
+
+  --vc-background: oklch(100% 0 0); /* #FFFFFF */
+  --vc-foreground: oklch(24.65% 0.0255 232.49); /* #14232B ink */
+  --vc-surface: oklch(97.09% 0.0032 197.1); /* #F3F6F6 */
+  --vc-muted: oklch(37.22% 0.0247 229.86); /* #33434B */
+  --vc-line: oklch(88.82% 0.0101 212.52); /* #D3DCDE */
+  --vc-primary: oklch(37.49% 0.159 260.69); /* #003893 */
+  --vc-primary-foreground: oklch(100% 0 0);
+  --vc-highlight: oklch(87.24% 0.1757 93.47); /* #FCD116, solo fondo/acento */
+  --vc-highlight-foreground: oklch(37.49% 0.159 260.69);
+  --vc-accent: oklch(54.12% 0.2127 24.79); /* #CE1126 */
+  --vc-link: oklch(51.35% 0.1178 153.69); /* #1D7A46 */
+  --vc-focus: oklch(37.49% 0.159 260.69);
+}
+
+.dark {
+  --vc-background: oklch(20.95% 0.0208 230.71); /* #0E1A20 */
+  --vc-foreground: oklch(97.09% 0.0032 197.1); /* #F3F6F6 */
+  --vc-surface: oklch(24.65% 0.0255 232.49); /* #14232B */
+  --vc-muted: oklch(81.26% 0.015 224.54); /* #B8C4C9 */
+  --vc-line: oklch(33.78% 0.0252 230.04); /* #2A3A42 */
+  --vc-primary: oklch(72.32% 0.1429 265.38); /* #7AA2FF */
+  --vc-primary-foreground: oklch(20.95% 0.0208 230.71);
+  --vc-highlight: oklch(87.24% 0.1757 93.47);
+  --vc-highlight-foreground: oklch(20.95% 0.0208 230.71);
+  --vc-accent: oklch(71.46% 0.1804 16.78); /* #FF6B7A */
+  --vc-link: oklch(78.46% 0.1347 159.52); /* #5FD39A */
+  --vc-focus: oklch(87.24% 0.1757 93.47);
+}

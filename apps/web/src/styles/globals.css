@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+@import '@viajacol/ui/tokens.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--vc-background);
+  --color-foreground: var(--vc-foreground);
+  --color-surface: var(--vc-surface);
+  --color-muted: var(--vc-muted);
+  --color-line: var(--vc-line);
+  --color-primary: var(--vc-primary);
+  --color-primary-foreground: var(--vc-primary-foreground);
+  --color-highlight: var(--vc-highlight);
+  --color-highlight-foreground: var(--vc-highlight-foreground);
+  --color-accent: var(--vc-accent);
+  --color-link: var(--vc-link);
+  --color-flag-yellow: var(--vc-flag-yellow);
+  --color-flag-blue: var(--vc-flag-blue);
+  --color-flag-red: var(--vc-flag-red);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--vc-background);
+  color: var(--vc-foreground);
+}
+
+:focus-visible {
+  outline: 3px solid var(--vc-focus);
+  outline-offset: 2px;
+}
+
+/* Transiciones entre páginas (View Transitions). */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

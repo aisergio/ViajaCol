@@ -1,0 +1,32 @@
+{
+  "name": "viaja-colombia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Viaja Colombia — prototipo académico de Arquitectura Front-End",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "npm run dev -w @viajacol/web",
+    "build": "npm run build -w @viajacol/web",
+    "start": "npm run start -w @viajacol/web",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "npm run typecheck -w @viajacol/web",
+    "test": "npm run test -w @viajacol/web",
+    "test:coverage": "npm run test:coverage -w @viajacol/web",
+    "e2e": "npm run e2e -w @viajacol/web"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.6",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.10.1"
+  }
+}

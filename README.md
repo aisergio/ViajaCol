@@ -14,7 +14,36 @@ Front-End** (Politécnico Grancolombiano).
   Cloudflare Worker.
 - **Proceso**: Spec-Driven Development con GitHub Spec Kit (`specs/`) y CI en GitHub Actions.
 
-La documentación detallada estará en [`docs/`](docs/).
+La documentación detallada estará en [`docs/`](docs/); las decisiones de arquitectura, en
+[`docs/adr/`](docs/adr/).
+
+## Cómo correrlo
+
+Requisitos: Node.js 22.13 o superior y npm 11.
+
+```bash
+npm install
+npm run dev            # http://localhost:3000/ViajaCol
+```
+
+| Comando | Qué hace |
+|---|---|
+| `npm run lint` | ESLint (reglas de Next.js y TypeScript) |
+| `npm run typecheck` | TypeScript estricto |
+| `npm run test:coverage` | Vitest: ViewModels, modelos y catálogo de textos (cobertura ≥ 80 %) |
+| `npm run build` | Build de producción (las páginas se prerenderizan) |
+| `npm run e2e` | Playwright + axe sobre el build de producción |
+
+## Estructura
+
+```
+apps/web/          aplicación Next.js (rutas en src/app/[locale], funcionalidades en src/features)
+packages/ui/       tokens de diseño (OKLCH) y componentes base
+packages/i18n/     catálogo de textos ES/EN
+specs/             especificaciones de Spec Kit (una carpeta por funcionalidad)
+infra/             Terraform (bootstrap y stacks)
+docs/              ADR, guías de aprendizaje y seguridad
+```
 
 ## Equipo
 
