@@ -1,0 +1,11 @@
+{
+  "name": "@viajacol/i18n",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Catálogo de textos ES/EN de Viaja Colombia",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./messages/*": "./messages/*"
+  }
+}

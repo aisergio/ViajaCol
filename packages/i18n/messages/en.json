@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "siteName": "Viaja Colombia",
+    "title": "Viaja Colombia — places, festivals and flavors of Colombia",
+    "description": "Discover places, festivals, dishes and experiences in Colombia and plan your next trip."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "comingSoon": "Coming soon",
+    "inProgress": "Under construction"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Viaja Colombia, go to the home page",
+    "noticias": "News",
+    "sitios": "Sites",
+    "fiestas": "Festivals",
+    "platos": "Dishes",
+    "guias": "Guides",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "theme": {
+    "toggle": "Theme {current}. Switch to {next}",
+    "system": "system",
+    "light": "light",
+    "dark": "dark"
+  },
+  "home": {
+    "eyebrow": "Tourism in Colombia",
+    "title": "Viaja Colombia",
+    "tagline": "Places, festivals, dishes and experiences to plan your next trip.",
+    "infoTitle": "About the app",
+    "infoBody": "Find information about places, dishes and festivals in Colombia to plan your visits.",
+    "newsTitle": "News",
+    "newsEmpty": "The first news stories are coming soon."
+  },
+  "sections": {
+    "sitios": {
+      "title": "Sites",
+      "intro": "Places to visit across Colombia's six natural regions."
+    },
+    "fiestas": {
+      "title": "Festivals",
+      "intro": "Carnivals, fairs and festivals by city and by month."
+    },
+    "platos": {
+      "title": "Dishes",
+      "intro": "Typical flavors from every region to try on your trip."
+    }
+  },
+  "footer": {
+    "project": "Academic prototype for the Front-End Architecture course.",
+    "license": "Code under the MIT license.",
+    "repo": "GitHub repository",
+    "credits": "Images keep their original licenses."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The address you opened does not exist or has changed.",
+    "back": "Back to the home page"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "We could not load this section. Please try again.",
+    "retry": "Try again",
+    "back": "Back to the home page"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "siteName": "Viaja Colombia",
+    "title": "Viaja Colombia — sitios, fiestas y sabores de Colombia",
+    "description": "Descubre sitios, fiestas, platos y experiencias de Colombia y planea tu próximo viaje."
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "comingSoon": "Próximamente",
+    "inProgress": "En construcción"
+  },
+  "nav": {
+    "label": "Navegación principal",
+    "home": "Viaja Colombia, ir a la portada",
+    "noticias": "Noticias",
+    "sitios": "Sitios",
+    "fiestas": "Fiestas",
+    "platos": "Platos",
+    "guias": "Guías",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English"
+  },
+  "theme": {
+    "toggle": "Tema {current}. Cambiar a {next}",
+    "system": "del sistema",
+    "light": "claro",
+    "dark": "oscuro"
+  },
+  "home": {
+    "eyebrow": "Turismo en Colombia",
+    "title": "Viaja Colombia",
+    "tagline": "Sitios, fiestas, platos y experiencias para planear tu próximo viaje.",
+    "infoTitle": "Información de la app",
+    "infoBody": "Encuentra información sobre lugares, platos y fiestas de Colombia para planear tus visitas.",
+    "newsTitle": "Noticias",
+    "newsEmpty": "Pronto publicaremos las primeras noticias."
+  },
+  "sections": {
+    "sitios": {
+      "title": "Sitios",
+      "intro": "Lugares para visitar en las seis regiones naturales de Colombia."
+    },
+    "fiestas": {
+      "title": "Fiestas",
+      "intro": "Carnavales, ferias y festivales por ciudad y por mes."
+    },
+    "platos": {
+      "title": "Platos",
+      "intro": "Sabores típicos de cada región para probar en tu viaje."
+    }
+  },
+  "footer": {
+    "project": "Prototipo académico de la asignatura Arquitectura Front-End.",
+    "license": "Código bajo licencia MIT.",
+    "repo": "Repositorio en GitHub",
+    "credits": "Las imágenes conservan sus licencias originales."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "La dirección que abriste no existe o cambió.",
+    "back": "Volver a la portada"
+  },
+  "error": {
+    "title": "Algo salió mal",
+    "body": "No pudimos cargar esta sección. Intenta de nuevo.",
+    "retry": "Reintentar",
+    "back": "Volver a la portada"
+  }
+}
