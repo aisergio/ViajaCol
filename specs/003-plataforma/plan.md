@@ -1,113 +1,136 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Plataforma de publicación del prototipo
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `003-plataforma` | **Date**: 2026-11-25 | **Spec**: [spec.md](spec.md)
 
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/speckit-plan` command; its definition describes the execution workflow.
+**Input**: Feature specification from `/specs/003-plataforma/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+El sitio se publica en `https://aisergio.dev/ViajaCol` con cuatro piezas:
+
+1. **Borde:** un Cloudflare Worker en las rutas `/ViajaCol*`. Canoniza la ruta, agrega el secreto del
+   origen y el host público, calcula el hash del cuerpo y devuelve la respuesta en *streaming*.
+2. **CDN:** CloudFront. La función `origin-guard` rechaza todo lo que no trae el secreto. Los estáticos
+   con hash salen de S3 con caché inmutable. Además, agrega las cabeceras de seguridad.
+3. **Cómputo:** Lambda arm64 con el servidor *standalone* de Next.js detrás del Lambda Web Adapter,
+   alias `live` y Function URL con IAM. CloudFront la firma con OAC.
+4. **Entrega:** `deploy.yml` compila en GitHub (arm64) y publica en un runner de CodeBuild con
+   aprobación del entorno `production`. Publicar o restaurar es mover el alias.
+
+Todo está en Terraform (`infra/live` y el módulo `infra/modules/nextjs-zone`). Los únicos cambios
+en la zona del dominio (rutas y regla de tasa) se activan aparte, con `enable_public_routes`.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+**Language/Version**:
+- Terraform 1.17.2, con los proveedores AWS 6.74, Cloudflare 5.29, random 3.9 y archive 2.8.
+- Node.js 24 (runtime `nodejs24.x` en Lambda y CI).
+- JavaScript estándar en el Worker y en CloudFront Functions (runtime `cloudfront-js-2.0`).
+- Bash en los scripts de despliegue y PowerShell en los locales.
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**:
 
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+| Pieza | Versión | Nota |
+|---|---|---|
+| AWS Lambda Web Adapter | 1.1.0 (capa oficial arm64 v30) | Copia propia verificada por SHA-256 |
+| Next.js | 16.4.6 | `output: 'standalone'` solo en CI (`NEXT_OUTPUT`) |
+| checkov-action | v12.3146.0 (checkov 3.4.10) | Actualizada en la spec 002 |
+| actions/download-artifact | v8.0.2 | Fijada por SHA |
+| Imagen de CodeBuild | `amazonlinux-aarch64-lambda-standard:nodejs24` | Cómputo Lambda de 2 GB |
 
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+**Storage**: dos buckets S3 privados: `static`, para los recursos `/ViajaCol/_next/static/*`, y
+`artifacts`, para los zip de Lambda. Además, un KeyValueStore de CloudFront para el secreto. No hay
+base de datos en esta spec.
 
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]
+**Testing**:
+- `node --test` para el Worker: canonización, cabeceras, hash, 413 y reescritura de `Location`.
+- Vitest y Playwright para `/api/health`.
+- `terraform validate`, TFLint y Checkov en `iac.yml`.
+- `scripts/deploy/smoke.sh` tras cada publicación.
 
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Target Platform**:
+- AWS us-east-2, en el proyecto ViajaCol de la nueva experiencia (SCP de una región, sin OIDC). La
+  CDN es global.
+- Cloudflare, plan Free, zona `aisergio.dev`.
 
-**Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]
+**Project Type**: infraestructura y entrega continua de una aplicación web.
 
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Performance Goals**:
+- Primer byte por debajo de 1 s con la función activa.
+- Arranque en frío por debajo de 5 s para la página completa.
+- HTML estático y datos RSC desde la caché de CloudFront.
 
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
+**Constraints**:
+- US$10 al mes, sin recursos con cargo fijo.
+- Concurrencia de la cuenta: 10.
+- Sin OIDC desde GitHub.
+- La zona del dominio es compartida con otros proyectos.
+- El plan Free de Cloudflare admite 1 regla de tasa (bloqueo de 10 s).
 
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Scale/Scope**: 1 zona (web) en la E2; el módulo `nextjs-zone` se repite por dominio en la E3.
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+| Principio | Cómo se cumple | Estado |
+|---|---|---|
+| I. Server-first | El servidor de Next.js corre completo en Lambda (RSC, Route Handlers y luego Server Actions); la CDN respeta su `Cache-Control`. | ✅ |
+| II. MVVM con store compartido | No aplica: la spec no toca la interfaz. | — |
+| III. Pruebas primero | Pruebas del Worker y de `/api/health` antes de publicar, prueba de humo después y escaneo de IaC en cada PR. | ✅ |
+| IV. Accesible, bilingüe y rápido | La caché inmutable de los estáticos, el HTML en CDN y el *streaming* sin buffer protegen el LCP. SC-006 mide Lighthouse sobre la dirección pública. | ✅ |
+| V. Seguro por defecto | Origen oculto (OAC y secreto en el borde), cabeceras de seguridad, sin llaves de larga duración (rol de CodeBuild), runner filtrado por la cuenta del responsable y excepciones de Checkov con motivo. | ✅ |
+| Infraestructura y costos | Todo en Terraform, con etiquetas `Project=ViajaCol`; sin WAF, sin CMK y sin NAT, por costo; registros de 14 días. | ✅ |
 
-[Gates determined based on constitution file]
+**Re-check tras el diseño:** sin violaciones. La CSP base admite `'unsafe-inline'`, como riesgo
+documentado hasta el ADR de CSP (research.md, D-08).
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit-plan command output)
-├── research.md          # Phase 0 output (/speckit-plan command)
-├── data-model.md        # Phase 1 output (/speckit-plan command)
-├── quickstart.md        # Phase 1 output (/speckit-plan command)
-├── contracts/           # Phase 1 output (/speckit-plan command)
-└── tasks.md             # Phase 2 output (/speckit-tasks command - NOT created by /speckit-plan)
+specs/003-plataforma/
+├── spec.md
+├── plan.md
+├── research.md          # Decisiones D-01…D-10
+├── data-model.md        # Versión publicada, alias, secreto, ejecución
+├── quickstart.md        # Aplicar, publicar, verificar, restaurar, rotar
+├── contracts/
+│   ├── health.md        # GET/POST /ViajaCol/api/health
+│   └── borde-origen.md  # Cabeceras Worker → CloudFront → Lambda
+├── checklists/requirements.md
+└── tasks.md
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+infra/
+├── live/                       # Stack de la plataforma (estado en S3: live/terraform.tfstate)
+│   ├── web.tf                  # Capa del Web Adapter, módulo web y alertas SNS
+│   ├── static.tf               # Buckets static y artifacts
+│   ├── cdn.tf                  # CloudFront, OAC, políticas, origin-guard y KVS
+│   ├── edge.tf                 # Worker, rutas y regla de tasa (Cloudflare)
+│   ├── deploy.tf               # Runner de CodeBuild y su webhook
+│   ├── functions/origin-guard.js
+│   └── edge/worker.mjs (+ worker.test.mjs)
+└── modules/nextjs-zone/        # Lambda + alias live + Function URL + registros + alarmas
+scripts/
+├── infra/fetch-lwa-layer.ps1   # Descarga y verifica la capa oficial
+└── deploy/                     # build-web.sh, publish-web.sh, rollback.sh, smoke.sh, lambda/run.sh
+apps/web/src/app/api/health/    # Endpoint de salud (FR-011)
+.github/workflows/deploy.yml    # Paquete (PR), publicación (main) y restauración (manual)
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**:
+- `infra/live` concentra lo que existe una sola vez: buckets, CDN, borde y runner.
+- La zona de cómputo vive en un módulo porque la E3 la repetirá por dominio con alias y versiones
+  independientes.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+| Decisión | Por qué hace falta | Alternativa más simple descartada |
+|---|---|---|
+| Worker de Cloudflare delante de CloudFront | El dominio ya vive en Cloudflare con otros proyectos y solo `/ViajaCol*` debe cambiar. | Mover el DNS a Route 53 o apuntar el dominio a CloudFront: rompe el sitio raíz. |
+| Secreto en el borde y además OAC | OAC protege Lambda y S3; el secreto impide usar la CDN directamente para saltarse el límite de tasa. | Solo OAC: el dominio `*.cloudfront.net` quedaría abierto. |
+| Runner de CodeBuild | La SCP bloquea OIDC y la constitución prohíbe llaves de larga duración. | Llaves de IAM en secretos de GitHub: viola el principio V. |
+| Capa propia del Web Adapter | Independencia del publicador y verificación de integridad. | ARN público: más simple, pero sin control si la capa desaparece. |
