@@ -30,6 +30,7 @@ blob-report/
 crash.log
 *.auto.tfvars
 *.auto.tfvars.json
+backend.hcl
 override.tf
 override.tf.json
 *_override.tf
