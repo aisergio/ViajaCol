@@ -1,0 +1,31 @@
+name: Error
+description: Algo no funciona como se espera
+labels: ['bug']
+body:
+  - type: textarea
+    id: que-paso
+    attributes:
+      label: ¿Qué pasó?
+      description: Describe el error y qué esperabas que ocurriera.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Ir a …
+        2. Hacer clic en …
+        3. Ver el error
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Página o ruta
+      placeholder: https://aisergio.dev/ViajaCol/…
+  - type: input
+    id: navegador
+    attributes:
+      label: Navegador y dispositivo
+      placeholder: Chrome 157 en Windows 11

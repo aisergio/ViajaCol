@@ -1,0 +1,57 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      next-react:
+        patterns:
+          [
+            'next',
+            'react',
+            'react-dom',
+            '@types/react',
+            '@types/react-dom',
+            'eslint-config-next',
+            'next-intl',
+          ]
+      pruebas:
+        patterns:
+          [
+            'vitest',
+            '@vitest/*',
+            '@vitejs/*',
+            '@testing-library/*',
+            '@playwright/test',
+            '@axe-core/*',
+            'jsdom',
+          ]
+      herramientas:
+        patterns:
+          [
+            'eslint',
+            'eslint-config-prettier',
+            'prettier',
+            'typescript',
+            'tailwindcss',
+            '@tailwindcss/*',
+            '@types/node',
+          ]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      acciones:
+        patterns: ['*']
+
+  - package-ecosystem: terraform
+    directory: /infra/bootstrap
+    schedule:
+      interval: weekly
+      day: monday
