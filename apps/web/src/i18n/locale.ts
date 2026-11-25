@@ -12,3 +12,6 @@ export function resolveLocale(value: string): Locale {
 export function htmlLang(locale: Locale): string {
   return locale === 'es' ? 'es-CO' : 'en';
 }
+
+// Prueba temporal: este error de tipos debe bloquear la fusión.
+export const pruebaDeBloqueo: number = 'esto no es un número';
