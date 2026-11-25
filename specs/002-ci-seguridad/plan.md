@@ -34,7 +34,7 @@ Lambda); Terraform 1.17.2.
 | ossf/scorecard-action | v2.6.0 |
 | hashicorp/setup-terraform | v4.0.1 |
 | terraform-linters/setup-tflint | v6.3.2 |
-| bridgecrewio/checkov-action | v12.1347.0 |
+| bridgecrewio/checkov-action | v12.3146.0 (checkov 3.4.10) |
 
 Lighthouse CI corre como `@lhci/cli` con su versión fijada.
 

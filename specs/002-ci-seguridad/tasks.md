@@ -35,8 +35,8 @@ bloqueo con un check requerido en rojo.
 
 ## Phase 6: Polish
 
-- [X] T010 Ejecutar los flujos en el PR, corregir hallazgos y registrar los resultados
-- [ ] T011 Hacer requeridas las verificaciones principales en el conjunto de reglas de `main` y comprobar el bloqueo
+- [X] T010 Ejecutar los flujos en el PR, corregir hallazgos y registrar los resultados ([evidencia.md](evidencia.md))
+- [X] T011 Hacer requeridas las verificaciones principales en el conjunto de reglas de `main` y comprobar el bloqueo ([evidencia.md](evidencia.md))
 
 ## Dependencies
 
