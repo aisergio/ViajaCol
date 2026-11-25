@@ -9,7 +9,7 @@
 
 ```powershell
 npm install
-npm run dev          # http://localhost:3000/ViajaCol
+npm run dev          # http://localhost:3030/ViajaCol (el 3000 lo usa Docker en este PC)
 npm run lint
 npm run typecheck
 npm run test         # Vitest: ViewModels, store y completitud de textos

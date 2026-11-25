@@ -28,22 +28,30 @@
   --radius-xl: 20px;
 }
 
-:root {
-  color-scheme: light;
-}
+/* Estilos base en la capa `base` para que las utilidades de Tailwind (capa `utilities`) los ajusten. */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
 
-.dark {
-  color-scheme: dark;
-}
+  .dark {
+    color-scheme: dark;
+  }
 
-body {
-  background-color: var(--vc-background);
-  color: var(--vc-foreground);
-}
+  body {
+    background-color: var(--vc-background);
+    color: var(--vc-foreground);
+  }
 
-:focus-visible {
-  outline: 3px solid var(--vc-focus);
-  outline-offset: 2px;
+  :focus-visible {
+    outline: 3px solid var(--vc-focus);
+    outline-offset: 2px;
+  }
+
+  /* Destinos de foco programático (p. ej. <main> tras «Saltar al contenido»): sin marco visible. */
+  [tabindex='-1']:focus {
+    outline: none;
+  }
 }
 
 /* Transiciones entre páginas (View Transitions). */

@@ -1,5 +1,9 @@
 # Viaja Colombia
 
+[![CI](https://github.com/aisergio/ViajaCol/actions/workflows/ci.yml/badge.svg)](https://github.com/aisergio/ViajaCol/actions/workflows/ci.yml)
+[![Security](https://github.com/aisergio/ViajaCol/actions/workflows/security.yml/badge.svg)](https://github.com/aisergio/ViajaCol/actions/workflows/security.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aisergio/ViajaCol/badge)](https://scorecard.dev/viewer/?uri=github.com/aisergio/ViajaCol)
+
 Sitio turístico bilingüe (español / inglés) para descubrir sitios, fiestas, platos y experiencias de
 Colombia y planear viajes con «Mi viaje». Prototipo académico de la asignatura **Arquitectura
 Front-End** (Politécnico Grancolombiano).
@@ -23,7 +27,7 @@ Requisitos: Node.js 22.13 o superior y npm 11.
 
 ```bash
 npm install
-npm run dev            # http://localhost:3000/ViajaCol
+npm run dev            # http://localhost:3030/ViajaCol
 ```
 
 | Comando | Qué hace |
