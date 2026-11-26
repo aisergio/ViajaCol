@@ -71,7 +71,8 @@ curl -s -o /dev/null -w '%{http_code}\n' <web_function_url>                     
 
 4. Ejecuta `./scripts/infra/sync-deploy-secrets.ps1`. Guarda los seis secretos `DEPLOY_*` del
    repositorio sin mostrarlos.
-5. Fusiona en `main`.
+5. Fusiona en `main`. Si el PR cambió `infra/live` (por ejemplo, el Worker), ejecuta plan y apply
+   antes de aprobar: la prueba de humo también revisa el borde.
 6. En Actions → Despliegue, abre la ejecución y pulsa **Review deployments**. Marca `production` y
    pulsa **Approve and deploy**. Puedes aprobar mientras compila el paquete.
 7. Revisa el resumen: commit, versión de Lambda y prueba de humo.

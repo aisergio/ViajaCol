@@ -72,6 +72,7 @@ description: "Lista de tareas de la spec 003-plataforma"
 - [X] T027 Las seis cabeceras de seguridad en las respuestas propias del Worker (301 y 413), con pruebas, y la prueba de humo revisándolas en la redirección (SC-008)
 - [X] T028 La aprobación de `production` en su propio job, en un runner de GitHub, y los secretos `DEPLOY_*` en el repositorio, tras el incidente de la primera publicación (ADR 0005)
 - [X] T029 Ícono del sitio (`apps/web/src/app/icon.svg`): la página ya no pide `/favicon.ico` a la raíz del dominio, que da 522 (SC-006, buenas prácticas)
+- [X] T030 Segunda publicación desde `main`, ya con la aprobación aparte. El Worker se aplicó antes de aprobar, SC-004 se midió de nuevo y se borraron los `DEPLOY_*` del entorno ([evidencia](evidencia.md))
 
 ## Dependencies
 

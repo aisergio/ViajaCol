@@ -130,7 +130,7 @@ commit `362dfef`, la fusión del PR #5:
 - **Versión visible:** `/api/health` responde
   `{"status":"ok","version":"362dfefffcd09b09d6216318ae5f09b0be742e13"}`.
 - **SC-004:** el trabajo automático tomó 74 s (paquete y publicación), pero esta primera vez hubo que
-  relanzar el job. Se vuelve a medir en la siguiente publicación, con la aprobación en su propio job.
+  relanzar el job. Se volvió a medir en la segunda publicación, ya con la aprobación en su propio job.
 
 ## Lighthouse (SC-006)
 
@@ -161,6 +161,49 @@ commit `362dfef`, la fusión del PR #5:
   aprobados y los secretos `DEPLOY_*` pasan al repositorio (ADR 0005, actualización del 2026-11-26).
 - **Ícono:** la página declara `/ViajaCol/icon.svg`, el isotipo de la marca. El navegador ya no pide
   `/favicon.ico` a la raíz del dominio.
+
+## Segunda publicación desde main (T030, SC-004)
+
+El 2026-11-26 se fusionó el PR #7. Como cambiaba el Worker y la prueba de humo, la aprobación esperó
+a que se aplicara el Worker.
+
+- **Worker:** a las 23:09 UTC, `terraform apply` cambió 1 recurso (el código de
+  `cloudflare_workers_script.edge`) y no creó ni borró ninguno. El plan muestra además `observability`
+  en cada ejecución. Es una diferencia del proveedor sin efecto: la API vuelve a poner los mismos
+  valores.
+- **Comprobación en producción:**
+
+| Respuesta | Resultado |
+|---|---|
+| `/viajacol` y `/VIAJACOL/en/platos?x=1` | 301 con las seis cabeceras, y HSTS sin subdominios |
+| POST de 1,1 MB | 413 con las seis cabeceras |
+
+- **Publicación:** la ejecución
+  [45907930371](https://github.com/aisergio/ViajaCol/actions/runs/45907930371) publicó el commit
+  `0c6d09c`:
+
+| Paso | Hora (UTC) | Resultado |
+|---|---|---|
+| Fusión | 22:56:48 | PR #7 |
+| Paquete | 22:56:56–22:57:26 | 30 s |
+| Aprobación de producción | 23:21:38–23:21:41 | En un runner de GitHub. La espera incluyó el apply del Worker y renovar la sesión de AWS |
+| Publicar en producción | 23:21:55–23:22:38 | El runner de CodeBuild arrancó 14 s después de la aprobación. Publicó en 34 s la versión 4 de la función |
+| Prueba de humo | 23:22:34–23:22:37 | En verde, incluidas las cabeceras de la redirección |
+
+- **Versión visible:** `/api/health` responde
+  `{"status":"ok","version":"0c6d09c15a97bd45a52e42aae26e6c6771ece301"}`. La página declara
+  `/ViajaCol/icon.svg`, que responde 200 con `image/svg+xml`.
+- **SC-004 se cumple en lo que depende de la plataforma:**
+  - La versión quedó visible 53 s después de la aprobación.
+  - El paquete compila mientras se espera la aprobación, y terminó 38 s después de la fusión. Con una
+    aprobación inmediata, la versión queda visible unos 1,5 minutos después de fusionar.
+  - Esta vez pasaron 26 minutos entre la fusión y la versión visible, por la espera deliberada de la
+    aprobación.
+  - La publicación no necesitó comandos locales. El apply del Worker sí, porque los cambios de la IaC
+    del borde se aplican desde el PC del responsable.
+- **Secretos:** después de esta publicación, que ya usó los `DEPLOY_*` del repositorio, se borraron
+  sus copias del entorno `production`. El entorno conserva sus revisores requeridos y su política de
+  ramas.
 
 ## Pendiente
 
