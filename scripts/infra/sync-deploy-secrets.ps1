@@ -1,19 +1,22 @@
 <#
 .SYNOPSIS
-  Copia las salidas de infra/live a los secretos del entorno `production` de GitHub, que usa
-  deploy.yml. No imprime ningún valor.
+  Copia las salidas de infra/live a los secretos del repositorio que usa deploy.yml. No imprime ningún
+  valor.
 
 .DESCRIPTION
   Se guardan como secretos (y no como variables) porque los registros de Actions de un repositorio
-  público son públicos y los secretos se enmascaran. Requiere `gh auth login` con permiso de
-  administración del repositorio y un `terraform init` previo del stack live.
+  público son públicos y los secretos se enmascaran. Son del repositorio y no del entorno
+  `production`: los jobs de CodeBuild ya no declaran el entorno, porque la aprobación va en su propio
+  job (ADR 0005). No son credenciales: el acceso a AWS lo da el rol del runner de CodeBuild.
+
+  Requiere `gh auth login` con permiso de administración del repositorio y un `terraform init` previo
+  del stack live.
 
 .EXAMPLE
   ./scripts/infra/sync-deploy-secrets.ps1
 #>
 param(
-  [string]$Repository = 'aisergio/ViajaCol',
-  [string]$Environment = 'production'
+  [string]$Repository = 'aisergio/ViajaCol'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -32,7 +35,7 @@ $secrets = [ordered]@{
 
 foreach ($name in $secrets.Keys) {
   if ([string]::IsNullOrWhiteSpace($secrets[$name])) { throw "Salida vacía para $name" }
-  $secrets[$name] | gh secret set $name --repo $Repository --env $Environment
+  $secrets[$name] | gh secret set $name --repo $Repository
   if ($LASTEXITCODE -ne 0) { throw "No se pudo guardar $name" }
   "✓ $name"
 }

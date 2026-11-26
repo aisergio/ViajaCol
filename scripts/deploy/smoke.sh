@@ -26,12 +26,18 @@ echo "✓ versión $EXPECTED_VERSION"
 [[ $(status "$PUBLIC_URL/ruta-que-no-existe-$RANDOM") == 404 ]] || fail "una ruta inexistente no responde 404"
 echo "✓ portada ES/EN y 404"
 
-# 3. Cabeceras de seguridad (FR-006).
-headers=$(curl -sSI --max-time 20 "$PUBLIC_URL" | tr -d '\r' | tr '[:upper:]' '[:lower:]')
-for name in strict-transport-security x-content-type-options referrer-policy content-security-policy x-frame-options permissions-policy; do
-  grep -q "^$name:" <<<"$headers" || fail "falta la cabecera $name"
-done
-if grep -q '^strict-transport-security:.*includesubdomains' <<<"$headers"; then fail "HSTS no debe incluir subdominios"; fi
+# 3. Cabeceras de seguridad (FR-006): en la portada, que pasa por CloudFront, y en la redirección
+#    canónica, que genera el Worker.
+security_headers() {
+  local headers
+  headers=$(curl -sSI --max-time 20 "$1" | tr -d '\r' | tr '[:upper:]' '[:lower:]')
+  for name in strict-transport-security x-content-type-options referrer-policy content-security-policy x-frame-options permissions-policy; do
+    grep -q "^$name:" <<<"$headers" || fail "falta la cabecera $name en $2"
+  done
+  if grep -q '^strict-transport-security:.*includesubdomains' <<<"$headers"; then fail "HSTS no debe incluir subdominios ($2)"; fi
+}
+security_headers "$PUBLIC_URL" "la portada"
+security_headers "$ORIGIN/viajacol" "la redirección canónica"
 echo "✓ cabeceras de seguridad"
 
 # 4. Un POST cruza el borde y CloudFront con el cuerpo íntegro (hash para OAC).

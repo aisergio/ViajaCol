@@ -84,8 +84,10 @@ Terraform, y con llamadas de solo lectura a las cuentas.
     job.
   - **Webhook:** filtro `WORKFLOW_JOB_QUEUED` + `ACTOR_ACCOUNT_ID` anclado (`^129683298$`), según el
     boletín 2026-002-AWS sobre filtros sin anclar.
-  - **Aprobación:** el entorno `production` exige la del responsable.
-  - **Secretos de despliegue:** van en el entorno, enmascarados en los registros públicos.
+  - **Aprobación:** el entorno `production` exige la del responsable. Va en un job propio, en un runner
+    de GitHub, del que dependen los jobs de CodeBuild (ADR 0005, actualización del 2026-11-26).
+  - **Secretos de despliegue:** van en el repositorio, enmascarados en los registros públicos. Son
+    nombres de recursos, no credenciales.
 - **Por qué:** credenciales temporales del rol del proyecto, sin llaves en GitHub. Un fork no puede
   usar el runner.
 - **Nota de aplicación:** el primer `apply` puede fallar con *"User is not authorized to access

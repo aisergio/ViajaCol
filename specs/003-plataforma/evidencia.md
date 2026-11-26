@@ -1,7 +1,7 @@
 # Evidencia: spec 003 (plataforma de publicación)
 
-Registro del 2026-11-25. Todavía sin rutas públicas: las pruebas van directo a CloudFront con el
-secreto del origen, como lo haría el Worker.
+Registro del 25 y el 26 de noviembre de 2026. Las secciones del 25 son anteriores a las rutas
+públicas: esas pruebas van directo a CloudFront con el secreto del origen, como lo haría el Worker.
 
 ## Infraestructura (T023)
 
@@ -69,9 +69,101 @@ cabeceras estables y el hash del cuerpo de cada ruta.
   - sin dominios personalizados;
   - sin regla de tasa previa, así que la de ViajaCol ocupará la única que admite el plan.
 
-## Pendiente con aprobación del dueño
+## Activación de las rutas, la regla de tasa y el webhook (T009, T014)
 
-- `enable_public_routes`: las rutas del Worker y la regla de tasa en la zona.
-- `enable_deploy_runner`: el webhook en el repositorio.
-- Los secretos `DEPLOY_*` del entorno `production`.
-- La primera publicación desde `main` y SC-001, SC-002 y SC-006 sobre la dirección pública.
+El 2026-11-26, con la aprobación del dueño:
+
+- **`terraform apply`:** 7 recursos nuevos (las 5 rutas del Worker, la regla de tasa y el webhook del
+  runner), 1 cambio sin efecto en el código del Worker y 0 borrados. Cloudflare aceptó la regla con
+  `starts_with` en el plan Free.
+- **Secretos:** los seis `DEPLOY_*` se cargaron con `sync-deploy-secrets.ps1`, sin mostrarlos.
+
+## Dominio después de activar las rutas (SC-002)
+
+- **Referencia:** dos fotos tomadas minutos antes del apply dan 0 diferencias entre sí. La foto del
+  día anterior no sirve: la página 522 muestra el centro de datos de Cloudflare que atendió (hoy,
+  Miami) y cambia de un día a otro.
+- **Comparación después del apply:**
+
+| Ruta | Resultado |
+|---|---|
+| `/`, `/robots.txt`, `/sitemap.xml`, `/favicon.ico` y una ruta inexistente | Igual (522) |
+| `/PlanEstudio`, `/PlanEstudio/`, `/MediPoli` y `/MediPoli/` | Igual |
+| `/ViajaColombia` y `/viajacolombia` | Mismo 522 y mismo cuerpo. Solo pierden `content-length`, porque ahora pasan por el Worker: sus rutas cubren todo lo que empieza por `/ViajaCol` |
+| `/ViajaCol` | 522 → 200 (cambio propio) |
+| `/viajacol` | 522 → 301 (cambio propio) |
+
+## Verificación de la dirección pública (SC-001, SC-003, FR-003 a FR-011, FR-020)
+
+Desde Colombia, el 2026-11-26, todavía con la versión de prueba (`1ec067b`):
+
+| Prueba | Resultado |
+|---|---|
+| `/ViajaCol`, `/en`, `/sitios`, `/fiestas` y `/en/platos` | 200, `lang` correcto (`es-CO` o `en`) y primer byte entre 78 y 120 ms, desde la caché de CloudFront |
+| Ruta inexistente | 404 |
+| `/api/health` | 200 con la versión y `Cache-Control: no-store` |
+| Estático `/_next/static` | `public, max-age=31536000, immutable` |
+| `/viajacol`, `/VIAJACOL`, `/Viajacol` y `/viajaCol` | 301 a `/ViajaCol` |
+| `/viajacol/en/platos?x=1` | 301 a `/ViajaCol/en/platos?x=1` |
+| `/ViajaColombia` | 522, como antes: el Worker la deja pasar |
+| POST con cuerpo | `{"status":"ok","received":8}` (FR-008) |
+| POST de 1,1 MB | 413 (FR-009) |
+| CloudFront, Function URL y S3 directos | 403 (SC-003) |
+| Ráfaga de peticiones a la portada | 429 en la petición 151 (límite de 150 cada 10 s), con `retry-after: 10`. A los 15 s vuelve el 200 (FR-010) |
+| Cabeceras de diagnóstico | `x-cache`, `age` y `server-timing` con el POP (`MIA3`). `via` nombra un servidor de CloudFront, no la distribución (FR-020) |
+
+- **Falla encontrada:** la redirección 301 y el 413, que genera el propio Worker, salían sin las seis
+  cabeceras de seguridad. Se corrigió después (ver las correcciones).
+
+## Primera publicación desde main (T015, SC-004)
+
+La ejecución [45760538715](https://github.com/aisergio/ViajaCol/actions/runs/45760538715) publicó el
+commit `362dfef`, la fusión del PR #5:
+
+| Paso | Hora (UTC) | Resultado |
+|---|---|---|
+| Paquete | 05:16–05:17 | 33 s |
+| Intento 1 | 05:17–05:37 | El runner arrancó antes de la aprobación, terminó por tiempo a los 15 minutos y el job quedó en cola sin runner. El incidente está en el ADR 0005 |
+| Intento 2 | 05:37–05:45 | Relanzado; esta vez CodeBuild esperó la aprobación. Publicó en 41 s la versión 3 de la función (antes, la 2) |
+| Prueba de humo | 05:45 | En verde: versión, ES/EN y 404, cabeceras, POST, redirección y origen protegido |
+
+- **Versión visible:** `/api/health` responde
+  `{"status":"ok","version":"362dfefffcd09b09d6216318ae5f09b0be742e13"}`.
+- **SC-004:** el trabajo automático tomó 74 s (paquete y publicación), pero esta primera vez hubo que
+  relanzar el job. Se vuelve a medir en la siguiente publicación, con la aprobación en su propio job.
+
+## Lighthouse (SC-006)
+
+- **Cómo se midió:** Lighthouse 13.6.0 con `@lhci/cli` 0.16.1, en móvil emulado y con 3 corridas
+  por página. Se corrió desde el PC del responsable (Colombia, Chrome 158) sobre la versión
+  `362dfef`, con las mismas aserciones de `apps/web/lighthouserc.json`. Todas pasan.
+- **Resultados** (mediana; entre paréntesis, el rango de las 3 corridas):
+
+| Página | Rendimiento | Accesibilidad | Buenas prácticas | SEO | LCP | TBT | CLS |
+|---|---|---|---|---|---|---|---|
+| Portada | 96 (93–98) | 100 | 92 | 92 | 1,6 s | 180 ms | 0 |
+| `/sitios` | 97 (96–97) | 100 | 92 | 92 | 1,8 s | 140 ms | 0 |
+| `/en` | 97 | 100 | 92 | 92 | 1,6 s | 130 ms | 0 |
+
+- **Lo que resta puntos viene del dominio, no de la aplicación:**
+  - **SEO, `robots-txt`:** Lighthouse lee `/robots.txt` en la raíz del dominio, que responde 522.
+  - **Buenas prácticas, errores en la consola:**
+    - El navegador pedía `/favicon.ico` en la raíz, que da 522, porque la página no declaraba ícono.
+      Se corrigió después: ahora declara `/ViajaCol/icon.svg`.
+    - Cloudflare Web Analytics inyecta su script en todo el dominio y la CSP del sitio lo bloquea.
+      Hay que decidir si se permite en la CSP o si se excluye la ruta en Cloudflare.
+
+## Correcciones tras la verificación
+
+- **Cabeceras del Worker:** la redirección 301 y el 413 llevan ahora las seis cabeceras de FR-006,
+  con pruebas en `worker.test.mjs`. La prueba de humo también las revisa en la redirección.
+- **Aprobación:** pasa a su propio job, en un runner de GitHub. Los jobs de CodeBuild se crean ya
+  aprobados y los secretos `DEPLOY_*` pasan al repositorio (ADR 0005, actualización del 2026-11-26).
+- **Ícono:** la página declara `/ViajaCol/icon.svg`, el isotipo de la marca. El navegador ya no pide
+  `/favicon.ico` a la raíz del dominio.
+
+## Pendiente
+
+- La confirmación de la suscripción al correo de alertas (T021, el dueño).
+- Qué hacer con el script de Cloudflare Web Analytics: permitirlo en la CSP o excluir la ruta en
+  Cloudflare (va con el ADR de la CSP).
