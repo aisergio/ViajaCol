@@ -8,7 +8,7 @@ Sitio turístico bilingüe (español / inglés) para descubrir sitios, fiestas, 
 Colombia y planear viajes con «Mi viaje». Prototipo académico de la asignatura **Arquitectura
 Front-End** (Politécnico Grancolombiano).
 
-> Estado: en construcción (Entrega 2). Sitio previsto en https://aisergio.dev/ViajaCol
+> Estado: en construcción (Entrega 2). Publicado en https://aisergio.dev/ViajaCol desde `main`.
 
 ## Arquitectura (resumen)
 
@@ -33,8 +33,9 @@ flowchart LR
 
 - **Infraestructura:** está en [`infra/live`](infra/live) y en el módulo
   [`infra/modules/nextjs-zone`](infra/modules/nextjs-zone).
-- **Publicación:** la hace [`deploy.yml`](.github/workflows/deploy.yml). Compila en GitHub, publica en
-  un runner de CodeBuild con aprobación de `production` y restaura moviendo el alias `live`.
+- **Publicación:** la hace [`deploy.yml`](.github/workflows/deploy.yml). Compila en GitHub, pide la
+  aprobación de `production` en su propio job, publica en un runner de CodeBuild y restaura moviendo
+  el alias `live`.
 - **Guía y evidencia:** el paso a paso está en
   [`specs/003-plataforma/quickstart.md`](specs/003-plataforma/quickstart.md) y la evidencia, en
   [`evidencia.md`](specs/003-plataforma/evidencia.md).

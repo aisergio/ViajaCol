@@ -36,16 +36,16 @@ description: "Lista de tareas de la spec 003-plataforma"
   - cuatro comportamientos y errores 5xx sin caché.
 - [X] T007 [P] [US1] `apps/web/src/app/api/health/route.ts` con pruebas en `route.test.ts` y `e2e/salud.spec.ts`; `APP_VERSION` en `next.config.ts`
 - [X] T008 [US1] Worker `infra/live/edge/worker.mjs` (canonización, secreto, hash, 413, `Location`), con 11 pruebas en `worker.test.mjs` y `infra/live/edge.tf` (script, sin `workers.dev`, rutas condicionadas)
-- [ ] T009 [US1] Activar las rutas públicas y la regla de tasa (`enable_public_routes = true`) **con la aprobación del dueño**
-- [ ] T010 [US1] Verificar SC-001, SC-002 (raíz del dominio antes y después, con `scripts/infra/domain-snapshot.mjs`; línea base en la [evidencia](evidencia.md)) y SC-006 (Lighthouse sobre la dirección pública)
+- [X] T009 [US1] Activar las rutas públicas y la regla de tasa (`enable_public_routes = true`) **con la aprobación del dueño** ([evidencia](evidencia.md))
+- [X] T010 [US1] Verificar SC-001, SC-002 (raíz del dominio antes y después, con `scripts/infra/domain-snapshot.mjs`) y SC-006 (Lighthouse sobre la dirección pública) ([evidencia](evidencia.md))
 
 ## Phase 4: User Story 2 - Publicar sin pasos manuales (Priority: P1)
 
 - [X] T011 [US2] `scripts/deploy/build-web.sh`, `publish-web.sh`, `smoke.sh` y `lambda/run.sh`
 - [X] T012 [US2] `.github/workflows/deploy.yml`: el paquete en el PR, la publicación en `main` con `production` y la restauración manual
 - [X] T013 [US2] Runner de CodeBuild en `infra/live/deploy.tf`: rol con mínimo privilegio y webhook `WORKFLOW_JOB_QUEUED` + `ACTOR_ACCOUNT_ID` anclado, condicionado a `enable_deploy_runner`
-- [ ] T014 [US2] Activar el webhook (`enable_deploy_runner = true`) y cargar los secretos del entorno con `scripts/infra/sync-deploy-secrets.ps1` **con la aprobación del dueño**
-- [ ] T015 [US2] Primera publicación desde `main` con la prueba de humo en verde (SC-004)
+- [X] T014 [US2] Activar el webhook (`enable_deploy_runner = true`) y cargar los secretos con `scripts/infra/sync-deploy-secrets.ps1` **con la aprobación del dueño**
+- [X] T015 [US2] Primera publicación desde `main` con la prueba de humo en verde (SC-004). Hubo que relanzar el job por el incidente del runner ([evidencia](evidencia.md), ADR 0005)
 
 ## Phase 5: User Story 3 - Volver a la versión anterior (Priority: P2)
 
@@ -69,6 +69,9 @@ description: "Lista de tareas de la spec 003-plataforma"
 - [X] T024 Despliegue de prueba con el paquete del PR, verificado a través de CloudFront con el secreto. Corrigió `HOSTNAME=0.0.0.0` ([evidencia](evidencia.md))
 - [X] T025 ADR 0003 (Lambda Web Adapter), 0004 (borde en Cloudflare con OAC) y 0005 (runner de CodeBuild)
 - [X] T026 README: sección «Despliegue» con diagrama y enlaces (la guía `docs/aprendizaje/nextjs-en-lambda.md` queda para la fase de documentos de la E2)
+- [X] T027 Las seis cabeceras de seguridad en las respuestas propias del Worker (301 y 413), con pruebas, y la prueba de humo revisándolas en la redirección (SC-008)
+- [X] T028 La aprobación de `production` en su propio job, en un runner de GitHub, y los secretos `DEPLOY_*` en el repositorio, tras el incidente de la primera publicación (ADR 0005)
+- [X] T029 Ícono del sitio (`apps/web/src/app/icon.svg`): la página ya no pide `/favicon.ico` a la raíz del dominio, que da 522 (SC-006, buenas prácticas)
 
 ## Dependencies
 
