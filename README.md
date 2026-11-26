@@ -21,6 +21,27 @@ Front-End** (Politécnico Grancolombiano).
 La documentación detallada estará en [`docs/`](docs/); las decisiones de arquitectura, en
 [`docs/adr/`](docs/adr/).
 
+### Despliegue
+
+```mermaid
+flowchart LR
+  U[Navegador] --> W[Cloudflare Worker<br/>aisergio.dev/ViajaCol*]
+  W -->|secreto + X-Forwarded-Host<br/>+ hash del cuerpo| CF[CloudFront<br/>origin-guard]
+  CF -->|OAC| S3[(S3<br/>_next/static)]
+  CF -->|OAC · streaming| L[Lambda arm64<br/>Next.js standalone<br/>+ Lambda Web Adapter]
+```
+
+- **Infraestructura:** está en [`infra/live`](infra/live) y en el módulo
+  [`infra/modules/nextjs-zone`](infra/modules/nextjs-zone).
+- **Publicación:** la hace [`deploy.yml`](.github/workflows/deploy.yml). Compila en GitHub, publica en
+  un runner de CodeBuild con aprobación de `production` y restaura moviendo el alias `live`.
+- **Guía y evidencia:** el paso a paso está en
+  [`specs/003-plataforma/quickstart.md`](specs/003-plataforma/quickstart.md) y la evidencia, en
+  [`evidencia.md`](specs/003-plataforma/evidencia.md).
+- **Decisiones:** ADR [0003](docs/adr/0003-nextjs-en-lambda-con-web-adapter.md),
+  [0004](docs/adr/0004-borde-cloudflare-y-origen-oculto.md) y
+  [0005](docs/adr/0005-runner-de-codebuild-para-publicar.md).
+
 ## Cómo correrlo
 
 Requisitos: Node.js 22.13 o superior y npm 11.

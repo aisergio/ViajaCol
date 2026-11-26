@@ -1,0 +1,10 @@
+# Copia este archivo como terraform.auto.tfvars (no versionado) y completa los valores.
+
+cloudflare_account_id = "<id de la cuenta de Cloudflare>"
+cloudflare_zone_id    = "<id de la zona aisergio.dev>"
+github_connection_arn = "<salida github_connection_arn del stack bootstrap>"
+alert_emails          = ["<correo para las alarmas>"]
+
+# Se activan cuando el dueño lo aprueba (ver specs/003-plataforma/quickstart.md).
+enable_public_routes = false
+enable_deploy_runner = false
