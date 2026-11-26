@@ -71,3 +71,9 @@ eventos.
   responsable puede hacerlo.
 - ⚠️ Los secretos del repositorio también llegan a los PR de ramas propias, no a los de forks. No dan
   acceso a AWS: eso lo da el runner, que solo atiende jobs del responsable.
+
+### Verificación
+
+En la segunda publicación (ejecución 45907930371), el runner de CodeBuild arrancó 14 s después de la
+aprobación y la versión quedó visible 53 s después de aprobar. Luego se borraron los `DEPLOY_*` del
+entorno.
