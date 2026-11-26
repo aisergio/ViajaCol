@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import { afterEach, beforeEach, describe, it } from 'node:test';
 
-import worker, { MAX_BODY_BYTES, sha256Hex } from './worker.mjs';
+import worker, { MAX_BODY_BYTES, SECURITY_HEADERS, sha256Hex } from './worker.mjs';
 
 const env = { BASE_PATH: '/ViajaCol', ORIGIN_HOST: 'd111111abcdef8.cloudfront.net', ORIGIN_SECRET: 's3cr3t' };
 const realFetch = globalThis.fetch;
@@ -23,6 +23,19 @@ afterEach(() => {
 
 const run = (url, init) => worker.fetch(new Request(url, init), env);
 
+// FR-006: las seis cabeceras de seguridad, también en las respuestas que genera el Worker.
+const SIX = [
+  'strict-transport-security',
+  'x-content-type-options',
+  'referrer-policy',
+  'content-security-policy',
+  'x-frame-options',
+  'permissions-policy',
+];
+function assertSecurityHeaders(response) {
+  for (const name of SIX) assert.ok(response.headers.get(name), `falta ${name}`);
+}
+
 describe('canonización de la ruta', () => {
   for (const variant of ['/viajacol', '/VIAJACOL/en', '/Viajacol/sitios?region=caribe']) {
     it(`redirige ${variant} a la forma canónica con 301`, async () => {
@@ -31,6 +44,7 @@ describe('canonización de la ruta', () => {
       const location = new URL(response.headers.get('location'));
       assert.equal(location.pathname.slice(0, 9), '/ViajaCol');
       assert.equal(location.search, new URL(`https://x${variant}`).search);
+      assertSecurityHeaders(response);
       assert.equal(calls.length, 0);
     });
   }
@@ -76,7 +90,19 @@ describe('reenvío a CloudFront', () => {
       body: new Uint8Array(MAX_BODY_BYTES + 1),
     });
     assert.equal(response.status, 413);
+    assertSecurityHeaders(response);
     assert.equal(calls.length, 0);
+  });
+});
+
+describe('cabeceras de seguridad propias', () => {
+  it('usa HSTS de 2 años sin subdominios ni preload', () => {
+    assert.equal(SECURITY_HEADERS['strict-transport-security'], 'max-age=63072000');
+  });
+
+  it('no las agrega a las respuestas del origen, que ya trae CloudFront', async () => {
+    const response = await run('https://aisergio.dev/ViajaCol');
+    assert.equal(response.headers.get('content-security-policy'), null);
   });
 });
 
