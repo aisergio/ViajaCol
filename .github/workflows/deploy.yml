@@ -3,6 +3,11 @@ name: Despliegue
 # PR: solo compila el paquete de Lambda (evidencia de que se puede publicar).
 # main: compila en GitHub (arm64) y publica en un runner de CodeBuild con aprobación de `production`.
 # Manual: publicar de nuevo o restaurar una versión anterior sin recompilar.
+#
+# La aprobación va en su propio job, en un runner de GitHub. Así los jobs de CodeBuild se crean ya
+# aprobados: si el job de CodeBuild esperara la aprobación, su runner (máximo 15 minutos) podría
+# arrancar antes y apagarse sin trabajo (ADR 0005). Por eso los secretos DEPLOY_* son del
+# repositorio y no del entorno.
 on:
   pull_request:
     paths:
@@ -78,17 +83,26 @@ jobs:
           retention-days: 7
           if-no-files-found: error
 
+  aprobar:
+    name: Aprobación de producción
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04-arm
+    environment:
+      name: production
+      url: https://aisergio.dev/ViajaCol
+    timeout-minutes: 5
+    steps:
+      - name: Registrar la aprobación
+        run: echo "Aprobado ($GITHUB_EVENT_NAME) para el commit $GITHUB_SHA"
+
   publicar:
     name: Publicar en producción
-    needs: paquete
+    needs: [paquete, aprobar]
     if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.accion == 'publicar')
     # Runner de CodeBuild (infra/live/deploy.tf): solo acepta jobs de la cuenta del responsable.
     runs-on:
       - codebuild-viajacol-deploy-${{ github.run_id }}-${{ github.run_attempt }}
       - publicar
-    environment:
-      name: production
-      url: https://aisergio.dev/ViajaCol
     timeout-minutes: 15
     steps:
       - name: Descargar el código
@@ -119,13 +133,11 @@ jobs:
 
   restaurar:
     name: Restaurar versión
+    needs: aprobar
     if: github.event_name == 'workflow_dispatch' && inputs.accion == 'restaurar'
     runs-on:
       - codebuild-viajacol-deploy-${{ github.run_id }}-${{ github.run_attempt }}
       - restaurar
-    environment:
-      name: production
-      url: https://aisergio.dev/ViajaCol
     timeout-minutes: 10
     steps:
       - name: Descargar el código

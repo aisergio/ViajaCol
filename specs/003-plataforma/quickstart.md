@@ -69,16 +69,18 @@ curl -s -o /dev/null -w '%{http_code}\n' <web_function_url>                     
    node scripts/infra/domain-snapshot.mjs compare "$env:TEMP\antes.json" "$env:TEMP\despues.json"
    ```
 
-4. Ejecuta `./scripts/infra/sync-deploy-secrets.ps1`. Guarda los seis secretos `DEPLOY_*` del entorno
-   `production` sin mostrarlos.
+4. Ejecuta `./scripts/infra/sync-deploy-secrets.ps1`. Guarda los seis secretos `DEPLOY_*` del
+   repositorio sin mostrarlos.
 5. Fusiona en `main`.
-6. En Actions → Despliegue, aprueba `production`.
+6. En Actions → Despliegue, abre la ejecución y pulsa **Review deployments**. Marca `production` y
+   pulsa **Approve and deploy**. Puedes aprobar mientras compila el paquete.
 7. Revisa el resumen: commit, versión de Lambda y prueba de humo.
 
 ## 4. Restaurar
 
 Ve a Actions → Despliegue → Run workflow, elige `accion: restaurar` y deja `version` vacío (la
-anterior) o pon un número. La prueba de humo confirma el commit restaurado.
+anterior) o pon un número. Aprueba `production` como al publicar. La prueba de humo confirma el commit
+restaurado.
 
 ## 5. Rotar el secreto del origen
 
