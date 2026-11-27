@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { AccountMenu } from '@/features/account/view/AccountMenu';
 import { LanguageSwitcher } from '@/features/language/view/LanguageSwitcher';
 import { MainNav } from '@/features/navigation/view/MainNav';
 import { MobileNav } from '@/features/navigation/view/MobileNav';
@@ -35,6 +36,7 @@ export async function SiteHeader() {
           </div>
           <LanguageSwitcher />
           <ThemeToggle />
+          <AccountMenu />
           <MobileNav />
         </div>
       </div>

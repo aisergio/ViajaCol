@@ -162,8 +162,33 @@ Entre las 513 rutas:
 | [`vista-previa.jpg`](evidencia/vista-previa.jpg) | Vista previa para redes de la Feria de las Flores |
 | [`fotos-del-catalogo.jpg`](evidencia/fotos-del-catalogo.jpg) | Las 96 fotos elegidas |
 
-## Pendiente tras publicar (T040)
+## Tras publicar (T040, 27 nov 2026, versión 5)
 
-- Lighthouse sobre una lista y una ficha publicadas (SC-003).
-- Recargar y compartir direcciones de ventana en producción (SC-005).
-- La foto de una ficha en móvil desde la caché de la CDN, con 150 KB o menos (SC-007).
+- **Despliegue:** de la aprobación (07:09:49) a la prueba de humo en verde (07:11:03) pasaron 74 s.
+  Publicar tomó 45 s y la prueba de humo 4 s, incluidas la foto (`image/webp` y caché inmutable), el
+  buscador y una vista previa.
+- **SC-005 (ventanas):** las 108 direcciones de ventana (30 sitios y 24 fiestas, en ES y EN), abiertas
+  directamente, responden 200 con la página completa, su `h1` y el `canonical` a sí mismas. En Chrome
+  contra producción, una prueba a la vez, pasan las 6 de `e2e/ventanas.spec.ts` (con axe) y las
+  ventanas en inglés de sitios y fiestas.
+- **SC-007 (foto principal):** Valle de Cocora en móvil (412 px, DPR 1,75) carga
+  `valle-de-cocora-24698534-960.webp`: 88,4 KB, `image/webp`, desde la caché de Cloudflare
+  (`CF-Cache-Status: HIT`).
+- **SC-003 (Lighthouse en la dirección pública):** móvil, limitación aplicada, 3 corridas y la mediana
+  por LCP.
+
+  | Página | Rendimiento | LCP | TBT | CLS | Accesibilidad | Buenas prácticas | SEO |
+  |---|---|---|---|---|---|---|---|
+  | Valle de Cocora (ficha) | 97 | 1,8 s | 160 ms | 0 | 100 | 92 | 92 |
+  | Sitios (lista) | 92 | 2,3 s | 210 ms | 0 | 100 | 92 | 92 |
+  | Portada | 93 | 2,6 s | 180 ms | 0 | 100 | 92 | 92 |
+  | Portada en inglés | 93 | 2,6 s | 190 ms | 0 | 100 | 92 | 92 |
+
+  - La lista queda al límite: en la corrida que LHCI toma como mediana, el LCP fue 2,51 s.
+  - Las portadas (fuera de SC-003) pasan del presupuesto por 0,1 s. El HTML sale de Lambda en Ohio y
+    pasa por Cloudflare y CloudFront; en local medían 1,8 s.
+  - Buenas prácticas 92: la CSP bloquea el script de analítica que inyecta Cloudflare (decisión
+    pendiente de la spec 003). SEO 92: el `robots.txt` de la raíz del dominio no es del proyecto.
+- **Hallazgo:** las pruebas seguidas contra producción disparan el límite de tasa del borde (Error 1015).
+  Una lista hace unas 55 peticiones (29 son precargas de enlaces) y abrir una ventana, unas 26 más. Queda
+  para un ajuste de las precargas.

@@ -98,6 +98,16 @@ jobs:
 
       - name: Pruebas de extremo a extremo (Playwright + axe)
         run: npm run e2e
+        env:
+          # Configuración de prueba de la cuenta (spec 006): no hay un Cognito real detrás y la clave
+          # solo firma sesiones de esta corrida. Nada de esto es un secreto.
+          AUTH_ORIGIN: http://localhost:3100
+          AUTH_SECRET: e2e-solo-pruebas-e2e-solo-pruebas-e2e-solo-pruebas
+          COGNITO_USER_POOL_ID: us-east-2_e2e
+          COGNITO_CLIENT_ID: e2e-client
+          COGNITO_CLIENT_SECRET: e2e-client-secret
+          COGNITO_DOMAIN: viajacol-e2e.auth.us-east-2.amazoncognito.com
+          USERS_TABLE: viajacol-users-e2e
 
       - name: Guardar reporte de Playwright
         if: failure()

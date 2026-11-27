@@ -175,5 +175,55 @@
     "body": "We could not load this section. Please try again.",
     "retry": "Try again",
     "back": "Back to the home page"
+  },
+  "account": {
+    "signIn": "Sign in",
+    "signInLabel": "Sign in or create an account",
+    "menuLabel": "{name}'s account",
+    "myAccount": "My account",
+    "signOut": "Sign out",
+    "loading": "Loading account",
+    "page": {
+      "title": "My account",
+      "intro": "Your Viaja Colombia profile.",
+      "profileTitle": "Profile",
+      "displayName": "Display name",
+      "displayNameHint": "From 1 to 50 characters. It is the name shown in the header.",
+      "email": "Email",
+      "memberSince": "Account created",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "Done: your name was saved.",
+      "errors": {
+        "nombre-invalido": "Enter a name from 1 to 50 characters.",
+        "sin-sesion": "Your session ended. Please sign in again.",
+        "no-disponible": "We could not save the change. Please try again in a moment."
+      },
+      "privacyTitle": "Your data",
+      "privacy": "We only keep your email (in Amazon Cognito), your display name and the date you created the account. We use them to sign you in and for your trip plans, and you can delete them at any time.",
+      "deleteTitle": "Delete the account",
+      "deleteIntro": "Your user and your profile are deleted and you are signed out. This cannot be undone.",
+      "deleteOpen": "Delete my account",
+      "deleteConfirmLabel": "Type “eliminar” to confirm",
+      "deleteConfirm": "Delete forever",
+      "deleteCancel": "Cancel",
+      "deleting": "Deleting…",
+      "deleteErrors": {
+        "confirmacion": "Type “eliminar” to confirm.",
+        "sin-sesion": "Your session ended. Please sign in again.",
+        "no-disponible": "We could not delete the account. Please try again in a moment."
+      }
+    },
+    "signInError": {
+      "title": "We could not sign you in",
+      "text": "The sign-in screen did not respond or was cancelled. You can try again.",
+      "retry": "Try again",
+      "home": "Go to the home page"
+    },
+    "deleted": {
+      "title": "Your account was deleted",
+      "text": "We deleted your user and your profile, and signed you out.",
+      "home": "Go to the home page"
+    }
   }
 }

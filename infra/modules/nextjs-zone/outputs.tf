@@ -27,3 +27,8 @@ output "log_group_name" {
   description = "Grupo de registros de la función."
   value       = aws_cloudwatch_log_group.this.name
 }
+
+output "role_name" {
+  description = "Rol de ejecución de la función, para agregarle permisos de la zona (spec 006: cuenta)."
+  value       = aws_iam_role.this.name
+}

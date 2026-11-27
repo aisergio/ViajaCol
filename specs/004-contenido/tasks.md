@@ -113,7 +113,7 @@ description: "Lista de tareas de la spec 004-contenido"
   [guía de rutas interceptadas y ventanas](../../docs/aprendizaje/rutas-interceptadas-y-ventanas.md)
 - [ ] T039 Revisión de coherencia entre spec, plan, contratos y tareas (en lugar de
   `/speckit-analyze` y `/speckit-converge`), y PR con capturas y la hoja de contacto
-- [ ] T040 Tras publicar: verificar SC-003, SC-005 y SC-007 en la dirección pública ([evidencia](evidencia.md))
+- [X] T040 Tras publicar: verificar SC-003, SC-005 y SC-007 en la dirección pública ([evidencia](evidencia.md))
 - [X] T041 Rendimiento móvil (research D-11): fotos diferidas con `DeferredPhoto` y la principal con
   `fetchPriority="high"`, CSS en línea, buscador en dos tiempos y con menos sugerencias, nuqs solo en
   las listas, rejilla que no se vuelve a crear al hidratar, fuentes `optional`, `content-visibility`
