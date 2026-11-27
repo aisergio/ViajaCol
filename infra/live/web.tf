@@ -27,6 +27,17 @@ module "web" {
   layer_arns      = [aws_lambda_layer_version.lwa.arn]
   memory_mb       = var.web_memory_mb
   alarm_topic_arn = aws_sns_topic.alerts.arn
+
+  # Cuenta (spec 006): solo identificadores y nombres de parámetros; los secretos están en SSM.
+  environment = {
+    AUTH_ORIGIN          = local.site_origin
+    AUTH_SECRET_PARAM    = aws_ssm_parameter.auth_secret.name
+    COGNITO_SECRET_PARAM = aws_ssm_parameter.cognito_client_secret.name
+    COGNITO_USER_POOL_ID = aws_cognito_user_pool.users.id
+    COGNITO_CLIENT_ID    = aws_cognito_user_pool_client.web.id
+    COGNITO_DOMAIN       = local.cognito_host
+    USERS_TABLE          = aws_dynamodb_table.users.name
+  }
 }
 
 # --- Alertas por correo ------------------------------------------------------------------------------

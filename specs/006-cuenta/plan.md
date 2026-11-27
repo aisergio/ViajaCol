@@ -89,7 +89,7 @@ Complexity Tracking.
 | Estado | Tipo | Dónde vive | Quién lo cambia | Cómo se rastrea |
 |---|---|---|---|---|
 | Sesión (quién es el usuario) | Global, de solo lectura | Cookies `HttpOnly` de Better Auth | El flujo de entrar y salir | `auth.api.getSession` en el servidor |
-| Indicador de sesión | Global | Cookie `viajacol.con_sesion` (legible, sin datos) | El regreso de Cognito y `salir` | DevTools → Application → Cookies |
+| Indicador de sesión | Global | Cookie `viajacol.con_sesion` (legible, sin datos) | `entrar`, `salir` y el primer 401 | DevTools → Application → Cookies |
 | Nombre del encabezado | Remoto | `useAccountMenuViewModel` (`GET /api/cuenta/yo`) | El servidor | Network |
 | Perfil | Servidor (fuente de verdad) | DynamoDB `viajacol-users` | Server Actions | `updatedAt` del registro |
 | Campo del nombre y sus errores | Local | `useActionState` en `useProfileViewModel` | El ViewModel | React DevTools |

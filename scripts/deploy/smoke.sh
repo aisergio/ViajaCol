@@ -63,7 +63,15 @@ og_type=$(curl -sS -o /dev/null -w '%{content_type}' --max-time 20 "$PUBLIC_URL/
 [[ "$og_type" == image/jpeg* ]] || fail "la vista previa para redes no es image/jpeg ($og_type)"
 echo "✓ fotos, buscador y vista previa"
 
-# 7. Acceso directo al origen: 403 (US4).
+# 7. Cuenta (spec 006): «Entrar» lleva a Cognito, «Mi cuenta» pide sesión y sin sesión no hay nombre.
+signin_location=$(curl -sS -o /dev/null -w '%{redirect_url}' --max-time 20 "$PUBLIC_URL/entrar")
+[[ "$signin_location" == https://*.amazoncognito.com/oauth2/authorize* ]] || fail "«Entrar» no redirige a Cognito"
+[[ $(status "$PUBLIC_URL/cuenta") == 307 ]] || fail "«Mi cuenta» sin sesión no redirige a «Entrar»"
+[[ $(status "$PUBLIC_URL/api/cuenta/yo") == 401 ]] || fail "/api/cuenta/yo sin sesión no responde 401"
+[[ $(status "$PUBLIC_URL/api/auth/ok") == 200 ]] || fail "la ruta de autenticación no responde"
+echo "✓ cuenta: entrar, página privada y sesión"
+
+# 8. Acceso directo al origen: 403 (US4).
 if [ -n "${CF_DOMAIN:-}" ]; then
   [[ $(status "https://$CF_DOMAIN/ViajaCol") == 403 ]] || fail "CloudFront directo no responde 403"
 fi

@@ -16,12 +16,16 @@ export function clearSessionHint(): void {
   document.cookie = `${SESSION_HINT_COOKIE}=; Path=${BASE_PATH}; Max-Age=0; SameSite=Lax`;
 }
 
-export type AccountNameResult = { status: 'ok'; name: string } | { status: 'anonymous' } | { status: 'error' };
+export type AccountNameResult =
+  { status: 'ok'; name: string } | { status: 'anonymous' } | { status: 'error' };
 
 /** Pide el nombre visible a `/api/cuenta/yo` (contracts/rutas.md). */
 export async function fetchAccountName(): Promise<AccountNameResult> {
   try {
-    const response = await fetch(`${BASE_PATH}/api/cuenta/yo`, { credentials: 'same-origin', cache: 'no-store' });
+    const response = await fetch(`${BASE_PATH}/api/cuenta/yo`, {
+      credentials: 'same-origin',
+      cache: 'no-store',
+    });
     if (response.status === 401) return { status: 'anonymous' };
     if (!response.ok) return { status: 'error' };
     const body = (await response.json()) as { name?: unknown };

@@ -158,7 +158,8 @@ locals {
     "connect-src 'self'",
     "frame-ancestors 'none'",
     "base-uri 'self'",
-    "form-action 'self'",
+    # Cerrar sesión es un formulario que termina en el cierre de sesión de Cognito (spec 006, D-04).
+    "form-action 'self' https://${local.cognito_host}",
     "object-src 'none'",
     "upgrade-insecure-requests",
   ])

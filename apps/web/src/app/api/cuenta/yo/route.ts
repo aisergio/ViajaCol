@@ -16,7 +16,10 @@ export async function GET(request: Request) {
     if (!user) {
       const { origin } = await getAuthConfig();
       const response = Response.json({ error: 'sin-sesion' }, { status: 401, headers: NO_STORE });
-      response.headers.append('set-cookie', sessionHintCookie('off', origin.startsWith('https://')));
+      response.headers.append(
+        'set-cookie',
+        sessionHintCookie('off', origin.startsWith('https://')),
+      );
       return response;
     }
     const { users } = await getAccountServices();

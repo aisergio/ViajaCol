@@ -13,12 +13,17 @@ describe('modelo de la cuenta en el cliente', () => {
   it('arma las rutas por idioma y el regreso a la página actual', () => {
     expect(accountPaths('es')).toEqual({ signIn: '/ViajaCol/entrar', signOut: '/ViajaCol/salir' });
     expect(accountPaths('en').signOut).toBe('/ViajaCol/en/salir');
-    expect(signInHref('es', '/ViajaCol/sitios?region=caribe')).toBe('/ViajaCol/entrar?volver=%2FViajaCol%2Fsitios%3Fregion%3Dcaribe');
+    expect(signInHref('es', '/ViajaCol/sitios?region=caribe')).toBe(
+      '/ViajaCol/entrar?volver=%2FViajaCol%2Fsitios%3Fregion%3Dcaribe',
+    );
     expect(signInHref('en', null)).toBe('/ViajaCol/en/entrar');
   });
 
   it.each([
-    [{ status: 200, body: { name: 'Ana' } }, { status: 'ok', name: 'Ana' }],
+    [
+      { status: 200, body: { name: 'Ana' } },
+      { status: 'ok', name: 'Ana' },
+    ],
     [{ status: 401, body: { error: 'sin-sesion' } }, { status: 'anonymous' }],
     [{ status: 503, body: {} }, { status: 'error' }],
     [{ status: 200, body: { name: 42 } }, { status: 'error' }],
@@ -26,7 +31,10 @@ describe('modelo de la cuenta en el cliente', () => {
     const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify(body), { status }));
     vi.stubGlobal('fetch', fetchMock);
     await expect(fetchAccountName()).resolves.toEqual(expected);
-    expect(fetchMock).toHaveBeenCalledWith('/ViajaCol/api/cuenta/yo', { credentials: 'same-origin', cache: 'no-store' });
+    expect(fetchMock).toHaveBeenCalledWith('/ViajaCol/api/cuenta/yo', {
+      credentials: 'same-origin',
+      cache: 'no-store',
+    });
   });
 
   it('sin red responde error', async () => {

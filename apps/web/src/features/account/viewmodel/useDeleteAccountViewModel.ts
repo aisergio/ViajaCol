@@ -3,7 +3,10 @@
 import { useActionState, useCallback, useState } from 'react';
 import type { DeleteFormState } from '@/app/[locale]/cuenta/actions';
 
-export type DeleteAction = (previous: DeleteFormState, formData: FormData) => Promise<DeleteFormState>;
+export type DeleteAction = (
+  previous: DeleteFormState,
+  formData: FormData,
+) => Promise<DeleteFormState>;
 
 /**
  * ViewModel de «Eliminar mi cuenta»: primero muestra la confirmación escrita y luego envía la acción.

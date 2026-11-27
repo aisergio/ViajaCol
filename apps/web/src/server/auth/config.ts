@@ -29,7 +29,9 @@ const MIN_SECRET_LENGTH = 32;
 export const fetchSsmParameters: ParameterFetcher = async (names, region) => {
   const { SSMClient, GetParametersCommand } = await import('@aws-sdk/client-ssm');
   const client = new SSMClient({ region });
-  const result = await client.send(new GetParametersCommand({ Names: names, WithDecryption: true }));
+  const result = await client.send(
+    new GetParametersCommand({ Names: names, WithDecryption: true }),
+  );
   if (result.InvalidParameters?.length) throw new AuthConfigError(result.InvalidParameters);
   return Object.fromEntries((result.Parameters ?? []).map((p) => [p.Name ?? '', p.Value ?? '']));
 };
@@ -39,7 +41,13 @@ export async function loadAuthConfig(
   fetchParameters: ParameterFetcher = fetchSsmParameters,
 ): Promise<AuthConfig> {
   const region = env.AWS_REGION ?? 'us-east-2';
-  const required = ['AUTH_ORIGIN', 'COGNITO_USER_POOL_ID', 'COGNITO_CLIENT_ID', 'COGNITO_DOMAIN', 'USERS_TABLE'];
+  const required = [
+    'AUTH_ORIGIN',
+    'COGNITO_USER_POOL_ID',
+    'COGNITO_CLIENT_ID',
+    'COGNITO_DOMAIN',
+    'USERS_TABLE',
+  ];
   const missing = required.filter((name) => !env[name]);
 
   // Cada secreto puede venir directo (local) o por el nombre de su parámetro en SSM (Lambda).
@@ -54,12 +62,14 @@ export async function loadAuthConfig(
 
   const toFetch = secretSources.filter((s) => !env[s.value]).map((s) => env[s.param] as string);
   const fetched = toFetch.length ? await fetchParameters(toFetch, region) : {};
-  const secretOf = (s: (typeof secretSources)[number]) => env[s.value] ?? fetched[env[s.param] as string] ?? '';
+  const secretOf = (s: (typeof secretSources)[number]) =>
+    env[s.value] ?? fetched[env[s.param] as string] ?? '';
   const secret = secretOf(secretSources[0]!);
   const clientSecret = secretOf(secretSources[1]!);
 
   const invalid: string[] = [];
-  if (secret.length < MIN_SECRET_LENGTH) invalid.push(`AUTH_SECRET (mínimo ${MIN_SECRET_LENGTH} caracteres)`);
+  if (secret.length < MIN_SECRET_LENGTH)
+    invalid.push(`AUTH_SECRET (mínimo ${MIN_SECRET_LENGTH} caracteres)`);
   if (!clientSecret) invalid.push('COGNITO_CLIENT_SECRET');
   const origin = env.AUTH_ORIGIN as string;
   if (new URL(origin).pathname !== '/') invalid.push('AUTH_ORIGIN (solo origen, sin ruta)');

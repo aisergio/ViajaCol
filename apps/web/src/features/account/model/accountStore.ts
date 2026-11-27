@@ -22,5 +22,6 @@ export const useAccountStore = create<AccountState>()((set) => ({
   setLoading: () => set({ status: 'loading' }),
   signIn: (name) => set({ status: 'signed-in', name }),
   signOut: () => set({ status: 'anonymous', name: '' }),
-  rename: (name) => set((state) => (state.status === 'signed-in' ? { name } : { status: 'signed-in', name })),
+  rename: (name) =>
+    set((state) => (state.status === 'signed-in' ? { name } : { status: 'signed-in', name })),
 }));

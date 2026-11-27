@@ -71,12 +71,13 @@
 - **Decision:** el menú de cuenta es un componente de cliente. Si existe la cookie
   `viajacol.con_sesion` (valor `1`, sin datos, legible por JavaScript, `Path=/ViajaCol`, 7 días), pide
   `GET /api/cuenta/yo` y muestra el nombre. Si no existe, muestra «Entrar» sin hacer peticiones. La
-  cookie la pone el regreso de Cognito (un `hook` de Better Auth) y la borra `salir`.
+  cookie la pone `entrar` justo antes de ir a Cognito, y la borran `salir` y el primer 401. Así no depende de
+  que Better Auth deje agregar cookies a su redirección de regreso.
 - **Rationale:** leer cookies en el layout volvería dinámicas las 513 rutas y anularía la caché y el LCP.
   Preguntar siempre costaría una invocación por cada visita anónima, con la concurrencia de 10 y el
   límite de tasa del borde.
-- **Riesgo aceptado:** si la cookie indicadora queda sola (por ejemplo, borrada a mano la de sesión), el
-  menú pide `/api/cuenta/yo`, recibe 401, borra el indicador y muestra «Entrar».
+- **Riesgo aceptado:** si la cookie indicadora queda sola (el usuario canceló en Cognito o borró a mano la
+  de sesión), el menú pide `/api/cuenta/yo`, recibe 401, borra el indicador y muestra «Entrar».
 
 ## D-06. Perfil en DynamoDB
 

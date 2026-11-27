@@ -34,7 +34,9 @@ describe('initialDisplayName', () => {
 
   it('si falta, usa la parte local del correo recortada a 50', () => {
     expect(initialDisplayName({ ...ana, name: '   ' })).toBe('ana.maria');
-    expect(initialDisplayName({ ...ana, name: '', email: `${'x'.repeat(80)}@example.com` })).toHaveLength(50);
+    expect(
+      initialDisplayName({ ...ana, name: '', email: `${'x'.repeat(80)}@example.com` }),
+    ).toHaveLength(50);
   });
 });
 
@@ -42,9 +44,18 @@ describe('ensureProfile', () => {
   it('crea el perfil la primera vez y no lo pisa después', async () => {
     const repo = memoryRepo();
     const first = await ensureProfile(repo, ana, now);
-    expect(first).toEqual({ sub: 'sub-ana', displayName: 'Ana María', createdAt: now.toISOString(), updatedAt: now.toISOString() });
+    expect(first).toEqual({
+      sub: 'sub-ana',
+      displayName: 'Ana María',
+      createdAt: now.toISOString(),
+      updatedAt: now.toISOString(),
+    });
     await repo.updateDisplayName('sub-ana', 'Anita', now.toISOString());
-    const again = await ensureProfile(repo, { ...ana, name: 'Otro nombre' }, new Date('2026-12-01T00:00:00Z'));
+    const again = await ensureProfile(
+      repo,
+      { ...ana, name: 'Otro nombre' },
+      new Date('2026-12-01T00:00:00Z'),
+    );
     expect(again.displayName).toBe('Anita');
     expect(again.createdAt).toBe(now.toISOString());
   });
@@ -57,12 +68,15 @@ describe('updateDisplayName', () => {
     expect(result).toEqual({ ok: true, profile: expect.objectContaining({ displayName: 'Ana' }) });
   });
 
-  it.each([[''], ['   '], ['x'.repeat(51)], ['línea\nnueva'], [42], [null]])('rechaza %j sin guardar', async (value) => {
-    const repo = memoryRepo();
-    const result = await updateDisplayName(repo, ana, value, now);
-    expect(result).toEqual({ ok: false, error: 'nombre-invalido' });
-    expect(repo.items.size).toBe(0);
-  });
+  it.each([[''], ['   '], ['x'.repeat(51)], ['línea\nnueva'], [42], [null]])(
+    'rechaza %j sin guardar',
+    async (value) => {
+      const repo = memoryRepo();
+      const result = await updateDisplayName(repo, ana, value, now);
+      expect(result).toEqual({ ok: false, error: 'nombre-invalido' });
+      expect(repo.items.size).toBe(0);
+    },
+  );
 
   it('solo cambia el perfil del usuario de la sesión', async () => {
     const otro: Profile = { sub: 'sub-otro', displayName: 'Otro', createdAt: 'a', updatedAt: 'a' };
@@ -74,7 +88,9 @@ describe('updateDisplayName', () => {
 
 describe('deleteAccount', () => {
   it('borra primero en el proveedor y luego el perfil', async () => {
-    const repo = memoryRepo([{ sub: 'sub-ana', displayName: 'Ana', createdAt: 'a', updatedAt: 'a' }]);
+    const repo = memoryRepo([
+      { sub: 'sub-ana', displayName: 'Ana', createdAt: 'a', updatedAt: 'a' },
+    ]);
     const order: string[] = [];
     const identity: IdentityAdmin = { deleteUser: vi.fn(async () => void order.push('identidad')) };
     const spy = vi.spyOn(repo, 'delete').mockImplementation(async (sub) => {
@@ -88,7 +104,9 @@ describe('deleteAccount', () => {
   });
 
   it('si el proveedor falla, no borra el perfil', async () => {
-    const repo = memoryRepo([{ sub: 'sub-ana', displayName: 'Ana', createdAt: 'a', updatedAt: 'a' }]);
+    const repo = memoryRepo([
+      { sub: 'sub-ana', displayName: 'Ana', createdAt: 'a', updatedAt: 'a' },
+    ]);
     const identity: IdentityAdmin = { deleteUser: vi.fn().mockRejectedValue(new Error('caído')) };
     await expect(deleteAccount(repo, identity, ana)).rejects.toThrow('caído');
     expect(repo.items.has('sub-ana')).toBe(true);

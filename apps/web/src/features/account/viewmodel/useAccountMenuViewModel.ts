@@ -1,8 +1,8 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
+import { usePathname } from '@/i18n/navigation';
 import { useAccountStore } from '../model/accountStore';
 import {
   type AccountLocale,
@@ -21,9 +21,10 @@ import {
  */
 export function useAccountMenuViewModel() {
   const locale = useLocale() as AccountLocale;
-  // Sin el basePath y con el prefijo de idioma (`/sitios`, `/en/sitios`); también en el servidor, así
-  // que «Entrar» trae su regreso aun sin JavaScript.
+  // Ruta sin basePath ni idioma (`/sitios`), igual en el servidor y en el cliente: «Entrar» trae su
+  // regreso aun sin JavaScript. El prefijo del idioma se agrega aquí.
   const pathname = usePathname();
+  const localePrefix = locale === 'en' ? '/en' : '';
   const status = useAccountStore((state) => state.status);
   const name = useAccountStore((state) => state.name);
   const [open, setOpen] = useState(false);
@@ -58,7 +59,10 @@ export function useAccountMenuViewModel() {
     open,
     toggle,
     close,
-    signInHref: signInHref(locale, pathname ? `${BASE_PATH}${pathname === '/' ? '' : pathname}` : null),
+    signInHref: signInHref(
+      locale,
+      `${BASE_PATH}${localePrefix}${pathname === '/' ? '' : pathname}`,
+    ),
     signOutAction: accountPaths(locale).signOut,
   };
 }

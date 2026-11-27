@@ -5,10 +5,14 @@ import * as session from '../model/session';
 import { useAccountMenuViewModel } from './useAccountMenuViewModel';
 
 vi.mock('next-intl', () => ({ useLocale: () => 'es' }));
-vi.mock('next/navigation', () => ({ usePathname: () => '/sitios' }));
+vi.mock('@/i18n/navigation', () => ({ usePathname: () => '/sitios' }));
 
 function setCookie(value: string) {
-  Object.defineProperty(document, 'cookie', { configurable: true, get: () => value, set: () => undefined });
+  Object.defineProperty(document, 'cookie', {
+    configurable: true,
+    get: () => value,
+    set: () => undefined,
+  });
 }
 
 describe('useAccountMenuViewModel', () => {

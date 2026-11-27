@@ -2,7 +2,10 @@
 
 import { TriangleAlert } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { type DeleteAction, useDeleteAccountViewModel } from '../viewmodel/useDeleteAccountViewModel';
+import {
+  type DeleteAction,
+  useDeleteAccountViewModel,
+} from '../viewmodel/useDeleteAccountViewModel';
 
 type Props = { action: DeleteAction };
 
@@ -13,7 +16,11 @@ export function DeleteAccountForm({ action }: Props) {
 
   if (!vm.confirming) {
     return (
-      <button type="button" onClick={vm.start} className="inline-flex min-h-11 items-center rounded-md border border-line px-5 font-semibold hover:bg-surface">
+      <button
+        type="button"
+        onClick={vm.start}
+        className="inline-flex min-h-11 items-center rounded-md border border-line px-5 font-semibold hover:bg-surface"
+      >
         {t('deleteOpen')}
       </button>
     );
@@ -41,7 +48,11 @@ export function DeleteAccountForm({ action }: Props) {
         >
           {vm.pending ? t('deleting') : t('deleteConfirm')}
         </button>
-        <button type="button" onClick={vm.cancel} className="inline-flex min-h-11 items-center rounded-md border border-line px-5 font-semibold hover:bg-surface">
+        <button
+          type="button"
+          onClick={vm.cancel}
+          className="inline-flex min-h-11 items-center rounded-md border border-line px-5 font-semibold hover:bg-surface"
+        >
           {t('deleteCancel')}
         </button>
       </div>

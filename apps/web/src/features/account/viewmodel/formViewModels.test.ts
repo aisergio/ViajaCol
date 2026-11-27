@@ -9,7 +9,12 @@ describe('useProfileViewModel', () => {
 
   it('empieza con el nombre guardado y sin errores', () => {
     const { result } = renderHook(() => useProfileViewModel('Ana', vi.fn()));
-    expect(result.current).toMatchObject({ name: 'Ana', saved: false, error: null, pending: false });
+    expect(result.current).toMatchObject({
+      name: 'Ana',
+      saved: false,
+      error: null,
+      pending: false,
+    });
   });
 
   it('al guardar, el nombre nuevo pasa al store compartido', async () => {

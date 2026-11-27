@@ -1,6 +1,12 @@
 import 'server-only';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
-import { DeleteCommand, DynamoDBDocumentClient, GetCommand, PutCommand, UpdateCommand } from '@aws-sdk/lib-dynamodb';
+import {
+  DeleteCommand,
+  DynamoDBDocumentClient,
+  GetCommand,
+  PutCommand,
+  UpdateCommand,
+} from '@aws-sdk/lib-dynamodb';
 import type { Profile, UsersRepository } from '@/server/application/account/ports';
 
 type DocumentClient = Pick<DynamoDBDocumentClient, 'send'>;
@@ -9,12 +15,18 @@ const isConditionFailure = (error: unknown) =>
   (error as { name?: string } | null)?.name === 'ConditionalCheckFailedException';
 
 /** Adaptador de DynamoDB para el perfil: tabla `viajacol-users`, clave de partición `sub`. */
-export function createDynamoUsersRepository(tableName: string, region: string, client?: DocumentClient): UsersRepository {
+export function createDynamoUsersRepository(
+  tableName: string,
+  region: string,
+  client?: DocumentClient,
+): UsersRepository {
   const doc = client ?? DynamoDBDocumentClient.from(new DynamoDBClient({ region }));
   const names = { '#sub': 'sub' };
 
   const get = async (sub: string): Promise<Profile | null> => {
-    const result = await doc.send(new GetCommand({ TableName: tableName, Key: { sub }, ConsistentRead: true }));
+    const result = await doc.send(
+      new GetCommand({ TableName: tableName, Key: { sub }, ConsistentRead: true }),
+    );
     return (result.Item as Profile | undefined) ?? null;
   };
 

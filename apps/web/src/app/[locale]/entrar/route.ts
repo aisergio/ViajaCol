@@ -20,19 +20,37 @@ export async function GET(request: Request, { params }: Context) {
   try {
     const [auth, config] = await Promise.all([getAuth(), getAuthConfig()]);
     const result = await auth.api.signInSocial({
-      body: { provider: 'cognito', callbackURL: volver, errorCallbackURL: errorPath, additionalParams: { lang: locale } },
+      body: {
+        provider: 'cognito',
+        callbackURL: volver,
+        errorCallbackURL: errorPath,
+        additionalParams: { lang: locale },
+      },
       headers: request.headers,
       asResponse: true,
     });
     const { url } = (await result.json()) as { url?: string };
     if (!result.ok || !url) throw new Error(`signInSocial respondió ${result.status}`);
 
-    const response = new Response(null, { status: 302, headers: { location: url, 'cache-control': NO_STORE } });
-    for (const cookie of result.headers.getSetCookie()) response.headers.append('set-cookie', cookie);
-    response.headers.append('set-cookie', sessionHintCookie('on', config.origin.startsWith('https://')));
+    const response = new Response(null, {
+      status: 302,
+      headers: { location: url, 'cache-control': NO_STORE },
+    });
+    for (const cookie of result.headers.getSetCookie())
+      response.headers.append('set-cookie', cookie);
+    response.headers.append(
+      'set-cookie',
+      sessionHintCookie('on', config.origin.startsWith('https://')),
+    );
     return response;
   } catch (error) {
-    console.error('[cuenta] no se pudo iniciar la entrada:', error instanceof Error ? error.message : error);
-    return new Response(null, { status: 302, headers: { location: errorPath, 'cache-control': NO_STORE } });
+    console.error(
+      '[cuenta] no se pudo iniciar la entrada:',
+      error instanceof Error ? error.message : error,
+    );
+    return new Response(null, {
+      status: 302,
+      headers: { location: errorPath, 'cache-control': NO_STORE },
+    });
   }
 }

@@ -28,14 +28,24 @@ export function initialDisplayName(user: AccountUser): string {
 }
 
 /** Devuelve el perfil del usuario y lo crea la primera vez (research D-06). */
-export async function ensureProfile(repo: UsersRepository, user: AccountUser, now = new Date()): Promise<Profile> {
+export async function ensureProfile(
+  repo: UsersRepository,
+  user: AccountUser,
+  now = new Date(),
+): Promise<Profile> {
   const existing = await repo.get(user.sub);
   if (existing) return existing;
   const stamp = now.toISOString();
-  return repo.createIfMissing({ sub: user.sub, displayName: initialDisplayName(user), createdAt: stamp, updatedAt: stamp });
+  return repo.createIfMissing({
+    sub: user.sub,
+    displayName: initialDisplayName(user),
+    createdAt: stamp,
+    updatedAt: stamp,
+  });
 }
 
-export type UpdateDisplayNameResult = { ok: true; profile: Profile } | { ok: false; error: 'nombre-invalido' };
+export type UpdateDisplayNameResult =
+  { ok: true; profile: Profile } | { ok: false; error: 'nombre-invalido' };
 
 export async function updateDisplayName(
   repo: UsersRepository,
@@ -55,7 +65,11 @@ export async function updateDisplayName(
  * Elimina la cuenta: primero el usuario en el proveedor (así ya no puede entrar) y luego el perfil.
  * Si el proveedor falla, no se borra nada.
  */
-export async function deleteAccount(repo: UsersRepository, identity: IdentityAdmin, user: AccountUser): Promise<void> {
+export async function deleteAccount(
+  repo: UsersRepository,
+  identity: IdentityAdmin,
+  user: AccountUser,
+): Promise<void> {
   await identity.deleteUser(user.sub);
   await repo.delete(user.sub);
 }

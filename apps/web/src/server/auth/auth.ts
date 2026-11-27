@@ -20,7 +20,12 @@ export function createAuth(config: AuthConfig) {
     trustedOrigins: [config.origin],
     session: {
       expiresIn: SESSION_MAX_AGE_S,
-      cookieCache: { enabled: true, maxAge: SESSION_MAX_AGE_S, strategy: 'jwe', refreshCache: true },
+      cookieCache: {
+        enabled: true,
+        maxAge: SESSION_MAX_AGE_S,
+        strategy: 'jwe',
+        refreshCache: true,
+      },
     },
     // Sin base de datos el estado del flujo va en una cookie; los tokens de Cognito no se guardan.
     account: { storeStateStrategy: 'cookie', storeAccountCookie: false },

@@ -22,7 +22,10 @@ export default async function AccountDeletedPage({ params }: Props) {
       <h1 className="font-display text-3xl font-bold">{t('title')}</h1>
       <p className="mt-3 text-muted">{t('text')}</p>
       <div className="mt-8 flex justify-center">
-        <Link href="/" className="inline-flex min-h-11 items-center rounded-md bg-primary px-5 font-semibold text-primary-foreground">
+        <Link
+          href="/"
+          className="inline-flex min-h-11 items-center rounded-md bg-primary px-5 font-semibold text-primary-foreground"
+        >
           {t('home')}
         </Link>
       </div>

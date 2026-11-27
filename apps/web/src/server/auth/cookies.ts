@@ -21,13 +21,18 @@ export function hasSessionCookie(cookieHeader: string | null): boolean {
 
 /** Cabecera Set-Cookie de la cookie indicadora: `on` la crea por 7 días y `off` la borra. */
 export function sessionHintCookie(state: 'on' | 'off', secure: boolean): string {
-  const attributes = [`Path=${BASE_PATH}`, 'SameSite=Lax', state === 'on' ? `Max-Age=${SESSION_MAX_AGE_S}` : 'Max-Age=0'];
+  const attributes = [
+    `Path=${BASE_PATH}`,
+    'SameSite=Lax',
+    state === 'on' ? `Max-Age=${SESSION_MAX_AGE_S}` : 'Max-Age=0',
+  ];
   if (secure) attributes.push('Secure');
   return `${SESSION_HINT_COOKIE}=${state === 'on' ? '1' : ''}; ${attributes.join('; ')}`;
 }
 
 /** Cabeceras Set-Cookie que borran la sesión y el indicador (salir y eliminar la cuenta). */
 export function clearSessionCookies(secure: boolean): string[] {
-  const expire = (name: string) => `${name}=; Path=${BASE_PATH}; Max-Age=0; HttpOnly; SameSite=Lax${secure ? '; Secure' : ''}`;
+  const expire = (name: string) =>
+    `${name}=; Path=${BASE_PATH}; Max-Age=0; HttpOnly; SameSite=Lax${secure ? '; Secure' : ''}`;
   return [...sessionCookieNames(secure).map(expire), sessionHintCookie('off', secure)];
 }
