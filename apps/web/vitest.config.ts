@@ -18,9 +18,11 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       include: [
+        'src/domain/**',
         'src/features/**/model/**',
         'src/features/**/viewmodel/**',
         'src/server/application/**',
+        'src/server/trips/{catalog,context,ics,weather}.ts',
         'src/server/auth/{return-path,config,cookies,with-base-path}.ts',
       ],
       exclude: ['**/*.test.*'],

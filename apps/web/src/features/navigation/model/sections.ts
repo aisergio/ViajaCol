@@ -1,5 +1,5 @@
 export type SectionId =
-  'sitios' | 'fiestas' | 'platos' | 'experiencias' | 'regiones' | 'noticias' | 'guias';
+  'sitios' | 'fiestas' | 'platos' | 'experiencias' | 'regiones' | 'noticias' | 'miViaje' | 'guias';
 
 export type Section = {
   id: SectionId;
@@ -16,6 +16,7 @@ export const SECTIONS: readonly Section[] = [
   { id: 'experiencias', href: '/experiencias', status: 'active' },
   { id: 'regiones', href: '/regiones', status: 'active' },
   { id: 'noticias', href: '/noticias', status: 'active' },
+  { id: 'miViaje', href: '/mi-viaje', status: 'active' },
   { id: 'guias', href: '/guias', status: 'soon' },
 ];
 

@@ -108,6 +108,7 @@ jobs:
           COGNITO_CLIENT_SECRET: e2e-client-secret
           COGNITO_DOMAIN: viajacol-e2e.auth.us-east-2.amazoncognito.com
           USERS_TABLE: viajacol-users-e2e
+          TRIPS_TABLE: viajacol-trips-e2e
 
       - name: Guardar reporte de Playwright
         if: failure()

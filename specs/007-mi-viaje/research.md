@@ -58,9 +58,12 @@
 - **Decision:**
   - fiestas: las del catálogo cuyos meses tocan las fechas del viaje;
   - clima: Open-Meteo `forecast` (sin llave) para viajes que empiezan en 16 días o menos, con la
-    ubicación del primer sitio de cada día o la del primer elemento con coordenadas. Después de 16 días,
-    el clima típico del mes con la API de clima de Open-Meteo. Caché de 1 hora en el servidor; si falla,
-    la sección no aparece.
+    ubicación del primer elemento con coordenadas de cada día o, si el día no tiene, la del primero del
+    viaje. Todos los lugares van en una sola consulta. Después de 16 días, el clima típico del mes: el
+    promedio de los tres años anteriores en la API de clima de Open-Meteo (modelo `MRI_AGCM3_2_S`, con
+    corrección de sesgo), con las máximas, las mínimas y los días con 1 mm de lluvia o más. Caché de 1
+    hora en memoria; si falla o tarda más de 3 s, la sección no aparece. La página cita la fuente
+    (CC BY 4.0).
 
 ## D-09. Mapa
 

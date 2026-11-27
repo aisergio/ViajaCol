@@ -20,7 +20,7 @@ export function MainNav({ className, orientation = 'horizontal', id }: Props) {
             {item.isDisabled ? (
               <span
                 aria-disabled="true"
-                className="inline-flex min-h-11 items-center gap-2 px-3 text-sm text-muted"
+                className="inline-flex min-h-11 items-center gap-2 px-2 text-sm whitespace-nowrap text-muted"
               >
                 {t(item.id)}
                 <span className="rounded-sm bg-surface px-1.5 py-0.5 text-xs font-medium">
@@ -32,9 +32,9 @@ export function MainNav({ className, orientation = 'horizontal', id }: Props) {
                 href={item.href}
                 aria-current={item.isActive ? 'page' : undefined}
                 className={cn(
-                  'relative inline-flex min-h-11 items-center px-3 text-sm font-semibold transition-colors hover:text-primary',
+                  'relative inline-flex min-h-11 items-center px-2 text-sm font-semibold whitespace-nowrap transition-colors hover:text-primary',
                   item.isActive
-                    ? 'text-primary after:absolute after:inset-x-3 after:bottom-1.5 after:h-0.5 after:rounded-full after:bg-primary'
+                    ? 'text-primary after:absolute after:inset-x-2 after:bottom-1.5 after:h-0.5 after:rounded-full after:bg-primary'
                     : 'text-foreground',
                 )}
               >

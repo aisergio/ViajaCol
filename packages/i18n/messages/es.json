@@ -19,7 +19,8 @@
     "noticias": "Noticias",
     "guias": "Guías",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "miViaje": "Mi viaje"
   },
   "language": {
     "label": "Idioma",
@@ -224,6 +225,189 @@
       "title": "Tu cuenta fue eliminada",
       "text": "Borramos tu usuario y tu perfil, y cerramos la sesión.",
       "home": "Ir a la portada"
+    }
+  },
+  "trip": {
+    "navLabel": "Mi viaje",
+    "kinds": {
+      "sitio": "Sitio",
+      "fiesta": "Fiesta",
+      "plato": "Plato",
+      "experiencia": "Experiencia",
+      "nota": "Nota"
+    },
+    "errors": {
+      "invalido": "Revisa los datos: nombre de 1 a 60 caracteres, viaje de 1 a 30 días y de 1 a 20 viajeros.",
+      "limite": "Llegaste al límite: 20 viajes y 100 elementos por viaje.",
+      "sin-sesion": "Tu sesión terminó. Vuelve a entrar.",
+      "conflicto": "El viaje cambió en otra pestaña. Cargamos la versión más reciente.",
+      "no-encontrado": "Ese viaje ya no existe.",
+      "duplicado": "Ya está en ese viaje.",
+      "no-disponible": "No pudimos guardar el cambio. Intenta de nuevo en un momento."
+    },
+    "add": {
+      "button": "Agregar a Mi viaje",
+      "dialogTitle": "Agregar «{name}» a un viaje",
+      "loading": "Cargando tus viajes…",
+      "noTrips": "Aún no tienes viajes.",
+      "createFirst": "Crear un viaje",
+      "added": "Agregado a «{trip}».",
+      "addedDraft": "Guardado en tu borrador.",
+      "openTrip": "Abrir Mi viaje",
+      "close": "Cerrar",
+      "adding": "Agregando…",
+      "duplicateDraft": "Ya está en tu borrador.",
+      "limitDraft": "Tu borrador llegó al límite de 100 elementos.",
+      "sessionEnded": "Tu sesión terminó, así que lo guardamos en tu borrador."
+    },
+    "list": {
+      "title": "Mi viaje",
+      "intro": "Tus viajes por Colombia: días, notas y presupuesto.",
+      "empty": "Todavía no tienes viajes. Crea el primero.",
+      "items": "{count, plural, =0 {sin elementos} one {# elemento} other {# elementos}}",
+      "dates": "{start} – {end}",
+      "migrating": "Guardando tu borrador en tu cuenta…",
+      "draftName": "Mi borrador",
+      "yours": "Tus viajes",
+      "days": "{count, plural, one {# día} other {# días}}",
+      "travelers": "{count, plural, one {# viajero} other {# viajeros}}",
+      "atLimit": "Tienes 20 viajes, el máximo. Elimina uno para crear otro.",
+      "open": "Abrir {name}"
+    },
+    "form": {
+      "createTitle": "Nuevo viaje",
+      "editTitle": "Datos del viaje",
+      "name": "Nombre",
+      "startDate": "Desde",
+      "endDate": "Hasta",
+      "travelers": "Viajeros",
+      "budget": "Presupuesto (COP)",
+      "create": "Crear viaje",
+      "save": "Guardar",
+      "saving": "Guardando…",
+      "saved": "Listo: guardamos los datos.",
+      "datesHint": "De 1 a 30 días.",
+      "travelersHint": "De 1 a 20 personas.",
+      "budgetHint": "En pesos colombianos (COP), de 0 a 100 millones, sin puntos.",
+      "fieldErrors": {
+        "name": "Escribe un nombre de 1 a 60 caracteres.",
+        "startDate": "Elige una fecha válida.",
+        "endDate": "Elige una fecha válida.",
+        "fin-antes-de-inicio": "La fecha final no puede ser anterior a la inicial.",
+        "demasiado-largo": "El viaje puede durar como mucho 30 días.",
+        "travelers": "Escribe de 1 a 20 viajeros.",
+        "budget": "Escribe un presupuesto de 0 a 100 millones de pesos."
+      }
+    },
+    "draft": {
+      "title": "Tu borrador",
+      "intro": "Lo que agregaste sin entrar. Se guarda solo en este navegador.",
+      "empty": "Tu borrador está vacío. Agrega sitios, fiestas, platos o experiencias desde sus fichas.",
+      "signIn": "Entra para guardarlo en tu cuenta",
+      "remove": "Quitar {name}"
+    },
+    "editor": {
+      "back": "Volver a Mi viaje",
+      "unassigned": "Sin día",
+      "day": "Día {n} · {date}",
+      "empty": "Sin elementos.",
+      "moveTo": "Mover a",
+      "moveUp": "Subir",
+      "moveDown": "Bajar",
+      "remove": "Quitar",
+      "cost": "Costo (COP)",
+      "drag": "Arrastrar {name}",
+      "itemActions": "Acciones de {name}",
+      "openDetail": "Ver la ficha",
+      "unavailable": "No disponible",
+      "pending": "Guardando…",
+      "announcements": {
+        "start": "Tomaste {name}.",
+        "over": "{name} está sobre {target}.",
+        "end": "Soltaste {name} en {target}.",
+        "cancel": "Cancelaste el movimiento de {name}."
+      },
+      "instructions": "Para mover un elemento, enfócalo y pulsa espacio. Usa las flechas para llevarlo, espacio para soltarlo y escape para cancelar.",
+      "note": {
+        "add": "Agregar nota",
+        "title": "Título",
+        "text": "Texto (opcional)",
+        "day": "Día",
+        "save": "Guardar nota",
+        "cancel": "Cancelar",
+        "edit": "Editar nota"
+      },
+      "summary": "{days, plural, one {# día} other {# días}} · {travelers, plural, one {# viajero} other {# viajeros}}",
+      "board": "Itinerario",
+      "moved": "{name} quedó en {target}, posición {position}.",
+      "removed": "Quitaste {name}.",
+      "saved": "Cambios guardados.",
+      "noteSaved": "Nota guardada.",
+      "costLabel": "Costo de {name} (COP)",
+      "costHint": "Se guarda al salir del campo o con Enter.",
+      "itemCount": "{count, plural, =0 {sin elementos} one {# elemento} other {# elementos}}",
+      "move": "Mover",
+      "roleDescription": "elemento movible"
+    },
+    "budget": {
+      "title": "Presupuesto",
+      "total": "Total estimado",
+      "budget": "Presupuesto",
+      "remaining": "Disponible",
+      "over": "Te pasas del presupuesto por {amount}.",
+      "kinds": {
+        "sitio": "Sitios",
+        "fiesta": "Fiestas",
+        "plato": "Platos",
+        "experiencia": "Experiencias",
+        "nota": "Notas"
+      }
+    },
+    "share": {
+      "title": "Compartir",
+      "intro": "Un enlace de solo lectura, sin tus datos de la cuenta. Puedes revocarlo cuando quieras.",
+      "create": "Crear enlace",
+      "revoke": "Dejar de compartir",
+      "link": "Enlace del viaje",
+      "copy": "Copiar enlace",
+      "copied": "Enlace copiado.",
+      "shared": "Listo: creamos el enlace.",
+      "revoked": "Dejaste de compartir el viaje: el enlace ya no abre.",
+      "copyFailed": "No pudimos copiar. Selecciona el enlace y cópialo."
+    },
+    "exportIcs": "Descargar calendario (.ics)",
+    "remove": {
+      "button": "Eliminar el viaje",
+      "confirm": "Escribe «eliminar» para borrar «{name}». No se puede deshacer.",
+      "yes": "Eliminar para siempre",
+      "no": "Cancelar",
+      "mismatch": "Escribe «eliminar» para confirmar.",
+      "deleting": "Eliminando…"
+    },
+    "context": {
+      "festivals": "Fiestas en tus fechas",
+      "festivalsNone": "No hay fiestas del catálogo en los meses de este viaje.",
+      "add": "Agregar",
+      "added": "En el viaje",
+      "weather": "Clima",
+      "forecast": "Pronóstico para {place}",
+      "typical": "Clima típico de {month} en {place}",
+      "temps": "Máx. {max} °C · mín. {min} °C",
+      "rain": "Lluvia: {value} %",
+      "rainyDays": "{value} días de lluvia en el mes",
+      "places": "Lugares por día",
+      "placesNone": "Agrega sitios, fiestas o experiencias para ver sus lugares por día.",
+      "weatherCredit": "Datos del clima: <link>Open-Meteo.com</link> (CC BY 4.0)."
+    },
+    "shared": {
+      "eyebrow": "Viaje compartido · solo lectura",
+      "cta": "Planea tu propio viaje",
+      "ogAlt": "Itinerario «{name}» en Viaja Colombia",
+      "brand": "Viaja Colombia"
+    },
+    "ics": {
+      "day": "Día {n}",
+      "empty": "Sin elementos."
     }
   }
 }

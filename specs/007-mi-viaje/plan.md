@@ -9,8 +9,9 @@
 - **Datos:** tabla DynamoDB `viajacol-trips` con clave `sub` (dueño) + `tripId`, y un índice disperso
   por `shareId` para los enlaces compartidos. Cada viaje es un documento con sus elementos y un número
   de `version` (research D-01).
-- **Dominio puro:** `src/server/domain/trip.ts` aplica cada cambio (crear, editar, agregar, mover,
-  costo, nota, compartir) sobre el documento y valida con Zod. Los casos de uso cargan, aplican y
+- **Dominio puro:** `src/domain/trip.ts` aplica cada cambio (crear, editar, agregar, mover, costo,
+  nota, compartir) sobre el documento y valida con Zod. Lo usan el servidor y el ViewModel del editor,
+  que aplica la misma función al estado optimista. Los casos de uso cargan, aplican y
   guardan con la condición `version = esperada`; si no coincide, es un conflicto (D-02).
 - **Server Actions** en `app/[locale]/mi-viaje/actions.ts`, con sesión y Zod. La interfaz usa
   `useOptimistic`: el cambio se ve al instante y se deshace si el servidor lo rechaza (D-03).
@@ -23,8 +24,8 @@
 - **Compartir y exportar:** `/viaje/[shareId]` de solo lectura (`noindex`) con vista previa generada por
   `next/og`, y `.ics` generado en un Route Handler privado (D-07).
 - **Contexto:** fiestas del catálogo por los meses del viaje; pronóstico de Open-Meteo para viajes a 16
-  días o menos y, después, el clima típico del mes (D-08). El mapa usa las coordenadas de sitios y
-  fiestas sobre una silueta simple de Colombia (D-09).
+  días o menos y, después, el clima típico del mes (D-08). Los lugares de cada día se listan en texto;
+  el mapa SVG con las formas de las regiones llega con la spec 008 (D-09, T030).
 
 ## Technical Context
 
@@ -92,20 +93,22 @@ specs/007-mi-viaje/
 ```text
 infra/live/trips.tf                      # tabla, índice por shareId y permisos
 apps/web/src/
-├── server/domain/trip.ts                # documento, límites y operaciones puras
+├── domain/trip.ts                       # documento, límites y operaciones puras (servidor y cliente)
 ├── server/application/trips/            # casos de uso y puerto TripsRepository
 ├── server/infrastructure/dynamodb/trips-repository.ts
-├── server/trips/{ics,weather,context}.ts
+├── server/trips/{catalog,context,ics,shared,weather}.ts
 ├── app/[locale]/mi-viaje/{page.tsx,actions.ts,[tripId]/page.tsx,[tripId]/calendario/route.ts}
 ├── app/[locale]/viaje/[shareId]/page.tsx
 ├── app/api/og/viaje/[shareId]/route.tsx
-├── features/trip/{model,viewmodel,view}/
-├── features/trip-draft/{model,viewmodel,view}/
-└── features/add-to-trip/{viewmodel,view}/
+├── components/trips/{TripReadOnly,WeatherSection}.tsx   # Server Components
+├── features/trip-editor/{model,viewmodel,view}/          # tablero por días, presupuesto, compartir
+├── features/trip-list/{viewmodel,view}/                  # crear, editar y eliminar
+├── features/trip-draft/{model,viewmodel,view}/           # borrador sin cuenta
+└── features/add-to-trip/{viewmodel,view}/                # botón y diálogo de las fichas
 ```
 
-**Structure Decision**: el dominio del viaje es puro y vive en `server/domain`: en la E3 se mueve con la
-zona `mi-viaje` sin cambios.
+**Structure Decision**: el dominio del viaje es puro y vive en `src/domain`, fuera de `server/`, porque
+lo importan el servidor y el navegador. En la E3 se mueve con la zona `mi-viaje` sin cambios.
 
 ## Complexity Tracking
 
