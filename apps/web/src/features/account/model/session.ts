@@ -46,3 +46,12 @@ export function signInHref(locale: AccountLocale, currentPath: string | null): s
   const { signIn } = accountPaths(locale);
   return currentPath ? `${signIn}?volver=${encodeURIComponent(currentPath)}` : signIn;
 }
+
+/**
+ * «Entrar» para la página actual. `pathname` es la ruta sin `basePath` ni idioma (`/sitios`), igual
+ * en el servidor y en el cliente, así que el enlace trae su regreso aun sin JavaScript.
+ */
+export function currentSignInHref(locale: AccountLocale, pathname: string): string {
+  const localePrefix = locale === 'en' ? '/en' : '';
+  return signInHref(locale, `${BASE_PATH}${localePrefix}${pathname === '/' ? '' : pathname}`);
+}
