@@ -77,7 +77,7 @@ test.describe('US2 · Leer la ficha completa', () => {
     await expect(page.getByText(/Foto: /).first()).toBeVisible();
     await expect(
       page.getByRole('link', { name: 'Ver la foto de «Valle de Cocora» en Wikimedia Commons' }),
-    ).toHaveAttribute('href', /commons\.wikimedia\.org/);
+    ).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
     await page.getByRole('link', { name: 'English' }).click();
     await expect(page).toHaveURL(/\/ViajaCol\/en\/sitios\/valle-de-cocora$/);
     await expect(page.getByRole('heading', { level: 1, name: 'Cocora Valley' })).toBeVisible();

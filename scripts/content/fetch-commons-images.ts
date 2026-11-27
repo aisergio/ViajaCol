@@ -104,18 +104,27 @@ function meta(info: ImageInfo, key: string): string {
   return info.extmetadata?.[key]?.value ?? '';
 }
 
+const ENTITIES: Record<string, string> = {
+  '&amp;': '&',
+  '&quot;': '"',
+  '&#39;': "'",
+  '&#039;': "'",
+  '&apos;': "'",
+  '&lt;': '<',
+  '&gt;': '>',
+  '&nbsp;': ' ',
+};
+
 /** Texto plano desde el HTML de Commons (autor y descripción). */
 function plain(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#0?39;|&apos;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return (
+    html
+      .replace(/<[^>]+>/g, ' ')
+      // Una sola pasada: «&amp;lt;» queda como «&lt;» y no se desescapa dos veces.
+      .replace(/&(?:amp|quot|#0?39|apos|lt|gt|nbsp);/g, (entity) => ENTITIES[entity] ?? entity)
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
 }
 
 function categoriesFrom(arg: string | undefined): string[] {
