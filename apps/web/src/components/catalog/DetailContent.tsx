@@ -1,6 +1,8 @@
 import type { DetailItem } from '@viajacol/content';
 import { cn } from '@viajacol/ui';
 import { useTranslations } from 'next-intl';
+import { AddToTripButton } from '@/features/add-to-trip/view/AddToTripButton';
+import { CATEGORY_TO_KIND } from '@/server/trips/catalog';
 import { CatalogPhoto } from './CatalogPhoto';
 import { DemoBadge } from './DemoBadge';
 import { FactList } from './FactList';
@@ -18,6 +20,8 @@ export function DetailContent({ item, variant }: Props) {
   const isPage = variant === 'page';
   const Title = isPage ? 'h1' : 'h2';
   const width = isPage ? 'mx-auto max-w-6xl px-4' : 'px-5 sm:px-7';
+  // Sitios, fiestas, platos y experiencias se pueden agregar a «Mi viaje» (spec 007, FR-003).
+  const tripKind = CATEGORY_TO_KIND[item.category];
 
   return (
     <article className={isPage ? 'pb-4' : 'pb-7'}>
@@ -65,6 +69,7 @@ export function DetailContent({ item, variant }: Props) {
             {t('demoNote')}
           </p>
         ) : null}
+        {tripKind ? <AddToTripButton kind={tripKind} slug={item.slug} name={item.name} /> : null}
       </header>
 
       <div className={cn(width, 'mt-8 grid gap-8', isPage && 'md:grid-cols-[2fr_1fr]')}>

@@ -27,11 +27,13 @@ export async function SiteHeader() {
           className="flex min-h-11 shrink-0 items-center gap-2 font-display text-lg font-bold text-primary"
         >
           <BrandMark />
-          <span className="hidden sm:inline">Viaja Colombia</span>
+          {/* Con el menú completo (xl) no cabe el texto: el contenedor no pasa de 1280 px en ninguna
+              pantalla, así que basta el logo (el enlace tiene nombre). */}
+          <span className="hidden sm:inline xl:hidden">Viaja Colombia</span>
         </Link>
         <MainNav className="ml-2 hidden xl:block" />
         <div className="ml-auto flex min-w-0 flex-1 items-center justify-end gap-2 xl:flex-none">
-          <div className="min-w-0 flex-1 sm:max-w-xs xl:w-60 xl:flex-none">
+          <div className="min-w-0 flex-1 sm:max-w-xs xl:w-48 xl:flex-none">
             <SearchBox />
           </div>
           <LanguageSwitcher />

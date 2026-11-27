@@ -37,6 +37,7 @@ module "web" {
     COGNITO_CLIENT_ID    = aws_cognito_user_pool_client.web.id
     COGNITO_DOMAIN       = local.cognito_host
     USERS_TABLE          = aws_dynamodb_table.users.name
+    TRIPS_TABLE          = aws_dynamodb_table.trips.name
   }
 }
 

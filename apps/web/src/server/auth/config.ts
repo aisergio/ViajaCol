@@ -12,6 +12,8 @@ export interface AuthConfig {
   region: string;
   cognito: { userPoolId: string; clientId: string; clientSecret: string; domain: string };
   usersTable: string;
+  /** Tabla de los viajes (spec 007). */
+  tripsTable: string;
 }
 
 export type ParameterFetcher = (names: string[], region: string) => Promise<Record<string, string>>;
@@ -47,6 +49,7 @@ export async function loadAuthConfig(
     'COGNITO_CLIENT_ID',
     'COGNITO_DOMAIN',
     'USERS_TABLE',
+    'TRIPS_TABLE',
   ];
   const missing = required.filter((name) => !env[name]);
 
@@ -86,5 +89,6 @@ export async function loadAuthConfig(
       domain: env.COGNITO_DOMAIN as string,
     },
     usersTable: env.USERS_TABLE as string,
+    tripsTable: env.TRIPS_TABLE as string,
   };
 }

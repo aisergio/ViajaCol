@@ -7,6 +7,7 @@ const base = {
   COGNITO_CLIENT_ID: 'cliente',
   COGNITO_DOMAIN: 'viajacol-1234.auth.us-east-2.amazoncognito.com',
   USERS_TABLE: 'viajacol-users',
+  TRIPS_TABLE: 'viajacol-trips',
 };
 const secret = 'x'.repeat(48);
 
@@ -23,6 +24,7 @@ describe('loadAuthConfig', () => {
       secret,
       region: 'us-east-2',
       usersTable: 'viajacol-users',
+      tripsTable: 'viajacol-trips',
     });
     expect(config.cognito).toEqual({
       userPoolId: 'us-east-2_abc',

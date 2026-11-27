@@ -71,7 +71,18 @@ signin_location=$(curl -sS -o /dev/null -w '%{redirect_url}' --max-time 20 "$PUB
 [[ $(status "$PUBLIC_URL/api/auth/ok") == 200 ]] || fail "la ruta de autenticación no responde"
 echo "✓ cuenta: entrar, página privada y sesión"
 
-# 8. Acceso directo al origen: 403 (US4).
+# 8. Mi viaje (spec 007): sin sesión la lista muestra el borrador y un viaje pide «Entrar». Un enlace
+#    compartido con formato válido que no existe responde 404: consulta el índice de DynamoDB, así que
+#    también comprueba la tabla y el permiso de la función.
+[[ $(status "$PUBLIC_URL/mi-viaje") == 200 ]] || fail "«Mi viaje» sin sesión no responde 200"
+[[ $(status "$PUBLIC_URL/mi-viaje/00000000-0000-0000-0000-000000000000") == 307 ]] ||
+  fail "un viaje sin sesión no redirige a «Entrar»"
+[[ $(status "$PUBLIC_URL/viaje/AAAAAAAAAAAAAAAAAAAAAA") == 404 ]] || fail "un enlace compartido inexistente no responde 404"
+[[ $(status "$PUBLIC_URL/api/og/viaje/AAAAAAAAAAAAAAAAAAAAAA") == 404 ]] ||
+  fail "la vista previa de un enlace inexistente no responde 404"
+echo "✓ mi viaje: borrador, viaje privado y enlace compartido"
+
+# 9. Acceso directo al origen: 403 (US4).
 if [ -n "${CF_DOMAIN:-}" ]; then
   [[ $(status "https://$CF_DOMAIN/ViajaCol") == 403 ]] || fail "CloudFront directo no responde 403"
 fi

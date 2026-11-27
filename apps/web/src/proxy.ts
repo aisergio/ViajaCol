@@ -5,8 +5,12 @@ import { hasSessionCookie } from './server/auth/cookies';
 
 const intlMiddleware = createMiddleware(routing);
 
-/** Páginas privadas (spec 006). La verificación real ocurre en el servidor; esto solo ahorra un viaje. */
-const PRIVATE_PAGE = /^\/(en\/)?cuenta\/?$/;
+/**
+ * Páginas privadas: «Mi cuenta» (spec 006) y cada viaje con su calendario (spec 007). La lista
+ * `/mi-viaje` es pública: sin sesión muestra el borrador. La verificación real ocurre en el servidor;
+ * esto solo ahorra un viaje.
+ */
+const PRIVATE_PAGE = /^\/(en\/)?(cuenta|mi-viaje\/[^/]+(\/calendario)?)\/?$/;
 
 /**
  * Proxy (antes middleware) de Next.js 16:

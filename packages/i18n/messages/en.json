@@ -19,7 +19,8 @@
     "noticias": "News",
     "guias": "Guides",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "miViaje": "My trip"
   },
   "language": {
     "label": "Language",
@@ -224,6 +225,189 @@
       "title": "Your account was deleted",
       "text": "We deleted your user and your profile, and signed you out.",
       "home": "Go to the home page"
+    }
+  },
+  "trip": {
+    "navLabel": "My trip",
+    "kinds": {
+      "sitio": "Place",
+      "fiesta": "Festival",
+      "plato": "Dish",
+      "experiencia": "Experience",
+      "nota": "Note"
+    },
+    "errors": {
+      "invalido": "Check the details: a name of 1 to 60 characters, a trip of 1 to 30 days and 1 to 20 travelers.",
+      "limite": "You reached the limit: 20 trips and 100 items per trip.",
+      "sin-sesion": "Your session ended. Please sign in again.",
+      "conflicto": "The trip changed in another tab. We loaded the latest version.",
+      "no-encontrado": "That trip no longer exists.",
+      "duplicado": "It is already in that trip.",
+      "no-disponible": "We could not save the change. Please try again in a moment."
+    },
+    "add": {
+      "button": "Add to My trip",
+      "dialogTitle": "Add “{name}” to a trip",
+      "loading": "Loading your trips…",
+      "noTrips": "You have no trips yet.",
+      "createFirst": "Create a trip",
+      "added": "Added to “{trip}”.",
+      "addedDraft": "Saved to your draft.",
+      "openTrip": "Open My trip",
+      "close": "Close",
+      "adding": "Adding…",
+      "duplicateDraft": "It is already in your draft.",
+      "limitDraft": "Your draft reached the limit of 100 items.",
+      "sessionEnded": "Your session ended, so we saved it to your draft."
+    },
+    "list": {
+      "title": "My trip",
+      "intro": "Your trips around Colombia: days, notes and budget.",
+      "empty": "You have no trips yet. Create the first one.",
+      "items": "{count, plural, =0 {no items} one {# item} other {# items}}",
+      "dates": "{start} – {end}",
+      "migrating": "Saving your draft to your account…",
+      "draftName": "My draft",
+      "yours": "Your trips",
+      "days": "{count, plural, one {# day} other {# days}}",
+      "travelers": "{count, plural, one {# traveler} other {# travelers}}",
+      "atLimit": "You have 20 trips, the maximum. Delete one to create another.",
+      "open": "Open {name}"
+    },
+    "form": {
+      "createTitle": "New trip",
+      "editTitle": "Trip details",
+      "name": "Name",
+      "startDate": "From",
+      "endDate": "To",
+      "travelers": "Travelers",
+      "budget": "Budget (COP)",
+      "create": "Create trip",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "Done: the details were saved.",
+      "datesHint": "From 1 to 30 days.",
+      "travelersHint": "From 1 to 20 people.",
+      "budgetHint": "In Colombian pesos (COP), from 0 to 100 million, without separators.",
+      "fieldErrors": {
+        "name": "Enter a name from 1 to 60 characters.",
+        "startDate": "Choose a valid date.",
+        "endDate": "Choose a valid date.",
+        "fin-antes-de-inicio": "The end date cannot be before the start date.",
+        "demasiado-largo": "A trip can last at most 30 days.",
+        "travelers": "Enter from 1 to 20 travelers.",
+        "budget": "Enter a budget from 0 to 100 million pesos."
+      }
+    },
+    "draft": {
+      "title": "Your draft",
+      "intro": "What you added without signing in. It is saved only in this browser.",
+      "empty": "Your draft is empty. Add places, festivals, dishes or experiences from their pages.",
+      "signIn": "Sign in to save it to your account",
+      "remove": "Remove {name}"
+    },
+    "editor": {
+      "back": "Back to My trip",
+      "unassigned": "No day",
+      "day": "Day {n} · {date}",
+      "empty": "No items.",
+      "moveTo": "Move to",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "remove": "Remove",
+      "cost": "Cost (COP)",
+      "drag": "Drag {name}",
+      "itemActions": "Actions for {name}",
+      "openDetail": "See the page",
+      "unavailable": "Not available",
+      "pending": "Saving…",
+      "announcements": {
+        "start": "You picked up {name}.",
+        "over": "{name} is over {target}.",
+        "end": "You dropped {name} on {target}.",
+        "cancel": "You cancelled moving {name}."
+      },
+      "instructions": "To move an item, focus it and press space. Use the arrow keys to move it, space to drop it and escape to cancel.",
+      "note": {
+        "add": "Add a note",
+        "title": "Title",
+        "text": "Text (optional)",
+        "day": "Day",
+        "save": "Save note",
+        "cancel": "Cancel",
+        "edit": "Edit note"
+      },
+      "summary": "{days, plural, one {# day} other {# days}} · {travelers, plural, one {# traveler} other {# travelers}}",
+      "board": "Itinerary",
+      "moved": "{name} is now in {target}, position {position}.",
+      "removed": "You removed {name}.",
+      "saved": "Changes saved.",
+      "noteSaved": "Note saved.",
+      "costLabel": "Cost of {name} (COP)",
+      "costHint": "It is saved when you leave the field or press Enter.",
+      "itemCount": "{count, plural, =0 {no items} one {# item} other {# items}}",
+      "move": "Move",
+      "roleDescription": "movable item"
+    },
+    "budget": {
+      "title": "Budget",
+      "total": "Estimated total",
+      "budget": "Budget",
+      "remaining": "Left",
+      "over": "You are over budget by {amount}.",
+      "kinds": {
+        "sitio": "Places",
+        "fiesta": "Festivals",
+        "plato": "Dishes",
+        "experiencia": "Experiences",
+        "nota": "Notes"
+      }
+    },
+    "share": {
+      "title": "Share",
+      "intro": "A read-only link without your account data. You can revoke it at any time.",
+      "create": "Create link",
+      "revoke": "Stop sharing",
+      "link": "Trip link",
+      "copy": "Copy link",
+      "copied": "Link copied.",
+      "shared": "Done: the link is ready.",
+      "revoked": "You stopped sharing the trip: the link no longer opens.",
+      "copyFailed": "We could not copy it. Select the link and copy it."
+    },
+    "exportIcs": "Download calendar (.ics)",
+    "remove": {
+      "button": "Delete the trip",
+      "confirm": "Type “eliminar” to delete “{name}”. This cannot be undone.",
+      "yes": "Delete forever",
+      "no": "Cancel",
+      "mismatch": "Type “eliminar” to confirm.",
+      "deleting": "Deleting…"
+    },
+    "context": {
+      "festivals": "Festivals on your dates",
+      "festivalsNone": "No catalog festivals in this trip’s months.",
+      "add": "Add",
+      "added": "In the trip",
+      "weather": "Weather",
+      "forecast": "Forecast for {place}",
+      "typical": "Typical {month} weather in {place}",
+      "temps": "High {max} °C · low {min} °C",
+      "rain": "Rain: {value} %",
+      "rainyDays": "{value} rainy days in the month",
+      "places": "Places by day",
+      "placesNone": "Add sites, festivals or experiences to see their places by day.",
+      "weatherCredit": "Weather data: <link>Open-Meteo.com</link> (CC BY 4.0)."
+    },
+    "shared": {
+      "eyebrow": "Shared trip · read only",
+      "cta": "Plan your own trip",
+      "ogAlt": "“{name}” itinerary on Viaja Colombia",
+      "brand": "Viaja Colombia"
+    },
+    "ics": {
+      "day": "Day {n}",
+      "empty": "No items."
     }
   }
 }
