@@ -17,8 +17,8 @@
 - **`hash`:** los 8 primeros caracteres hexadecimales del SHA-256 de las tres variantes. Si cambia la
   foto o su codificación, cambia el nombre.
 - **Publicación:** `build-web.sh` las copia a `dist/web/static/ViajaCol/media/`, y `publish-web.sh` las
-  sincroniza con S3 con `Cache-Control: public, max-age=31536000, immutable`. No viajan en el paquete de
-  Lambda.
+  sincroniza con S3 con `Cache-Control: public, max-age=31536000, immutable` y `Content-Type: image/webp`
+  explícito (la tabla de tipos del CLI de AWS no trae `.webp`). No viajan en el paquete de Lambda.
 - **Servicio:** CloudFront las sirve por el comportamiento `/ViajaCol/media/*` hacia S3 (spec 003).
 
 ## Cargador de `next/image` (`apps/web/src/lib/image-loader.ts`)

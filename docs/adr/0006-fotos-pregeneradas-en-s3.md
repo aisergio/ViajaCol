@@ -25,7 +25,7 @@
   `media/<categoria>/<slug>-<hash8>-<ancho>.webp`.
 - **Publicación:** las fotos se versionan en `apps/web/public/media`. `build-web.sh` las copia a los
   estáticos y las saca del paquete de Lambda, y `publish-web.sh` las sube a S3 con
-  `Cache-Control: public, max-age=31536000, immutable`.
+  `Cache-Control: public, max-age=31536000, immutable` y `Content-Type: image/webp` explícito.
 - **`next/image` con cargador propio:** `loaderFile` devuelve el archivo del ancho pedido, con
   `deviceSizes: [480, 960, 1600]` e `imageSizes: []`. Así, cada ancho del `srcset` es un archivo real.
   El marcador borroso de 16 px viaja en el manifiesto (`media.json`).
