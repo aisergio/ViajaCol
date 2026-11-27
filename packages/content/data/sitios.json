@@ -1,0 +1,812 @@
+[
+  {
+    "slug": "monserrate",
+    "region": "andina",
+    "department": "Bogotá D. C.",
+    "municipality": "Bogotá",
+    "coords": [4.6058, -74.056],
+    "kind": "cultura",
+    "photo": "File:Bogotá Monserrate desde La Candelaria.JPG",
+    "es": {
+      "name": "Cerro de Monserrate",
+      "summary": "El cerro que domina Bogotá, con un santuario a 3152 metros de altura y la mejor vista de la ciudad.",
+      "body": [
+        "Monserrate es el más conocido de los cerros que rodean Bogotá. En su cima, a 3152 metros sobre el nivel del mar, está el santuario del Señor Caído, del siglo XVII, que recibe peregrinos todo el año.",
+        "Se sube por un sendero de piedra, en teleférico o en funicular. Desde arriba se ve casi toda la ciudad, y al atardecer se encienden las luces de la sabana."
+      ],
+      "alt": "El santuario de Monserrate en lo alto del cerro, visto desde los tejados de La Candelaria"
+    },
+    "en": {
+      "name": "Monserrate Hill",
+      "summary": "The hill that towers over Bogotá, with a sanctuary 3,152 meters above sea level and the best view of the city.",
+      "body": [
+        "Monserrate is the best known of the hills around Bogotá. On its summit, 3,152 meters above sea level, stands the 17th-century sanctuary of the Fallen Lord, which receives pilgrims all year round.",
+        "You can climb a stone trail or ride the cable car or the funicular. From the top you can see almost the whole city, and at dusk the lights of the plateau come on."
+      ],
+      "alt": "Monserrate sanctuary on top of the hill, seen from the rooftops of La Candelaria"
+    }
+  },
+  {
+    "slug": "chorro-de-quevedo",
+    "region": "andina",
+    "department": "Bogotá D. C.",
+    "municipality": "Bogotá",
+    "coords": [4.5975, -74.0687],
+    "kind": "historia",
+    "photo": "File:Iglesia plaza del Chorro de Quevedo.JPG",
+    "es": {
+      "name": "Chorro de Quevedo",
+      "summary": "La plazoleta donde, según la tradición, se fundó Bogotá en 1538, en el corazón de La Candelaria.",
+      "body": [
+        "El Chorro de Quevedo es una pequeña plaza del barrio La Candelaria. La tradición dice que allí Gonzalo Jiménez de Quesada fundó Santafé de Bogotá en 1538, y una capilla blanca recuerda ese origen.",
+        "Hoy es punto de encuentro de estudiantes, artistas y viajeros, rodeado de callejones como el del Embudo, cafés y casas coloniales de colores."
+      ],
+      "alt": "Capilla blanca de la plazoleta del Chorro de Quevedo"
+    },
+    "en": {
+      "name": "Chorro de Quevedo",
+      "summary": "The small square where, according to tradition, Bogotá was founded in 1538, in the heart of La Candelaria.",
+      "body": [
+        "Chorro de Quevedo is a small square in the La Candelaria neighborhood. Tradition says Gonzalo Jiménez de Quesada founded Santafé de Bogotá there in 1538, and a white chapel recalls that origin.",
+        "Today it is a meeting point for students, artists and travelers, surrounded by alleys such as the Callejón del Embudo, cafés and colorful colonial houses."
+      ],
+      "alt": "White chapel on the Chorro de Quevedo square"
+    }
+  },
+  {
+    "slug": "plaza-de-bolivar-de-bogota",
+    "region": "andina",
+    "department": "Bogotá D. C.",
+    "municipality": "Bogotá",
+    "coords": [4.5981, -74.0758],
+    "kind": "historia",
+    "photo": "File:Plaza de Bolívar 1.jpg",
+    "es": {
+      "name": "Plaza de Bolívar",
+      "summary": "La plaza principal de Colombia, rodeada por la Catedral Primada, el Capitolio y el Palacio de Justicia.",
+      "body": [
+        "La Plaza de Bolívar es el centro histórico y político del país. A su alrededor están la Catedral Primada, el Capitolio Nacional, sede del Congreso, el Palacio de Justicia y el Palacio Liévano, de la Alcaldía de Bogotá.",
+        "En el centro está la estatua de Simón Bolívar, de 1846. La plaza es escenario de conciertos, protestas y celebraciones, y siempre tiene palomas y fotógrafos."
+      ],
+      "alt": "Catedral Primada y edificios de la Plaza de Bolívar, con los cerros al fondo"
+    },
+    "en": {
+      "name": "Plaza de Bolívar",
+      "summary": "Colombia's main square, surrounded by the Primatial Cathedral, the Capitol and the Palace of Justice.",
+      "body": [
+        "Plaza de Bolívar is the historic and political heart of the country. Around it stand the Primatial Cathedral, the National Capitol, home of Congress, the Palace of Justice and the Liévano Palace, Bogotá's city hall.",
+        "In the middle is the statue of Simón Bolívar, from 1846. The square hosts concerts, protests and celebrations, and there are always pigeons and photographers."
+      ],
+      "alt": "Primatial Cathedral and buildings on Plaza de Bolívar, with the hills behind"
+    }
+  },
+  {
+    "slug": "guatape-y-el-penol",
+    "region": "andina",
+    "department": "Antioquia",
+    "municipality": "Guatapé",
+    "coords": [6.2205, -75.179],
+    "kind": "naturaleza",
+    "photo": "File:Piedra del Peñol N1 30062011.jpg",
+    "es": {
+      "name": "Guatapé y la Piedra del Peñol",
+      "summary": "Una roca de granito de más de 200 metros con vista al embalse, junto a un pueblo de zócalos de colores.",
+      "body": [
+        "La Piedra del Peñol es una roca de granito de más de 200 metros de altura junto al embalse de Peñol-Guatapé, en el oriente de Antioquia. Una escalera de cientos de escalones lleva a la cima, desde donde se ven islas y brazos de agua hasta el horizonte.",
+        "Muy cerca está Guatapé, el pueblo de los zócalos: relieves pintados en la parte baja de las fachadas que cuentan historias de sus habitantes."
+      ],
+      "alt": "La Piedra del Peñol, una gran roca de granito con su escalera en un costado"
+    },
+    "en": {
+      "name": "Guatapé and El Peñol Rock",
+      "summary": "A granite rock more than 200 meters tall overlooking a reservoir, next to a town of colorful painted panels.",
+      "body": [
+        "El Peñol Rock is a granite monolith more than 200 meters tall beside the Peñol-Guatapé reservoir, in eastern Antioquia. A staircase of hundreds of steps leads to the top, with views of islands and inlets all the way to the horizon.",
+        "Nearby is Guatapé, the town of zócalos: painted reliefs on the lower part of the façades that tell the stories of the people who live there."
+      ],
+      "alt": "El Peñol Rock, a large granite monolith with its staircase on one side"
+    }
+  },
+  {
+    "slug": "pueblito-paisa",
+    "region": "andina",
+    "department": "Antioquia",
+    "municipality": "Medellín",
+    "coords": [6.2357, -75.5794],
+    "kind": "cultura",
+    "photo": "File:Plaza Pueblito Paisa-Medellin.JPG",
+    "es": {
+      "name": "Pueblito Paisa",
+      "summary": "La réplica de un pueblo antioqueño tradicional en la cima del cerro Nutibara, con vista a Medellín.",
+      "body": [
+        "En lo alto del cerro Nutibara, en Medellín, está el Pueblito Paisa: una plaza con iglesia, alcaldía, barbería y casas de balcones que reproduce un pueblo antioqueño de comienzos del siglo XX.",
+        "Es un buen lugar para probar comida típica, comprar artesanías y ver la ciudad desde uno de sus miradores más altos."
+      ],
+      "alt": "Plaza del Pueblito Paisa con su fuente, la iglesia y casas de balcones"
+    },
+    "en": {
+      "name": "Pueblito Paisa",
+      "summary": "A replica of a traditional Antioquian village on top of Nutibara Hill, overlooking Medellín.",
+      "body": [
+        "On top of Nutibara Hill, in Medellín, is Pueblito Paisa: a square with a church, a town hall, a barbershop and balconied houses that recreates an Antioquian village from the early 20th century.",
+        "It is a good place to try local food, buy handicrafts and look out over the city from one of its highest viewpoints."
+      ],
+      "alt": "Pueblito Paisa square with its fountain, the church and balconied houses"
+    }
+  },
+  {
+    "slug": "hacienda-napoles",
+    "region": "andina",
+    "department": "Antioquia",
+    "municipality": "Puerto Triunfo",
+    "coords": [5.9058, -74.7369],
+    "kind": "parque",
+    "photo": "File:Parque Temático Hacienda Nápoles 5.jpg",
+    "es": {
+      "name": "Parque Temático Hacienda Nápoles",
+      "summary": "Un parque temático con zoológico, parque acuático e hipopótamos, en el Magdalena Medio antioqueño.",
+      "body": [
+        "El Parque Temático Hacienda Nápoles está en Puerto Triunfo, en el Magdalena Medio antioqueño. Ocupa una antigua hacienda que el Estado incautó y convirtió en un parque con zoológico, parque acuático, senderos y lagos.",
+        "Es conocido por los hipopótamos que llegaron a la hacienda y que hoy viven en libertad en la región, un caso que se estudia como especie invasora."
+      ],
+      "alt": "Lago rodeado de pasto y árboles dentro del Parque Temático Hacienda Nápoles"
+    },
+    "en": {
+      "name": "Hacienda Nápoles Theme Park",
+      "summary": "A theme park with a zoo, a water park and hippos, in the Middle Magdalena area of Antioquia.",
+      "body": [
+        "Hacienda Nápoles Theme Park is in Puerto Triunfo, in the Middle Magdalena area of Antioquia. It occupies a former estate that the government seized and turned into a park with a zoo, a water park, trails and lakes.",
+        "It is known for the hippos brought to the estate, which now roam free in the region, a case studied as an invasive species."
+      ],
+      "alt": "Lake surrounded by grass and trees inside Hacienda Nápoles Theme Park"
+    }
+  },
+  {
+    "slug": "desierto-de-la-tatacoa",
+    "region": "andina",
+    "department": "Huila",
+    "municipality": "Villavieja",
+    "coords": [3.2333, -75.1667],
+    "kind": "naturaleza",
+    "photo": "File:The Tatacoa Desert (4925602486).jpg",
+    "es": {
+      "name": "Desierto de la Tatacoa",
+      "summary": "Un bosque seco tropical de cárcavas rojas y grises, con uno de los cielos nocturnos más limpios del país.",
+      "body": [
+        "La Tatacoa, en Villavieja (Huila), no es un desierto propiamente dicho sino un bosque seco tropical. La erosión formó laberintos de cárcavas de color ocre en la zona de El Cuzco y grises en Los Hoyos.",
+        "Su clima seco y la poca contaminación lumínica la hacen ideal para observar estrellas. Además, allí se han encontrado fósiles de animales de hace millones de años."
+      ],
+      "alt": "Cárcavas rojizas del desierto de la Tatacoa con vegetación seca"
+    },
+    "en": {
+      "name": "Tatacoa Desert",
+      "summary": "A tropical dry forest of red and gray gullies, with one of the clearest night skies in the country.",
+      "body": [
+        "La Tatacoa, in Villavieja (Huila), is not strictly a desert but a tropical dry forest. Erosion carved mazes of ochre gullies in the El Cuzco area and gray ones at Los Hoyos.",
+        "Its dry climate and low light pollution make it ideal for stargazing. Fossils of animals that lived millions of years ago have also been found there."
+      ],
+      "alt": "Reddish gullies of the Tatacoa Desert with dry vegetation"
+    }
+  },
+  {
+    "slug": "parque-arqueologico-de-san-agustin",
+    "region": "andina",
+    "department": "Huila",
+    "municipality": "San Agustín",
+    "coords": [1.8879, -76.2964],
+    "kind": "arqueologia",
+    "photo": "File:Parque Arqueológico de San Agustín-Mesita A 06.jpg",
+    "es": {
+      "name": "Parque Arqueológico de San Agustín",
+      "summary": "Cientos de estatuas de piedra y tumbas monumentales talladas hace más de mil años en el sur del Huila.",
+      "body": [
+        "En las montañas del sur del Huila, cerca del nacimiento del río Magdalena, una cultura indígena talló cientos de estatuas de piedra y construyó tumbas monumentales hace más de mil años. Son figuras de deidades, animales y guerreros que custodiaban a los muertos.",
+        "El parque es Patrimonio de la Humanidad desde 1995 y reúne el mayor conjunto de monumentos religiosos y esculturas megalíticas de Sudamérica."
+      ],
+      "alt": "Estatuas de piedra que custodian una tumba en la Mesita A del Parque Arqueológico de San Agustín"
+    },
+    "en": {
+      "name": "San Agustín Archaeological Park",
+      "summary": "Hundreds of stone statues and monumental tombs carved more than a thousand years ago in southern Huila.",
+      "body": [
+        "In the mountains of southern Huila, near the source of the Magdalena River, an Indigenous culture carved hundreds of stone statues and built monumental tombs more than a thousand years ago. They depict deities, animals and warriors that guarded the dead.",
+        "The park has been a World Heritage Site since 1995 and holds the largest group of religious monuments and megalithic sculptures in South America."
+      ],
+      "alt": "Stone statues guarding a tomb at Mesita A in San Agustín Archaeological Park"
+    }
+  },
+  {
+    "slug": "cueva-de-los-guacharos",
+    "region": "andina",
+    "department": "Huila",
+    "municipality": "Acevedo",
+    "coords": [1.62, -76.1],
+    "kind": "naturaleza",
+    "photo": "File:Oilbirds.jpg",
+    "es": {
+      "name": "Cueva de los Guácharos",
+      "summary": "El primer parque nacional de Colombia, con cuevas donde anidan los guácharos, aves que vuelan de noche.",
+      "body": [
+        "El Parque Nacional Natural Cueva de los Guácharos, entre Huila y Caquetá, fue el primero que creó Colombia, en 1960. Protege bosques de niebla, robledales y un sistema de cavernas atravesado por el río Suaza.",
+        "En las cuevas viven los guácharos, aves que pasan el día en la oscuridad y salen de noche a buscar frutos, orientándose con chasquidos que funcionan como un sonar."
+      ],
+      "alt": "Guácharos posados en la roca de una cueva"
+    },
+    "en": {
+      "name": "Cueva de los Guácharos",
+      "summary": "Colombia's first national park, with caves where oilbirds, birds that fly at night, build their nests.",
+      "body": [
+        "Cueva de los Guácharos National Park, between Huila and Caquetá, was the first one Colombia created, in 1960. It protects cloud forests, oak woods and a cave system crossed by the Suaza River.",
+        "The caves are home to oilbirds, which spend the day in the dark and come out at night to look for fruit, finding their way with clicks that work like sonar."
+      ],
+      "alt": "Oilbirds perched on the rock of a cave"
+    }
+  },
+  {
+    "slug": "valle-de-cocora",
+    "region": "andina",
+    "department": "Quindío",
+    "municipality": "Salento",
+    "coords": [4.6379, -75.4878],
+    "kind": "naturaleza",
+    "photo": "File:Valle Cocora, Kolumbien (13158608725).jpg",
+    "es": {
+      "name": "Valle de Cocora",
+      "summary": "Un valle de montaña con palmas de cera de más de 50 metros, el árbol nacional de Colombia.",
+      "body": [
+        "El valle de Cocora, en Salento (Quindío), es la puerta del Parque Nacional Natural Los Nevados y el lugar más famoso para ver la palma de cera, el árbol nacional de Colombia, que puede superar los 50 metros de altura.",
+        "Un sendero circular cruza potreros, bosque de niebla y puentes colgantes sobre el río Quindío. El valle forma parte del Paisaje Cultural Cafetero, Patrimonio de la Humanidad."
+      ],
+      "alt": "Palmas de cera altas y delgadas en una ladera verde del valle de Cocora"
+    },
+    "en": {
+      "name": "Cocora Valley",
+      "summary": "A mountain valley with wax palms more than 50 meters tall, Colombia's national tree.",
+      "body": [
+        "The Cocora Valley, in Salento (Quindío), is the gateway to Los Nevados National Park and the best-known place to see the wax palm, Colombia's national tree, which can grow taller than 50 meters.",
+        "A loop trail crosses pastures, cloud forest and hanging bridges over the Quindío River. The valley is part of the Coffee Cultural Landscape, a World Heritage Site."
+      ],
+      "alt": "Tall, slender wax palms on a green hillside in the Cocora Valley"
+    }
+  },
+  {
+    "slug": "ciudad-amurallada-de-cartagena",
+    "region": "caribe",
+    "department": "Bolívar",
+    "municipality": "Cartagena",
+    "coords": [10.4236, -75.5512],
+    "kind": "historia",
+    "photo": "File:Sunset-cartagena-tower-dewired.jpg",
+    "es": {
+      "name": "Ciudad amurallada de Cartagena",
+      "summary": "El centro histórico más famoso del país, con murallas coloniales, balcones con flores y plazas frente al mar.",
+      "body": [
+        "Cartagena de Indias fue uno de los puertos más importantes del imperio español en América. Para protegerla de piratas y ataques se construyeron, entre los siglos XVI y XVIII, unos 11 kilómetros de murallas y fortalezas como el castillo de San Felipe de Barajas.",
+        "Dentro de las murallas hay iglesias, plazas y casas de balcones floridos. El puerto, las fortalezas y el conjunto monumental son Patrimonio de la Humanidad desde 1984."
+      ],
+      "alt": "Garita de la muralla de Cartagena frente al mar al atardecer"
+    },
+    "en": {
+      "name": "Walled City of Cartagena",
+      "summary": "The country's most famous historic center, with colonial walls, flower-filled balconies and squares by the sea.",
+      "body": [
+        "Cartagena de Indias was one of the most important ports of the Spanish empire in the Americas. To protect it from pirates and attacks, about 11 kilometers of walls and fortresses such as San Felipe de Barajas Castle were built between the 16th and 18th centuries.",
+        "Inside the walls are churches, squares and houses with flowering balconies. The port, fortresses and monuments have been a World Heritage Site since 1984."
+      ],
+      "alt": "Watchtower on Cartagena's city wall facing the sea at sunset"
+    }
+  },
+  {
+    "slug": "parque-tayrona",
+    "region": "caribe",
+    "department": "Magdalena",
+    "municipality": "Santa Marta",
+    "coords": [11.3285, -73.9264],
+    "kind": "naturaleza",
+    "photo": "File:119 Tayrona Colombia Cabo San Juan Beach.JPG",
+    "es": {
+      "name": "Parque Nacional Natural Tayrona",
+      "summary": "Playas entre rocas gigantes y selva, al pie de la Sierra Nevada, en territorio sagrado de los pueblos indígenas.",
+      "body": [
+        "El Tayrona protege la costa donde la Sierra Nevada de Santa Marta se encuentra con el mar Caribe: bahías de arena dorada, rocas enormes, selva y vestigios de la cultura tairona.",
+        "Se recorre a pie desde la entrada de El Zaino hasta Arrecifes y el Cabo San Juan. Es territorio sagrado de los pueblos kogui, arhuaco, wiwa y kankuamo, y cierra algunas semanas al año para que la naturaleza descanse."
+      ],
+      "alt": "Playa del Cabo San Juan, en el Tayrona, con una lancha y rocas junto al mar"
+    },
+    "en": {
+      "name": "Tayrona National Park",
+      "summary": "Beaches among giant boulders and rainforest at the foot of the Sierra Nevada, on land sacred to Indigenous peoples.",
+      "body": [
+        "Tayrona protects the coast where the Sierra Nevada de Santa Marta meets the Caribbean Sea: golden-sand bays, huge boulders, rainforest and remains of the Tairona culture.",
+        "It is explored on foot from the El Zaino entrance to Arrecifes and Cabo San Juan. It is sacred land for the Kogui, Arhuaco, Wiwa and Kankuamo peoples, and it closes for a few weeks each year to let nature rest."
+      ],
+      "alt": "Cabo San Juan beach in Tayrona, with a boat and boulders by the sea"
+    }
+  },
+  {
+    "slug": "ciudad-perdida",
+    "region": "caribe",
+    "department": "Magdalena",
+    "municipality": "Santa Marta",
+    "coords": [11.0381, -73.9253],
+    "kind": "arqueologia",
+    "photo": "File:Lost City Ruins.jpg",
+    "es": {
+      "name": "Ciudad Perdida (Teyuna)",
+      "summary": "Una ciudad indígena en lo alto de la Sierra Nevada, más antigua que Machu Picchu, a la que solo se llega caminando.",
+      "body": [
+        "Teyuna, conocida como Ciudad Perdida, fue construida por los tairona hacia el año 800, unos seis siglos antes que Machu Picchu. Tiene cerca de 170 terrazas de piedra unidas por caminos y escaleras en medio de la selva de la Sierra Nevada.",
+        "Se llega en una caminata de varios días con guías autorizados. Para los pueblos kogui, arhuaco, wiwa y kankuamo es un lugar sagrado."
+      ],
+      "alt": "Terrazas circulares de piedra de Ciudad Perdida entre la selva"
+    },
+    "en": {
+      "name": "Lost City (Teyuna)",
+      "summary": "An Indigenous city high in the Sierra Nevada, older than Machu Picchu, that can only be reached on foot.",
+      "body": [
+        "Teyuna, known as the Lost City, was built by the Tairona around the year 800, some six centuries before Machu Picchu. It has about 170 stone terraces linked by paths and stairways deep in the Sierra Nevada rainforest.",
+        "It is reached on a multi-day trek with licensed guides. For the Kogui, Arhuaco, Wiwa and Kankuamo peoples it is a sacred place."
+      ],
+      "alt": "Circular stone terraces of the Lost City surrounded by rainforest"
+    }
+  },
+  {
+    "slug": "santa-cruz-de-mompox",
+    "region": "caribe",
+    "department": "Bolívar",
+    "municipality": "Mompox",
+    "coords": [9.2416, -74.4268],
+    "kind": "historia",
+    "photo": "File:Mompox Albarrada del alba.jpg",
+    "es": {
+      "name": "Santa Cruz de Mompox",
+      "summary": "Un pueblo colonial a orillas del río Magdalena, famoso por su filigrana de oro y plata y su Semana Santa.",
+      "body": [
+        "Mompox fue un puerto fluvial próspero en la época colonial, cuando el río Magdalena era el principal camino entre la costa y el interior. Cuando el río cambió de cauce, el pueblo quedó casi intacto, y su centro histórico es Patrimonio de la Humanidad desde 1995.",
+        "Sus calles de casas blancas, la albarrada junto al río y la filigrana de oro y plata hecha a mano lo hacen único. Su Semana Santa es una de las más tradicionales del país."
+      ],
+      "alt": "La albarrada de Mompox junto al río, con casas coloniales y árboles"
+    },
+    "en": {
+      "name": "Santa Cruz de Mompox",
+      "summary": "A colonial town on the Magdalena River, famous for its gold and silver filigree and its Holy Week.",
+      "body": [
+        "Mompox was a prosperous river port in colonial times, when the Magdalena was the main route between the coast and the interior. When the river changed course the town was left almost untouched, and its historic center has been a World Heritage Site since 1995.",
+        "Its streets of white houses, the riverside promenade and the handmade gold and silver filigree make it unique. Its Holy Week is one of the most traditional in the country."
+      ],
+      "alt": "Mompox riverside promenade with colonial houses and trees"
+    }
+  },
+  {
+    "slug": "cabo-de-la-vela",
+    "region": "caribe",
+    "department": "La Guajira",
+    "municipality": "Uribia",
+    "coords": [12.2083, -72.1528],
+    "kind": "playa",
+    "photo": "File:CABO DE LA VELA.JPG",
+    "es": {
+      "name": "Cabo de la Vela",
+      "summary": "Un pueblo wayuu donde el desierto de La Guajira se encuentra con el mar, con atardeceres en el Pilón de Azúcar.",
+      "body": [
+        "El Cabo de la Vela, en Uribia, es un corregimiento del pueblo wayuu en la península de La Guajira. Allí el desierto llega hasta playas de aguas tranquilas, buenas para el kitesurf.",
+        "Para los wayuu es un lugar sagrado llamado Jepirra, a donde van las almas de los muertos. El Pilón de Azúcar y el faro son los miradores favoritos para ver el atardecer."
+      ],
+      "alt": "Playa de arena dorada del Cabo de la Vela con un cerro al fondo"
+    },
+    "en": {
+      "name": "Cabo de la Vela",
+      "summary": "A Wayuu village where the La Guajira desert meets the sea, with sunsets at Pilón de Azúcar.",
+      "body": [
+        "Cabo de la Vela, in Uribia, is a Wayuu settlement on the La Guajira peninsula. Here the desert runs down to calm-water beaches that are good for kitesurfing.",
+        "For the Wayuu it is a sacred place called Jepirra, where the souls of the dead go. Pilón de Azúcar hill and the lighthouse are the favorite spots to watch the sunset."
+      ],
+      "alt": "Golden-sand beach at Cabo de la Vela with a hill in the background"
+    }
+  },
+  {
+    "slug": "san-basilio-de-palenque",
+    "region": "caribe",
+    "department": "Bolívar",
+    "municipality": "Mahates",
+    "coords": [10.1017, -75.1975],
+    "kind": "cultura",
+    "photo": "File:San basilio de palenque - panoramio (1).jpg",
+    "es": {
+      "name": "San Basilio de Palenque",
+      "summary": "Considerado el primer pueblo libre de América, fundado por africanos que escaparon de la esclavitud.",
+      "body": [
+        "San Basilio de Palenque, a unos 50 kilómetros de Cartagena, fue fundado a comienzos del siglo XVII por africanos que escaparon de la esclavitud, guiados por Benkos Biohó. Se le considera el primer pueblo libre de América.",
+        "Su gente conserva la lengua palenquera, una lengua criolla de base española única en el continente, y tradiciones musicales y funerarias. Su espacio cultural es Patrimonio Cultural Inmaterial de la Humanidad desde 2005."
+      ],
+      "alt": "Estatua de Benkos Biohó rompiendo sus cadenas, en San Basilio de Palenque"
+    },
+    "en": {
+      "name": "San Basilio de Palenque",
+      "summary": "Considered the first free town in the Americas, founded by Africans who escaped slavery.",
+      "body": [
+        "San Basilio de Palenque, about 50 kilometers from Cartagena, was founded in the early 17th century by Africans who escaped slavery, led by Benkos Biohó. It is considered the first free town in the Americas.",
+        "Its people keep alive the Palenquero language, a Spanish-based creole unique on the continent, along with musical and funeral traditions. Its cultural space has been Intangible Cultural Heritage of Humanity since 2005."
+      ],
+      "alt": "Statue of Benkos Biohó breaking his chains, in San Basilio de Palenque"
+    }
+  },
+  {
+    "slug": "parque-utria",
+    "region": "pacifica",
+    "department": "Chocó",
+    "municipality": "Bahía Solano",
+    "coords": [6.0167, -77.35],
+    "kind": "naturaleza",
+    "photo": "File:Ensenada de Utría.jpg",
+    "es": {
+      "name": "Parque Nacional Natural Utría",
+      "summary": "Una ensenada de aguas tranquilas rodeada de selva y manglares, a donde las ballenas entran con sus crías.",
+      "body": [
+        "El parque protege la ensenada de Utría, entre Bahía Solano y Nuquí, en el Chocó: un brazo de mar estrecho rodeado de selva húmeda, manglares y playas de arena oscura.",
+        "Entre julio y octubre las ballenas jorobadas entran a la ensenada con sus crías. Las comunidades emberá y afrodescendientes de la zona guían recorridos por senderos y manglares."
+      ],
+      "alt": "La ensenada de Utría con agua tranquila y una colina cubierta de selva"
+    },
+    "en": {
+      "name": "Utría National Park",
+      "summary": "A calm-water inlet surrounded by rainforest and mangroves, where whales come in with their calves.",
+      "body": [
+        "The park protects the Utría inlet, between Bahía Solano and Nuquí in Chocó: a narrow arm of the sea surrounded by rainforest, mangroves and dark-sand beaches.",
+        "Between July and October humpback whales enter the inlet with their calves. The local Emberá and Afro-Colombian communities guide walks along trails and through the mangroves."
+      ],
+      "alt": "The Utría inlet with calm water and a rainforest-covered hill"
+    }
+  },
+  {
+    "slug": "nuqui",
+    "region": "pacifica",
+    "department": "Chocó",
+    "municipality": "Nuquí",
+    "coords": [5.7101, -77.2711],
+    "kind": "playa",
+    "photo": "File:SUNSET BEACH NUQUI CHOCO COLOMBIA 1.jpg",
+    "es": {
+      "name": "Nuquí",
+      "summary": "Playas solitarias entre la selva y el océano Pacífico, aguas termales, cascadas y atardeceres intensos.",
+      "body": [
+        "Nuquí es un municipio del Chocó al que solo se llega en avioneta o en barco. Sus playas de arena oscura, como Guachalito y Termales, están bordeadas por la selva y por ríos que bajan de la serranía del Baudó.",
+        "Se puede caminar entre cascadas, bañarse en aguas termales y, entre julio y octubre, ver ballenas desde la playa. El turismo es comunitario y de baja escala."
+      ],
+      "alt": "Atardecer rosado en una playa de Nuquí con siluetas de palmas"
+    },
+    "en": {
+      "name": "Nuquí",
+      "summary": "Empty beaches between the rainforest and the Pacific Ocean, hot springs, waterfalls and vivid sunsets.",
+      "body": [
+        "Nuquí is a municipality in Chocó that can only be reached by small plane or by boat. Its dark-sand beaches, such as Guachalito and Termales, are lined by rainforest and by rivers flowing down from the Baudó hills.",
+        "You can walk among waterfalls, bathe in hot springs and, between July and October, watch whales from the beach. Tourism here is small-scale and community-run."
+      ],
+      "alt": "Pink sunset on a Nuquí beach with palm silhouettes"
+    }
+  },
+  {
+    "slug": "bahia-malaga",
+    "region": "pacifica",
+    "department": "Valle del Cauca",
+    "municipality": "Buenaventura",
+    "coords": [3.98, -77.33],
+    "kind": "naturaleza",
+    "photo": "File:Ballena jorobada y ballenato en Bahía Málaga.JPG",
+    "es": {
+      "name": "Bahía Málaga",
+      "summary": "Un parque nacional en el Pacífico vallecaucano, con cascadas que caen al mar y ballenas jorobadas.",
+      "body": [
+        "Bahía Málaga, en Buenaventura, es una bahía de esteros, islas y acantilados cubiertos de selva. Desde 2010 es parque nacional natural, y en ella caen al mar cascadas como La Sierpe.",
+        "Es una de las zonas de cría más importantes de las ballenas jorobadas en el Pacífico. Los poblados de Juanchaco, Ladrilleros y La Barra reciben a los viajeros."
+      ],
+      "alt": "Ballena jorobada y su ballenato nadando en Bahía Málaga"
+    },
+    "en": {
+      "name": "Bahía Málaga",
+      "summary": "A national park on the Pacific coast of Valle del Cauca, with waterfalls that drop into the sea and humpback whales.",
+      "body": [
+        "Bahía Málaga, in Buenaventura, is a bay of estuaries, islands and rainforest-covered cliffs. It has been a national park since 2010, and waterfalls such as La Sierpe pour straight into the sea.",
+        "It is one of the most important humpback whale breeding grounds on the Pacific coast. The villages of Juanchaco, Ladrilleros and La Barra welcome travelers."
+      ],
+      "alt": "Humpback whale and her calf swimming in Bahía Málaga"
+    }
+  },
+  {
+    "slug": "san-cipriano",
+    "region": "pacifica",
+    "department": "Valle del Cauca",
+    "municipality": "Buenaventura",
+    "coords": [3.8333, -76.9],
+    "kind": "naturaleza",
+    "photo": "File:San Cipriano pozo cristalino.jpg",
+    "es": {
+      "name": "Reserva Natural San Cipriano",
+      "summary": "Un río de aguas cristalinas en la selva, al que se llega en las brujitas, motos que andan sobre la carrilera.",
+      "body": [
+        "San Cipriano es una reserva de selva húmeda en Buenaventura, Valle del Cauca. Su río de aguas transparentes forma pozos y charcos ideales para nadar o bajar en neumático.",
+        "Se llega desde el caserío de Córdoba en las famosas brujitas, plataformas de madera impulsadas por motos que ruedan sobre la antigua vía del ferrocarril del Pacífico. La comunidad afrodescendiente administra el acceso y los servicios."
+      ],
+      "alt": "Pozo de agua cristalina rodeado de selva en San Cipriano"
+    },
+    "en": {
+      "name": "San Cipriano Nature Reserve",
+      "summary": "A crystal-clear river in the rainforest, reached on brujitas, motorbikes that ride on the old railway track.",
+      "body": [
+        "San Cipriano is a rainforest reserve in Buenaventura, Valle del Cauca. Its transparent river forms pools that are perfect for swimming or floating downstream on an inner tube.",
+        "It is reached from the hamlet of Córdoba on the famous brujitas, wooden platforms pushed by motorbikes along the old Pacific railway line. The Afro-Colombian community runs access and services."
+      ],
+      "alt": "Crystal-clear pool surrounded by rainforest in San Cipriano"
+    }
+  },
+  {
+    "slug": "cano-cristales",
+    "region": "orinoquia",
+    "department": "Meta",
+    "municipality": "La Macarena",
+    "coords": [2.265, -73.79],
+    "kind": "naturaleza",
+    "photo": "File:CAÑO CRISTALES RÍO EN LA MACARENA META.jpg",
+    "es": {
+      "name": "Caño Cristales",
+      "summary": "El río de los cinco colores: una planta acuática lo tiñe de rojo entre junio y noviembre.",
+      "body": [
+        "Caño Cristales nace en la serranía de La Macarena, en el Meta. Entre junio y noviembre una planta acuática endémica, la Macarenia clavigera, se vuelve roja y, con el amarillo, el verde, el azul y el negro de las rocas, forma el llamado río de los cinco colores.",
+        "Se visita solo con guías y en grupos pequeños desde La Macarena, y fuera de temporada se cierra para que el ecosistema se recupere."
+      ],
+      "alt": "Plantas rojas bajo el agua clara de Caño Cristales, entre rocas y selva"
+    },
+    "en": {
+      "name": "Caño Cristales",
+      "summary": "The river of five colors: an aquatic plant turns it red between June and November.",
+      "body": [
+        "Caño Cristales rises in the La Macarena mountains, in Meta. Between June and November an endemic aquatic plant, Macarenia clavigera, turns red and, together with the yellow, green, blue and black of the rocks, creates the so-called river of five colors.",
+        "It can only be visited with guides and in small groups from La Macarena, and it closes off-season so the ecosystem can recover."
+      ],
+      "alt": "Red plants under the clear water of Caño Cristales, between rocks and jungle"
+    }
+  },
+  {
+    "slug": "parque-el-tuparro",
+    "region": "orinoquia",
+    "department": "Vichada",
+    "municipality": "Cumaribo",
+    "coords": [5.25, -67.85],
+    "kind": "naturaleza",
+    "photo": "File:La octava Maravilla del Mundo segun Alexander Von Humboldt.jpg",
+    "es": {
+      "name": "Parque Nacional Natural El Tuparro",
+      "summary": "Sabanas, ríos y rocas gigantes junto al Orinoco, con el raudal de Maipures que Humboldt llamó la octava maravilla.",
+      "body": [
+        "El Tuparro, en el Vichada, protege sabanas, bosques de galería y ríos de la cuenca del Orinoco, en la frontera con Venezuela. Es reserva de biosfera de la UNESCO.",
+        "Su lugar más famoso es el raudal de Maipures, unos rápidos del Orinoco que Alexander von Humboldt describió como la octava maravilla del mundo. En el parque viven delfines rosados y nutrias gigantes."
+      ],
+      "alt": "Rápidos del raudal de Maipures entre rocas y selva, en El Tuparro"
+    },
+    "en": {
+      "name": "El Tuparro National Park",
+      "summary": "Savannas, rivers and giant boulders by the Orinoco, with the Maipures rapids that Humboldt called the eighth wonder.",
+      "body": [
+        "El Tuparro, in Vichada, protects savannas, gallery forests and rivers of the Orinoco basin on the border with Venezuela. It is a UNESCO biosphere reserve.",
+        "Its most famous spot is the Maipures rapids on the Orinoco, which Alexander von Humboldt described as the eighth wonder of the world. Pink river dolphins and giant otters live in the park."
+      ],
+      "alt": "Maipures rapids among rocks and forest in El Tuparro"
+    }
+  },
+  {
+    "slug": "villavicencio",
+    "region": "orinoquia",
+    "department": "Meta",
+    "municipality": "Villavicencio",
+    "coords": [4.142, -73.6266],
+    "kind": "ciudad",
+    "photo": "File:Centro de Villavicencio Meta.JPG",
+    "es": {
+      "name": "Villavicencio",
+      "summary": "La puerta del Llano, al pie de la cordillera: ciudad de joropo, coleo, carne a la llanera y ríos cercanos.",
+      "body": [
+        "Villavicencio, capital del Meta, está donde la cordillera Oriental se encuentra con la llanura, a unas tres horas de Bogotá por carretera. Por eso la llaman la puerta del Llano.",
+        "Es un centro de la cultura llanera: en sus parques y ferias suenan el arpa y el joropo, y en octubre recibe el Encuentro Mundial de Coleo. Cerca hay ríos, balnearios y parques temáticos."
+      ],
+      "alt": "Edificios del centro de Villavicencio con la cordillera al fondo"
+    },
+    "en": {
+      "name": "Villavicencio",
+      "summary": "The gateway to the Plains, at the foot of the mountains: a city of joropo, coleo, plains-style beef and nearby rivers.",
+      "body": [
+        "Villavicencio, the capital of Meta, sits where the Eastern Cordillera meets the plains, about three hours from Bogotá by road. That is why it is called the gateway to the Llano.",
+        "It is a hub of plains culture: harp and joropo music fill its parks and fairs, and every October it hosts the World Coleo Gathering. There are rivers, swimming spots and theme parks nearby."
+      ],
+      "alt": "Buildings in downtown Villavicencio with the mountains in the background"
+    }
+  },
+  {
+    "slug": "leticia",
+    "region": "amazonia",
+    "department": "Amazonas",
+    "municipality": "Leticia",
+    "coords": [-4.2153, -69.9406],
+    "kind": "ciudad",
+    "photo": "File:Amazonas, Iquitos - Leticia, Kolumbien (11472727105).jpg",
+    "es": {
+      "name": "Leticia",
+      "summary": "La capital del Amazonas, en la triple frontera con Brasil y Perú, puerta de entrada a la selva.",
+      "body": [
+        "Leticia es la capital del departamento de Amazonas y la ciudad más al sur de Colombia. Está a orillas del río Amazonas, en la triple frontera con Tabatinga (Brasil) y la isla de Santa Rosa (Perú).",
+        "Desde aquí salen las lanchas hacia Puerto Nariño, los lagos de Tarapoto y las comunidades indígenas. Al atardecer, miles de loros llegan a dormir a los árboles del parque Santander."
+      ],
+      "alt": "Canoa en el río Amazonas, cerca de Leticia"
+    },
+    "en": {
+      "name": "Leticia",
+      "summary": "The capital of Amazonas, on the triple border with Brazil and Peru, the gateway to the rainforest.",
+      "body": [
+        "Leticia is the capital of the Amazonas department and Colombia's southernmost city. It lies on the Amazon River, at the triple border with Tabatinga (Brazil) and Santa Rosa Island (Peru).",
+        "Boats leave from here for Puerto Nariño, the Tarapoto lakes and Indigenous communities. At dusk, thousands of parrots fly in to roost in the trees of Santander Park."
+      ],
+      "alt": "Canoe on the Amazon River near Leticia"
+    }
+  },
+  {
+    "slug": "puerto-narino",
+    "region": "amazonia",
+    "department": "Amazonas",
+    "municipality": "Puerto Nariño",
+    "coords": [-3.7703, -70.3831],
+    "kind": "cultura",
+    "photo": "File:Puerto narino.jpg",
+    "es": {
+      "name": "Puerto Nariño",
+      "summary": "Un pueblo sin carros a orillas del Amazonas, con casas de colores, comunidades tikuna y delfines rosados.",
+      "body": [
+        "Puerto Nariño, a unas dos horas en lancha desde Leticia, es un pueblo de calles peatonales donde no circulan carros. Lo habitan sobre todo familias tikuna, cocama y yagua, y se le conoce como el pesebre natural de Colombia.",
+        "Desde su muelle salen recorridos a los lagos de Tarapoto para ver delfines rosados y grises, y a comunidades indígenas cercanas."
+      ],
+      "alt": "Vista aérea de Puerto Nariño, con sus casas entre la selva y los lagos"
+    },
+    "en": {
+      "name": "Puerto Nariño",
+      "summary": "A car-free town on the Amazon, with colorful houses, Tikuna communities and pink river dolphins.",
+      "body": [
+        "Puerto Nariño, about two hours by boat from Leticia, is a town of pedestrian streets where no cars drive. Most of its people are Tikuna, Cocama and Yagua, and it is known as Colombia's natural nativity scene.",
+        "Trips leave from its dock to the Tarapoto lakes to see pink and gray dolphins, and to nearby Indigenous communities."
+      ],
+      "alt": "Aerial view of Puerto Nariño, with its houses between the rainforest and the lakes"
+    }
+  },
+  {
+    "slug": "lagos-de-tarapoto",
+    "region": "amazonia",
+    "department": "Amazonas",
+    "municipality": "Puerto Nariño",
+    "coords": [-3.8, -70.45],
+    "kind": "naturaleza",
+    "photo": "File:Went for a paddle at Lake Tarapoto in Puerto Nariño.jpg",
+    "es": {
+      "name": "Lagos de Tarapoto",
+      "summary": "Un sistema de lagos en la selva amazónica donde viven delfines rosados, victorias regias y cientos de aves.",
+      "body": [
+        "Los lagos de Tarapoto están cerca de Puerto Nariño, conectados con el río Loretoyacu y el Amazonas. Desde 2018 son un humedal de importancia internacional (sitio Ramsar).",
+        "En ellos se ven delfines rosados y grises, victorias regias, los nenúfares gigantes del Amazonas, y aves como garzas y martines pescadores. Las comunidades indígenas cuidan los lagos con acuerdos de pesca."
+      ],
+      "alt": "Persona remando en una canoa en el lago Tarapoto"
+    },
+    "en": {
+      "name": "Tarapoto Lakes",
+      "summary": "A system of lakes in the Amazon rainforest, home to pink dolphins, giant water lilies and hundreds of birds.",
+      "body": [
+        "The Tarapoto lakes lie near Puerto Nariño, connected to the Loretoyacu and Amazon rivers. Since 2018 they have been a wetland of international importance (Ramsar site).",
+        "Here you can see pink and gray dolphins, Victoria water lilies, the giant lily pads of the Amazon, and birds such as herons and kingfishers. Indigenous communities protect the lakes through fishing agreements."
+      ],
+      "alt": "Person paddling a canoe on Lake Tarapoto"
+    }
+  },
+  {
+    "slug": "fin-del-mundo",
+    "region": "amazonia",
+    "department": "Putumayo",
+    "municipality": "Mocoa",
+    "coords": [1.1731, -76.6447],
+    "kind": "naturaleza",
+    "photo": "File:Fin del Mundo, Mocoa, Putumayo - panoramio.jpg",
+    "es": {
+      "name": "Cascada Fin del Mundo",
+      "summary": "Una caminata por la selva de Mocoa que termina en una cascada de unos 70 metros.",
+      "body": [
+        "Cerca de Mocoa, capital del Putumayo, un sendero de unas dos horas sube por la selva, entre pozos y cascadas pequeñas, hasta el Fin del Mundo: una caída de agua de unos 70 metros desde el borde de una roca.",
+        "En el camino hay pozos para nadar. Es la puerta de entrada a la Amazonía andina, donde la montaña se encuentra con la selva."
+      ],
+      "alt": "Cascada que cae sobre un pozo entre rocas y selva, en el camino al Fin del Mundo"
+    },
+    "en": {
+      "name": "Fin del Mundo Waterfall",
+      "summary": "A rainforest hike near Mocoa that ends at a waterfall of about 70 meters.",
+      "body": [
+        "Near Mocoa, the capital of Putumayo, a trail of about two hours climbs through the rainforest, past pools and small waterfalls, to the Fin del Mundo (End of the World): a drop of about 70 meters from the edge of a rock.",
+        "There are swimming pools along the way. It is the gateway to the Andean Amazon, where the mountains meet the rainforest."
+      ],
+      "alt": "Waterfall pouring into a pool among rocks and rainforest on the way to Fin del Mundo"
+    }
+  },
+  {
+    "slug": "isla-de-san-andres",
+    "region": "insular",
+    "department": "San Andrés, Providencia y Santa Catalina",
+    "municipality": "San Andrés",
+    "coords": [12.5847, -81.7006],
+    "kind": "playa",
+    "photo": "File:Playa SAI.JPG",
+    "es": {
+      "name": "Isla de San Andrés",
+      "summary": "El mar de los siete colores, playas de arena blanca y la cultura raizal, en pleno Caribe.",
+      "body": [
+        "San Andrés es la isla más grande del archipiélago, a unos 700 kilómetros de la costa colombiana y más cerca de Nicaragua. Su mar de muchos tonos de azul se debe a la poca profundidad y a los arrecifes que la rodean.",
+        "Se recorre en una vuelta por la carretera circunvalar, con paradas en el Hoyo Soplador, la cueva de Morgan y playas como Spratt Bight y San Luis. Desde la isla salen lanchas a Johnny Cay y El Acuario."
+      ],
+      "alt": "Playa de arena blanca con barandas rojas y mar turquesa en San Andrés"
+    },
+    "en": {
+      "name": "San Andrés Island",
+      "summary": "The sea of seven colors, white-sand beaches and Raizal culture, in the middle of the Caribbean.",
+      "body": [
+        "San Andrés is the largest island in the archipelago, about 700 kilometers from the Colombian coast and closer to Nicaragua. Its many shades of blue come from the shallow water and the reefs around it.",
+        "It is explored on a loop along the ring road, stopping at the Hoyo Soplador blowhole, Morgan's Cave and beaches such as Spratt Bight and San Luis. Boats leave the island for Johnny Cay and El Acuario."
+      ],
+      "alt": "White-sand beach with red railings and turquoise sea in San Andrés"
+    }
+  },
+  {
+    "slug": "isla-de-providencia",
+    "region": "insular",
+    "department": "San Andrés, Providencia y Santa Catalina",
+    "municipality": "Providencia",
+    "coords": [13.3489, -81.3742],
+    "kind": "playa",
+    "photo": "File:Bahía Providencia.JPG",
+    "es": {
+      "name": "Isla de Providencia",
+      "summary": "Una isla montañosa y tranquila, rodeada por uno de los arrecifes de coral más grandes del Caribe.",
+      "body": [
+        "Providencia está a unos 90 kilómetros de San Andrés. Es más pequeña, montañosa y tranquila, y un puente peatonal la une con la isla de Santa Catalina.",
+        "La rodea uno de los arrecifes de barrera más grandes del Caribe, dentro de la Reserva de Biosfera Seaflower. Allí está el Parque Nacional Natural Old Providence McBean Lagoon, con manglares y el cayo Cangrejo."
+      ],
+      "alt": "Bahía de Providencia con agua turquesa y colinas verdes"
+    },
+    "en": {
+      "name": "Providencia Island",
+      "summary": "A quiet, mountainous island surrounded by one of the largest coral reefs in the Caribbean.",
+      "body": [
+        "Providencia lies about 90 kilometers from San Andrés. It is smaller, hillier and quieter, and a footbridge links it to the island of Santa Catalina.",
+        "It is surrounded by one of the largest barrier reefs in the Caribbean, within the Seaflower Biosphere Reserve. It is home to Old Providence McBean Lagoon National Park, with mangroves and Crab Cay."
+      ],
+      "alt": "Providencia bay with turquoise water and green hills"
+    }
+  },
+  {
+    "slug": "isla-gorgona",
+    "region": "insular",
+    "department": "Cauca",
+    "municipality": "Guapi",
+    "coords": [2.9667, -78.1833],
+    "kind": "naturaleza",
+    "photo": "File:Vistazo a la Isla Gorgonilla.jpg",
+    "es": {
+      "name": "Isla Gorgona",
+      "summary": "Una isla de selva en el Pacífico que fue cárcel y hoy es parque nacional, con ballenas, tortugas y arrecifes.",
+      "body": [
+        "Gorgona está a unos 35 kilómetros de la costa del Cauca. Entre 1960 y 1984 funcionó allí una cárcel; hoy es un parque nacional natural cubierto de selva húmeda, con especies que solo viven en la isla, como la lagartija azul de Gorgona.",
+        "Sus aguas tienen arrecifes de coral, tortugas marinas y, entre julio y octubre, ballenas jorobadas. Se visita con cupos limitados y reglas estrictas para cuidar la isla."
+      ],
+      "alt": "La isla Gorgonilla vista desde la costa rocosa de Gorgona"
+    },
+    "en": {
+      "name": "Gorgona Island",
+      "summary": "A rainforest island in the Pacific that was once a prison and is now a national park, with whales, turtles and reefs.",
+      "body": [
+        "Gorgona lies about 35 kilometers off the coast of Cauca. A prison operated there from 1960 to 1984; today it is a national park covered in rainforest, with species found only on the island, such as the blue anole of Gorgona.",
+        "Its waters have coral reefs, sea turtles and, between July and October, humpback whales. Visits are limited and follow strict rules to protect the island."
+      ],
+      "alt": "Gorgonilla Island seen from Gorgona's rocky shore"
+    }
+  }
+]

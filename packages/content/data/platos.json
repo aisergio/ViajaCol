@@ -1,0 +1,644 @@
+[
+  {
+    "slug": "bandeja-paisa",
+    "region": "andina",
+    "kind": "plato-fuerte",
+    "photo": "File:Bandeja paisa 30062011.jpg",
+    "es": {
+      "name": "Bandeja paisa",
+      "summary": "El plato más abundante de Antioquia: fríjoles, arroz, chicharrón, chorizo, huevo, plátano, arepa y aguacate.",
+      "body": [
+        "La bandeja paisa nació en las montañas de Antioquia y el Eje Cafetero como comida de arrieros y campesinos, que necesitaban energía para jornadas largas. Hoy se considera uno de los platos más representativos de Colombia.",
+        "Se sirve en una bandeja grande con fríjoles rojos, arroz blanco, carne molida, chicharrón, chorizo, huevo frito, tajadas de plátano maduro, arepa y aguacate. Se acompaña con mazamorra o una limonada."
+      ],
+      "alt": "Bandeja paisa con fríjoles, arroz, chicharrón, huevo frito, plátano y arepa",
+      "origin": "Antioquia y el Eje Cafetero",
+      "ingredients": [
+        "Fríjoles rojos",
+        "Arroz",
+        "Chicharrón",
+        "Carne molida",
+        "Chorizo",
+        "Huevo frito",
+        "Plátano maduro",
+        "Arepa",
+        "Aguacate"
+      ]
+    },
+    "en": {
+      "name": "Bandeja paisa",
+      "summary": "Antioquia's heartiest dish: beans, rice, pork crackling, chorizo, egg, plantain, arepa and avocado.",
+      "body": [
+        "Bandeja paisa was born in the mountains of Antioquia and the Coffee Region as food for mule drivers and farmers, who needed energy for long days. Today it is considered one of Colombia's most iconic dishes.",
+        "It comes on a large platter with red beans, white rice, ground beef, pork crackling, chorizo, a fried egg, ripe plantain slices, an arepa and avocado. It is served with mazamorra or a limeade."
+      ],
+      "alt": "Bandeja paisa with beans, rice, pork crackling, fried egg, plantain and arepa",
+      "origin": "Antioquia and the Coffee Region",
+      "ingredients": [
+        "Red beans",
+        "Rice",
+        "Pork crackling",
+        "Ground beef",
+        "Chorizo",
+        "Fried egg",
+        "Ripe plantain",
+        "Arepa",
+        "Avocado"
+      ]
+    }
+  },
+  {
+    "slug": "ajiaco-santafereno",
+    "region": "andina",
+    "kind": "sopa",
+    "photo": "File:Ajiaco la puerta falsa.jpg",
+    "es": {
+      "name": "Ajiaco santafereño",
+      "summary": "La sopa bogotana de tres papas, pollo y guascas, servida con mazorca, crema de leche, alcaparras y aguacate.",
+      "body": [
+        "El ajiaco es la sopa típica de Bogotá. Se prepara con tres clases de papa —sabanera, pastusa y criolla—, que espesan el caldo, pollo desmechado, mazorca y guascas, una hierba de la sabana que le da su sabor.",
+        "Se sirve con crema de leche y alcaparras para agregar al gusto, y con arroz y aguacate al lado. Restaurantes tradicionales del centro, como La Puerta Falsa, lo preparan desde hace generaciones."
+      ],
+      "alt": "Ajiaco servido en cazuela de barro, con crema, aguacate y arroz",
+      "origin": "Bogotá",
+      "ingredients": [
+        "Papa sabanera, pastusa y criolla",
+        "Pollo",
+        "Mazorca",
+        "Guascas",
+        "Crema de leche",
+        "Alcaparras",
+        "Aguacate"
+      ]
+    },
+    "en": {
+      "name": "Ajiaco santafereño",
+      "summary": "Bogotá's soup of three potatoes, chicken and guascas herb, served with corn, cream, capers and avocado.",
+      "body": [
+        "Ajiaco is Bogotá's signature soup. It is made with three kinds of potato, which thicken the broth, plus shredded chicken, corn on the cob and guascas, a herb from the high plains that gives it its flavor.",
+        "It comes with cream and capers to add to taste, and with rice and avocado on the side. Traditional downtown restaurants such as La Puerta Falsa have made it for generations."
+      ],
+      "alt": "Ajiaco served in a clay pot, with cream, avocado and rice",
+      "origin": "Bogotá",
+      "ingredients": [
+        "Three kinds of potato",
+        "Chicken",
+        "Corn on the cob",
+        "Guascas",
+        "Cream",
+        "Capers",
+        "Avocado"
+      ]
+    }
+  },
+  {
+    "slug": "changua",
+    "region": "andina",
+    "kind": "desayuno",
+    "photo": "File:Changua (3280423014).jpg",
+    "es": {
+      "name": "Changua",
+      "summary": "El desayuno del altiplano cundiboyacense: caldo de leche con huevo, cebolla larga, cilantro y pan.",
+      "body": [
+        "La changua es un caldo de leche y agua con huevos escalfados, cebolla larga y cilantro, típico de Cundinamarca y Boyacá. Es un desayuno caliente para las mañanas frías del altiplano.",
+        "Se acompaña con pan o calado, que se moja en el caldo, y a veces con chocolate. También tiene fama de remedio casero después de una noche de fiesta."
+      ],
+      "alt": "Plato de changua con huevo, pan y cilantro",
+      "origin": "Cundinamarca y Boyacá",
+      "ingredients": ["Leche", "Agua", "Huevo", "Cebolla larga", "Cilantro", "Pan o calado"]
+    },
+    "en": {
+      "name": "Changua",
+      "summary": "The breakfast of the Andean plateau: a milk broth with egg, scallions, cilantro and bread.",
+      "body": [
+        "Changua is a milk and water broth with poached eggs, scallions and cilantro, typical of Cundinamarca and Boyacá. It is a warm breakfast for the cold mornings of the high plateau.",
+        "It is eaten with bread or calado (toasted bread) dipped in the broth, and sometimes with hot chocolate. It is also known as a home remedy after a night out."
+      ],
+      "alt": "Bowl of changua with egg, bread and cilantro",
+      "origin": "Cundinamarca and Boyacá",
+      "ingredients": ["Milk", "Water", "Egg", "Scallions", "Cilantro", "Bread or calado"]
+    }
+  },
+  {
+    "slug": "lechona-tolimense",
+    "region": "andina",
+    "kind": "plato-fuerte",
+    "photo": "File:Lechona.JPG",
+    "es": {
+      "name": "Lechona tolimense",
+      "summary": "Cerdo entero relleno de su propia carne y arvejas, asado durante horas hasta que la piel queda crocante.",
+      "body": [
+        "La lechona es un cerdo entero relleno con su propia carne, arvejas amarillas, cebolla y especias, que se asa durante muchas horas en horno de leña hasta que la piel queda crocante. La versión tolimense, la más famosa, no lleva arroz; en otras regiones sí.",
+        "Es comida de celebración: fiestas patronales, festivales de junio y reuniones familiares. Se sirve con arepa y con insulso, un dulce de maíz y panela."
+      ],
+      "alt": "Lechona servida en una bandeja con su relleno de carne y arvejas",
+      "origin": "Tolima",
+      "ingredients": ["Cerdo", "Arvejas amarillas", "Cebolla larga", "Especias", "Arepa"]
+    },
+    "en": {
+      "name": "Lechona tolimense",
+      "summary": "A whole pig stuffed with its own meat and peas, roasted for hours until the skin turns crisp.",
+      "body": [
+        "Lechona is a whole pig stuffed with its own meat, yellow peas, scallions and spices, roasted for many hours in a wood oven until the skin is crisp. The Tolima version, the most famous, has no rice; other regions add it.",
+        "It is a celebration dish: patron saint festivals, the June festivals and family gatherings. It is served with arepa and with insulso, a sweet made of corn and panela."
+      ],
+      "alt": "Lechona served on a platter with its filling of meat and peas",
+      "origin": "Tolima",
+      "ingredients": ["Pork", "Yellow peas", "Scallions", "Spices", "Arepa"]
+    }
+  },
+  {
+    "slug": "hormigas-culonas",
+    "region": "andina",
+    "kind": "pasabocas",
+    "photo": "File:Hormiga Culona.jpg",
+    "es": {
+      "name": "Hormigas culonas",
+      "summary": "Reinas de hormiga tostadas con sal, un pasabocas crocante de Santander que se recoge en temporada de lluvias.",
+      "body": [
+        "Las hormigas culonas son las reinas aladas de la hormiga arriera (Atta laevigata), que salen de los hormigueros en la temporada de lluvias, entre marzo y mayo. En Santander, sobre todo en Barichara y San Gil, se recogen, se limpian y se tuestan con sal.",
+        "Su sabor recuerda al maní tostado y tienen mucha proteína. Se venden en bolsas en las carreteras y plazas del departamento, y son un recuerdo típico de viaje."
+      ],
+      "alt": "Reina de hormiga culona con alas sobre una superficie clara",
+      "origin": "Santander",
+      "ingredients": ["Reinas de hormiga culona", "Sal", "Agua (para remojarlas)"]
+    },
+    "en": {
+      "name": "Hormigas culonas",
+      "summary": "Ant queens toasted with salt, a crunchy snack from Santander gathered in the rainy season.",
+      "body": [
+        "Hormigas culonas are the winged queens of the leafcutter ant (Atta laevigata), which leave their nests in the rainy season, between March and May. In Santander, especially in Barichara and San Gil, they are gathered, cleaned and toasted with salt.",
+        "They taste like roasted peanuts and are high in protein. They are sold in bags along the roads and in town squares, and they are a classic travel souvenir."
+      ],
+      "alt": "Winged queen ant on a light surface",
+      "origin": "Santander",
+      "ingredients": ["Queen leafcutter ants", "Salt", "Water (for soaking)"]
+    }
+  },
+  {
+    "slug": "sancocho-trifasico",
+    "region": "andina",
+    "kind": "sopa",
+    "photo": "File:Sancocho cruzado de Gallina, Rabo y Costilla con arepa.jpg",
+    "es": {
+      "name": "Sancocho trifásico",
+      "summary": "Una sopa espesa con tres carnes —gallina, res y cerdo—, plátano, yuca, papa y mazorca, típica del Valle del Cauca.",
+      "body": [
+        "El sancocho es la sopa de las reuniones familiares en toda Colombia, y cada región tiene el suyo. El trifásico, típico del Valle del Cauca, lleva tres carnes: gallina, res y cerdo.",
+        "Se cocina a fuego lento con plátano verde, yuca, papa, mazorca y cilantro, y se acompaña con arroz, aguacate y ají. Muchas veces se prepara en una olla grande a la orilla de un río, en un paseo de olla."
+      ],
+      "alt": "Plato de sancocho con varias carnes, mazorca y yuca, servido con arepa",
+      "origin": "Valle del Cauca",
+      "ingredients": [
+        "Gallina",
+        "Carne de res",
+        "Carne de cerdo",
+        "Plátano verde",
+        "Yuca",
+        "Papa",
+        "Mazorca",
+        "Cilantro"
+      ]
+    },
+    "en": {
+      "name": "Three-meat sancocho",
+      "summary": "A thick soup with three meats—hen, beef and pork—plantain, cassava, potato and corn, typical of Valle del Cauca.",
+      "body": [
+        "Sancocho is the soup of family gatherings all over Colombia, and every region has its own. The trifásico, typical of Valle del Cauca, has three meats: hen, beef and pork.",
+        "It simmers slowly with green plantain, cassava, potato, corn and cilantro, and is served with rice, avocado and hot sauce. It is often cooked in a big pot on a riverbank, on a paseo de olla outing."
+      ],
+      "alt": "Bowl of sancocho with several meats, corn and cassava, served with arepa",
+      "origin": "Valle del Cauca",
+      "ingredients": [
+        "Hen",
+        "Beef",
+        "Pork",
+        "Green plantain",
+        "Cassava",
+        "Potato",
+        "Corn on the cob",
+        "Cilantro"
+      ]
+    }
+  },
+  {
+    "slug": "arepa-de-huevo",
+    "region": "caribe",
+    "kind": "pasabocas",
+    "photo": "File:Arepa de huevo por dentro.jpg",
+    "es": {
+      "name": "Arepa de huevo",
+      "summary": "Una arepa de maíz frita y rellena de huevo, el frito más famoso de la costa Caribe.",
+      "body": [
+        "La arepa de huevo se prepara con masa de maíz que se fríe una vez, se abre para meterle un huevo crudo y se vuelve a freír hasta que el huevo se cuaja adentro. Algunas versiones llevan también carne molida.",
+        "Es típica de la costa Caribe, en especial de Luruaco (Atlántico), que celebra un festival en su honor, y se vende en los puestos de fritos de playas y ciudades."
+      ],
+      "alt": "Arepa de huevo cortada por la mitad, con el huevo cocido adentro",
+      "origin": "Costa Caribe",
+      "ingredients": [
+        "Masa de maíz",
+        "Huevo",
+        "Sal",
+        "Aceite para freír",
+        "Carne molida (opcional)"
+      ]
+    },
+    "en": {
+      "name": "Arepa de huevo",
+      "summary": "A fried corn arepa stuffed with egg, the most famous fritter of the Caribbean coast.",
+      "body": [
+        "Arepa de huevo is made from corn dough that is fried once, opened to slip in a raw egg and fried again until the egg sets inside. Some versions also include ground beef.",
+        "It is typical of the Caribbean coast, especially Luruaco (Atlántico), which holds a festival in its honor, and it is sold at fritter stalls on beaches and in cities."
+      ],
+      "alt": "Arepa de huevo cut in half, with the cooked egg inside",
+      "origin": "Caribbean coast",
+      "ingredients": ["Corn dough", "Egg", "Salt", "Oil for frying", "Ground beef (optional)"]
+    }
+  },
+  {
+    "slug": "mamona",
+    "region": "orinoquia",
+    "kind": "plato-fuerte",
+    "photo": "File:Carne a la llanera, conocida como mamona..jpg",
+    "es": {
+      "name": "Mamona (ternera a la llanera)",
+      "summary": "Ternera asada durante horas en estacas alrededor del fuego, el plato de las fiestas de los Llanos.",
+      "body": [
+        "La mamona, o ternera a la llanera, es el asado de los Llanos Orientales. Se corta una ternera en presas grandes, que se ensartan en estacas de madera y se asan lentamente, durante horas, alrededor de una hoguera.",
+        "Se sirve con yuca, papa y plátano, y no puede faltar en ferias y celebraciones como el Encuentro Mundial de Coleo, con música de arpa y joropo."
+      ],
+      "alt": "Presas de ternera asándose en estacas alrededor del fuego",
+      "origin": "Meta, Casanare y Arauca",
+      "ingredients": ["Ternera", "Sal", "Yuca", "Papa", "Plátano"]
+    },
+    "en": {
+      "name": "Mamona (plains-style veal)",
+      "summary": "Veal roasted for hours on stakes around the fire, the festive dish of the Plains.",
+      "body": [
+        "Mamona, or ternera a la llanera, is the barbecue of the Eastern Plains. A young calf is cut into large pieces that are skewered on wooden stakes and slow-roasted for hours around a bonfire.",
+        "It is served with cassava, potato and plantain, and it is a must at fairs and celebrations such as the World Coleo Gathering, with harp and joropo music."
+      ],
+      "alt": "Pieces of veal roasting on stakes around the fire",
+      "origin": "Meta, Casanare and Arauca",
+      "ingredients": ["Veal", "Salt", "Cassava", "Potato", "Plantain"]
+    }
+  },
+  {
+    "slug": "pandebono",
+    "region": "andina",
+    "kind": "desayuno",
+    "photo": "File:Pandebono 2 (comprada en la Panadería Colombia Viva, en Barcelona, España).jpg",
+    "es": {
+      "name": "Pandebono",
+      "summary": "Un pan de almidón de yuca y queso, redondo y dorado, típico del Valle del Cauca y del desayuno colombiano.",
+      "body": [
+        "El pandebono es un pan pequeño hecho con almidón de yuca, harina de maíz, queso y huevo. Se hornea hasta que queda dorado por fuera y suave por dentro.",
+        "Es típico del Valle del Cauca y se come en el desayuno o en las onces, con café, chocolate o kumis. Se disfruta mejor recién salido del horno."
+      ],
+      "alt": "Dos pandebonos dorados",
+      "origin": "Valle del Cauca",
+      "ingredients": ["Almidón de yuca", "Harina de maíz", "Queso", "Huevo"]
+    },
+    "en": {
+      "name": "Pandebono",
+      "summary": "A round, golden bread made from cassava starch and cheese, typical of Valle del Cauca and Colombian breakfasts.",
+      "body": [
+        "Pandebono is a small bread made with cassava starch, corn flour, cheese and egg. It is baked until golden on the outside and soft inside.",
+        "It is typical of Valle del Cauca and eaten at breakfast or as an afternoon snack, with coffee, hot chocolate or kumis. It is best fresh from the oven."
+      ],
+      "alt": "Two golden pandebonos",
+      "origin": "Valle del Cauca",
+      "ingredients": ["Cassava starch", "Corn flour", "Cheese", "Egg"]
+    }
+  },
+  {
+    "slug": "tamal-tolimense",
+    "region": "andina",
+    "kind": "plato-fuerte",
+    "photo": "File:Tamal tolimense abierto.jpg",
+    "es": {
+      "name": "Tamal tolimense",
+      "summary": "Masa de maíz con cerdo, pollo, huevo, arveja, zanahoria y papa, envuelta en hojas de plátano y cocida durante horas.",
+      "body": [
+        "El tamal tolimense se arma sobre hojas de plátano con masa de maíz, costilla de cerdo, pollo, tocino, huevo cocido, arvejas, zanahoria y papa, sazonados con hogao. Se amarra y se cocina en olla durante varias horas.",
+        "Es el desayuno de domingo en el Tolima y en buena parte del país, servido con chocolate caliente y pan o arepa."
+      ],
+      "alt": "Tamal tolimense abierto sobre su hoja de plátano",
+      "origin": "Tolima",
+      "ingredients": [
+        "Masa de maíz",
+        "Cerdo",
+        "Pollo",
+        "Huevo",
+        "Arveja",
+        "Zanahoria",
+        "Papa",
+        "Hoja de plátano"
+      ]
+    },
+    "en": {
+      "name": "Tamal tolimense",
+      "summary": "Corn dough with pork, chicken, egg, peas, carrot and potato, wrapped in plantain leaves and cooked for hours.",
+      "body": [
+        "Tamal tolimense is assembled on plantain leaves with corn dough, pork ribs, chicken, bacon, boiled egg, peas, carrot and potato, seasoned with hogao sauce. It is tied up and simmered in a pot for several hours.",
+        "It is Sunday breakfast in Tolima and much of the country, served with hot chocolate and bread or arepa."
+      ],
+      "alt": "Tamal tolimense opened on its plantain leaf",
+      "origin": "Tolima",
+      "ingredients": [
+        "Corn dough",
+        "Pork",
+        "Chicken",
+        "Egg",
+        "Peas",
+        "Carrot",
+        "Potato",
+        "Plantain leaf"
+      ]
+    }
+  },
+  {
+    "slug": "arroz-con-coco",
+    "region": "caribe",
+    "kind": "acompanamiento",
+    "photo": "File:Arroz con coco.JPG",
+    "es": {
+      "name": "Arroz con coco",
+      "summary": "Arroz cocido con coco tostado, dulce y salado, que acompaña el pescado frito en la costa Caribe.",
+      "body": [
+        "En la costa Caribe, el arroz con coco se prepara cocinando la leche del coco hasta que suelta su aceite y se tuesta en el fondo de la olla: el titoté. Con esa base se cocina el arroz, que queda de color café y con sabor dulce y salado.",
+        "Algunas recetas agregan pasas. Acompaña el pescado frito, los patacones y la ensalada en los almuerzos de playa."
+      ],
+      "alt": "Arroz con coco de color café, con pasas",
+      "origin": "Costa Caribe",
+      "ingredients": ["Arroz", "Coco", "Azúcar o panela", "Sal", "Pasas (opcional)"]
+    },
+    "en": {
+      "name": "Coconut rice",
+      "summary": "Rice cooked with toasted coconut, sweet and savory, served with fried fish on the Caribbean coast.",
+      "body": [
+        "On the Caribbean coast, coconut rice starts by cooking coconut milk until it releases its oil and toasts at the bottom of the pot: the titoté. The rice is cooked on that base and turns brown, with a sweet and savory taste.",
+        "Some recipes add raisins. It goes with fried fish, patacones and salad at beach lunches."
+      ],
+      "alt": "Brown coconut rice with raisins",
+      "origin": "Caribbean coast",
+      "ingredients": ["Rice", "Coconut", "Sugar or panela", "Salt", "Raisins (optional)"]
+    }
+  },
+  {
+    "slug": "carimanola",
+    "region": "caribe",
+    "kind": "pasabocas",
+    "photo": "File:Carimañolas por dentro.jpg",
+    "es": {
+      "name": "Carimañola",
+      "summary": "Masa de yuca con forma de torpedo, rellena de carne o queso y frita, típica de los desayunos costeños.",
+      "body": [
+        "La carimañola se prepara con yuca cocida y molida, que se rellena con carne molida guisada o con queso costeño y se fríe hasta que queda crocante. Tiene forma alargada, como de torpedo.",
+        "Se come en el desayuno o como pasabocas en la costa Caribe, acompañada de suero costeño o ají."
+      ],
+      "alt": "Carimañolas partidas por la mitad, con su relleno a la vista",
+      "origin": "Costa Caribe",
+      "ingredients": ["Yuca", "Carne molida o queso costeño", "Cebolla", "Ajo", "Aceite para freír"]
+    },
+    "en": {
+      "name": "Carimañola",
+      "summary": "Torpedo-shaped cassava dough filled with meat or cheese and fried, a Caribbean coast breakfast favorite.",
+      "body": [
+        "Carimañola is made from boiled, mashed cassava, filled with stewed ground beef or coastal cheese and fried until crisp. It has an elongated, torpedo-like shape.",
+        "It is eaten for breakfast or as a snack on the Caribbean coast, with suero costeño (a tangy cultured cream) or hot sauce."
+      ],
+      "alt": "Carimañolas cut in half, showing their filling",
+      "origin": "Caribbean coast",
+      "ingredients": [
+        "Cassava",
+        "Ground beef or coastal cheese",
+        "Onion",
+        "Garlic",
+        "Oil for frying"
+      ]
+    }
+  },
+  {
+    "slug": "encocado-de-camaron",
+    "region": "pacifica",
+    "kind": "plato-fuerte",
+    "photo": "File:Comida en Basilia Valle Pacifico 02.jpg",
+    "es": {
+      "name": "Encocado de camarón",
+      "summary": "Camarones guisados en leche de coco con hierbas de azotea, el sabor de la cocina del Pacífico.",
+      "body": [
+        "El encocado es una preparación del litoral Pacífico en la que pescados o mariscos se cocinan en leche de coco con cebolla, ajo, pimentón y hierbas de azotea, como la chillangua y el poleo, que se cultivan en huertas elevadas junto a las casas.",
+        "El de camarón se sirve con arroz blanco o arroz con coco y patacones. Es uno de los platos que se pueden probar en ferias como el Festival Petronio Álvarez."
+      ],
+      "alt": "Plato de encocado de camarón en salsa de coco",
+      "origin": "Litoral Pacífico",
+      "ingredients": [
+        "Camarón",
+        "Leche de coco",
+        "Cebolla",
+        "Ajo",
+        "Pimentón",
+        "Chillangua",
+        "Poleo"
+      ]
+    },
+    "en": {
+      "name": "Shrimp encocado",
+      "summary": "Shrimp stewed in coconut milk with azotea herbs, the taste of Pacific coast cooking.",
+      "body": [
+        "Encocado is a Pacific coast dish in which fish or seafood are cooked in coconut milk with onion, garlic, bell pepper and azotea herbs, such as chillangua and poleo, grown in raised gardens next to the houses.",
+        "The shrimp version is served with white rice or coconut rice and patacones. It is one of the dishes you can try at fairs such as the Petronio Álvarez Festival."
+      ],
+      "alt": "Plate of shrimp encocado in coconut sauce",
+      "origin": "Pacific coast",
+      "ingredients": [
+        "Shrimp",
+        "Coconut milk",
+        "Onion",
+        "Garlic",
+        "Bell pepper",
+        "Chillangua",
+        "Poleo"
+      ]
+    }
+  },
+  {
+    "slug": "sancocho-de-pescado",
+    "region": "pacifica",
+    "kind": "sopa",
+    "photo": "File:Comida en Basilia Valle Pacifico 01.jpg",
+    "es": {
+      "name": "Sancocho de pescado",
+      "summary": "La versión del Pacífico del sancocho: pescado fresco cocido con plátano, yuca, coco y hierbas de azotea.",
+      "body": [
+        "En el Pacífico, el sancocho se hace con pescado fresco, como el pargo o el bagre, cocido con plátano verde, yuca, leche de coco y hierbas de azotea.",
+        "Es comida de todos los días en Buenaventura, Tumaco o Guapi, y se acompaña con arroz, patacones y jugos de frutas de la región, como el borojó."
+      ],
+      "alt": "Plato de sancocho de pescado con plátano y yuca",
+      "origin": "Litoral Pacífico",
+      "ingredients": [
+        "Pescado",
+        "Plátano verde",
+        "Yuca",
+        "Leche de coco",
+        "Cebolla",
+        "Hierbas de azotea"
+      ]
+    },
+    "en": {
+      "name": "Fish sancocho",
+      "summary": "The Pacific version of sancocho: fresh fish cooked with plantain, cassava, coconut and azotea herbs.",
+      "body": [
+        "On the Pacific coast, sancocho is made with fresh fish, such as snapper or catfish, cooked with green plantain, cassava, coconut milk and azotea herbs.",
+        "It is everyday food in Buenaventura, Tumaco and Guapi, served with rice, patacones and juices from local fruits such as borojó."
+      ],
+      "alt": "Bowl of fish sancocho with plantain and cassava",
+      "origin": "Pacific coast",
+      "ingredients": ["Fish", "Green plantain", "Cassava", "Coconut milk", "Onion", "Azotea herbs"]
+    }
+  },
+  {
+    "slug": "rondon",
+    "region": "insular",
+    "kind": "sopa",
+    "photo": "File:Plate of Rondon.jpg",
+    "es": {
+      "name": "Rondón",
+      "summary": "El guiso de San Andrés: pescado, caracol y cola de cerdo cocinados en leche de coco con yuca y plátano.",
+      "body": [
+        "El rondón (rundown, en creole) es el plato más típico del archipiélago de San Andrés y Providencia. Se cocina en una olla grande con leche de coco, pescado, caracol, cola de cerdo, yuca, ñame, plátano verde y dumplings, bolitas de harina.",
+        "Es comida para compartir en familia y entre vecinos, y una expresión de la cultura raizal. Cada cocinero tiene su receta, y en las islas se encuentra en restaurantes de comida típica."
+      ],
+      "alt": "Plato de rondón con pescado, plátano y yuca en salsa de coco",
+      "origin": "San Andrés y Providencia",
+      "ingredients": [
+        "Leche de coco",
+        "Pescado",
+        "Caracol",
+        "Cola de cerdo",
+        "Yuca",
+        "Ñame",
+        "Plátano verde",
+        "Dumplings"
+      ]
+    },
+    "en": {
+      "name": "Rondón (rundown)",
+      "summary": "San Andrés' stew: fish, conch and pig's tail cooked in coconut milk with cassava and plantain.",
+      "body": [
+        "Rondón (rundown in Creole) is the signature dish of the San Andrés and Providencia archipelago. It is cooked in a big pot with coconut milk, fish, conch, pig's tail, cassava, yam, green plantain and dumplings made of flour.",
+        "It is food to share with family and neighbors, and an expression of Raizal culture. Every cook has a recipe, and on the islands you can find it at traditional restaurants."
+      ],
+      "alt": "Plate of rondón with fish, plantain and cassava in coconut sauce",
+      "origin": "San Andrés and Providencia",
+      "ingredients": [
+        "Coconut milk",
+        "Fish",
+        "Conch",
+        "Pig's tail",
+        "Cassava",
+        "Yam",
+        "Green plantain",
+        "Dumplings"
+      ]
+    }
+  },
+  {
+    "slug": "casabe",
+    "region": "amazonia",
+    "kind": "acompanamiento",
+    "photo": "File:Elaboraciondelcasabe.jpg",
+    "es": {
+      "name": "Casabe",
+      "summary": "Una torta delgada de yuca brava rallada y tostada en un budare, el pan de los pueblos amazónicos.",
+      "body": [
+        "El casabe se hace con yuca brava, una variedad con una sustancia tóxica que hay que retirar. La yuca se ralla y se exprime en un sebucán, un tubo tejido, para sacarle el jugo; la harina que queda se tuesta en un budare, un plato de barro o de metal sobre el fuego.",
+        "Es el pan de muchos pueblos indígenas de la Amazonía y la Orinoquía. Se come con pescado, con ají o con caldos, y se conserva durante semanas."
+      ],
+      "alt": "Tortas de casabe tostándose sobre un budare al fuego",
+      "origin": "Amazonía",
+      "ingredients": ["Yuca brava", "Agua", "Sal (opcional)"]
+    },
+    "en": {
+      "name": "Casabe",
+      "summary": "A thin flatbread of grated bitter cassava toasted on a griddle, the bread of the Amazon peoples.",
+      "body": [
+        "Casabe is made from bitter cassava, a variety that contains a toxic substance that must be removed. The cassava is grated and squeezed in a sebucán, a woven tube, to press out the juice; the remaining flour is toasted on a budare, a clay or metal griddle over the fire.",
+        "It is the bread of many Indigenous peoples of the Amazon and the Orinoquía. It is eaten with fish, hot sauce or broths, and keeps for weeks."
+      ],
+      "alt": "Casabe flatbreads toasting on a griddle over the fire",
+      "origin": "Amazon",
+      "ingredients": ["Bitter cassava", "Water", "Salt (optional)"]
+    }
+  },
+  {
+    "slug": "obleas",
+    "region": "andina",
+    "kind": "postre",
+    "photo": "File:Obleas y solteritas.jpg",
+    "es": {
+      "name": "Obleas con arequipe",
+      "summary": "Dos láminas finas y crocantes rellenas de arequipe, mermelada o queso, el dulce de plazas y parques.",
+      "body": [
+        "Las obleas son láminas muy delgadas y crocantes de harina de trigo. Se venden en carritos en parques, plazas y salidas de colegios, donde se rellenan al momento.",
+        "La combinación clásica es con arequipe, pero también llevan mermelada de mora, crema de leche, queso rallado y chispas de colores. Es un dulce barato y popular en todo el país."
+      ],
+      "alt": "Puesto de obleas y solteritas, con pilas de obleas listas para rellenar",
+      "origin": "Todo el país",
+      "ingredients": [
+        "Obleas de harina de trigo",
+        "Arequipe",
+        "Mermelada de mora",
+        "Queso rallado",
+        "Crema de leche"
+      ]
+    },
+    "en": {
+      "name": "Obleas with arequipe",
+      "summary": "Two thin, crisp wafers filled with arequipe, jam or cheese, the sweet treat of squares and parks.",
+      "body": [
+        "Obleas are very thin, crisp wheat wafers. They are sold from carts in parks, town squares and outside schools, where they are filled on the spot.",
+        "The classic filling is arequipe (milk caramel), but they also come with blackberry jam, cream, grated cheese and sprinkles. They are a cheap, popular treat all over the country."
+      ],
+      "alt": "Stall selling obleas and solteritas, with stacks of wafers ready to fill",
+      "origin": "All over Colombia",
+      "ingredients": ["Wheat wafers", "Arequipe", "Blackberry jam", "Grated cheese", "Cream"]
+    }
+  },
+  {
+    "slug": "posta-negra-cartagenera",
+    "region": "caribe",
+    "kind": "plato-fuerte",
+    "photo": "File:Posta cartagenera o negra.jpg",
+    "es": {
+      "name": "Posta negra cartagenera",
+      "summary": "Carne de res cocida en una salsa oscura de panela y especias, uno de los platos típicos de Cartagena.",
+      "body": [
+        "La posta negra es uno de los platos típicos de Cartagena. Se prepara con un corte de res, la posta, que se cocina lentamente en una salsa espesa y oscura de panela o gaseosa de cola, cebolla, vinagre y especias.",
+        "Se sirve en tajadas, con arroz con coco, plátano maduro o yuca. Su sabor es una mezcla de dulce y salado."
+      ],
+      "alt": "Posta negra en salsa oscura junto a un plato de yuca",
+      "origin": "Cartagena",
+      "ingredients": [
+        "Posta de res",
+        "Panela o gaseosa de cola",
+        "Cebolla",
+        "Ajo",
+        "Vinagre",
+        "Especias"
+      ]
+    },
+    "en": {
+      "name": "Posta negra cartagenera",
+      "summary": "Beef braised in a dark sauce of panela and spices, one of Cartagena's signature dishes.",
+      "body": [
+        "Posta negra is one of Cartagena's signature dishes. A beef cut, the posta, is slow-cooked in a thick, dark sauce of panela or cola, onion, vinegar and spices.",
+        "It is served in slices with coconut rice, ripe plantain or cassava. Its flavor is a mix of sweet and savory."
+      ],
+      "alt": "Posta negra in dark sauce next to a dish of cassava",
+      "origin": "Cartagena",
+      "ingredients": ["Beef posta", "Panela or cola", "Onion", "Garlic", "Vinegar", "Spices"]
+    }
+  }
+]

@@ -6,11 +6,13 @@
       "url": [
         "http://localhost:3030/ViajaCol",
         "http://localhost:3030/ViajaCol/sitios",
+        "http://localhost:3030/ViajaCol/sitios/valle-de-cocora",
         "http://localhost:3030/ViajaCol/en"
       ],
       "numberOfRuns": 3,
       "settings": {
-        "chromeFlags": "--no-sandbox --headless=new"
+        "chromeFlags": "--no-sandbox --headless=new",
+        "throttlingMethod": "devtools"
       }
     },
     "assert": {

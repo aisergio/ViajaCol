@@ -19,14 +19,15 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "npm run typecheck -w @viajacol/web",
-    "test": "npm run test -w @viajacol/web",
-    "test:coverage": "npm run test:coverage -w @viajacol/web",
+    "test": "npm run test -w @viajacol/web && npm run test -w @viajacol/content",
+    "test:coverage": "npm run test:coverage -w @viajacol/web && npm run test -w @viajacol/content",
     "e2e": "npm run e2e -w @viajacol/web"
   },
   "devDependencies": {
     "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
     "eslint-config-prettier": "10.1.8",
-    "prettier": "3.10.1"
+    "prettier": "3.10.1",
+    "sharp": "0.35.5"
   }
 }

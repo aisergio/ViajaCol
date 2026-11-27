@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "caribe",
+    "departments": ["Atlántico", "Bolívar", "Cesar", "Córdoba", "La Guajira", "Magdalena", "Sucre"],
+    "photo": "File:012 Playa Blanca from the Boat.JPG",
+    "es": {
+      "name": "Caribe",
+      "summary": "Playas de agua turquesa, ciudades amuralladas, la Sierra Nevada y el desierto de La Guajira, al ritmo de la cumbia y el vallenato.",
+      "body": [
+        "La región Caribe ocupa el norte del país, entre el golfo de Urabá y la península de La Guajira. Allí están Cartagena, Barranquilla y Santa Marta, y la Sierra Nevada de Santa Marta, la montaña costera más alta del mundo.",
+        "Es tierra de carnavales, de la cumbia, el porro y el vallenato. Su cocina mezcla coco, pescado, maíz y yuca, herencia de los pueblos indígenas, africanos y españoles que la habitan."
+      ],
+      "alt": "Playa Blanca, en Barú, con agua turquesa y palmeras al fondo"
+    },
+    "en": {
+      "name": "Caribbean",
+      "summary": "Turquoise beaches, walled cities, the Sierra Nevada and the La Guajira desert, to the rhythm of cumbia and vallenato.",
+      "body": [
+        "The Caribbean region covers the north of the country, from the Gulf of Urabá to the La Guajira peninsula. It is home to Cartagena, Barranquilla and Santa Marta, and to the Sierra Nevada de Santa Marta, the world's highest coastal mountain range.",
+        "It is the land of carnivals and of cumbia, porro and vallenato music. Its food blends coconut, fish, corn and cassava, a legacy of the Indigenous, African and Spanish peoples who live there."
+      ],
+      "alt": "Playa Blanca, on Barú, with turquoise water and palm trees in the background"
+    }
+  },
+  {
+    "slug": "andina",
+    "departments": [
+      "Antioquia",
+      "Bogotá D. C.",
+      "Boyacá",
+      "Caldas",
+      "Cauca",
+      "Cundinamarca",
+      "Huila",
+      "Nariño",
+      "Norte de Santander",
+      "Quindío",
+      "Risaralda",
+      "Santander",
+      "Tolima",
+      "Valle del Cauca"
+    ],
+    "photo": "File:View of the Cerro Morrogacho in the Cócora Valley.jpg",
+    "es": {
+      "name": "Andina",
+      "summary": "Las tres cordilleras de los Andes: grandes ciudades, pueblos coloniales, cafetales y páramos, donde vive la mayoría de los colombianos.",
+      "body": [
+        "La región Andina sigue las tres cordilleras en que se dividen los Andes al entrar a Colombia. En sus valles y mesetas están Bogotá, Medellín y Cali, y vive la mayoría de la población del país.",
+        "Tiene de todo: páramos que producen agua, el Paisaje Cultural Cafetero, pueblos coloniales y desiertos como la Tatacoa. Su cocina es de montaña: ajiaco, bandeja paisa, tamales y arepas."
+      ],
+      "alt": "Palma de cera en el valle de Cocora, frente al cerro Morrogacho"
+    },
+    "en": {
+      "name": "Andes",
+      "summary": "The three Andean mountain ranges: big cities, colonial towns, coffee farms and páramos, home to most Colombians.",
+      "body": [
+        "The Andean region follows the three ranges into which the Andes split as they enter Colombia. Its valleys and plateaus hold Bogotá, Medellín and Cali, and most of the country's population.",
+        "It has a bit of everything: páramos that produce water, the Coffee Cultural Landscape, colonial towns and deserts such as La Tatacoa. Its food is mountain food: ajiaco, bandeja paisa, tamales and arepas."
+      ],
+      "alt": "Wax palm in the Cocora Valley, facing Cerro Morrogacho"
+    }
+  },
+  {
+    "slug": "pacifica",
+    "departments": ["Chocó", "Valle del Cauca", "Cauca", "Nariño"],
+    "photo": "File:Playa Juna, Chocó. Rio, selva, mar, todo un espectáculo.jpg",
+    "es": {
+      "name": "Pacífica",
+      "summary": "Selva húmeda que llega al mar, ballenas jorobadas, música de marimba y la cultura afrocolombiana del litoral.",
+      "body": [
+        "La región Pacífica es una franja de selva entre la cordillera Occidental y el océano, desde el Chocó hasta Nariño. Es una de las zonas más lluviosas y con más biodiversidad del planeta.",
+        "Entre julio y octubre llegan las ballenas jorobadas a tener sus crías. La música de marimba y los cantos tradicionales del Pacífico Sur son Patrimonio Cultural Inmaterial de la Humanidad, y su cocina gira en torno al coco y el pescado."
+      ],
+      "alt": "Playa Juna, en el Chocó, donde un río y la selva se encuentran con el mar"
+    },
+    "en": {
+      "name": "Pacific",
+      "summary": "Rainforest that reaches the sea, humpback whales, marimba music and the Afro-Colombian culture of the coast.",
+      "body": [
+        "The Pacific region is a strip of rainforest between the Western Cordillera and the ocean, from Chocó to Nariño. It is one of the rainiest and most biodiverse places on Earth.",
+        "Humpback whales arrive between July and October to give birth. The marimba music and traditional chants of the South Pacific are Intangible Cultural Heritage of Humanity, and the food revolves around coconut and fish."
+      ],
+      "alt": "Playa Juna, in Chocó, where a river and the rainforest meet the sea"
+    }
+  },
+  {
+    "slug": "orinoquia",
+    "departments": ["Arauca", "Casanare", "Meta", "Vichada"],
+    "photo": "File:Atardecer desde el Ombligo de Colombia.jpg",
+    "es": {
+      "name": "Orinoquía",
+      "summary": "Los Llanos Orientales: sabanas sin fin, ríos que van al Orinoco, ganado y música de arpa, cuatro y maracas.",
+      "body": [
+        "La Orinoquía, o los Llanos Orientales, es una inmensa sabana que se extiende al oriente de los Andes hasta el río Orinoco. En la época de lluvias sus ríos se desbordan y forman humedales llenos de aves, chigüiros y caimanes.",
+        "La cultura llanera vive del trabajo con el ganado a caballo, del joropo y del coleo. En el Meta está Caño Cristales, el río de los cinco colores."
+      ],
+      "alt": "Atardecer sobre los Llanos desde el Ombligo de Colombia, en Puerto López"
+    },
+    "en": {
+      "name": "Orinoquía",
+      "summary": "The Eastern Plains: endless savannas, rivers flowing to the Orinoco, cattle and the music of harp, cuatro and maracas.",
+      "body": [
+        "The Orinoquía, or Eastern Plains, is a huge savanna stretching east of the Andes to the Orinoco River. In the rainy season its rivers overflow into wetlands full of birds, capybaras and caimans.",
+        "Plains culture revolves around working cattle on horseback, joropo music and coleo. Meta is home to Caño Cristales, the river of five colors."
+      ],
+      "alt": "Sunset over the plains from the Ombligo de Colombia, in Puerto López"
+    }
+  },
+  {
+    "slug": "amazonia",
+    "departments": ["Amazonas", "Caquetá", "Guainía", "Guaviare", "Putumayo", "Vaupés"],
+    "photo": "File:Campo12Foto 2.JPG",
+    "es": {
+      "name": "Amazonía",
+      "summary": "La selva tropical más grande del mundo: ríos enormes, delfines rosados, comunidades indígenas y Chiribiquete.",
+      "body": [
+        "La Amazonía cubre cerca del 40 % del territorio colombiano y es la región menos poblada. Allí la selva y los ríos lo son todo: el Amazonas, el Caquetá y el Putumayo son las carreteras de la región.",
+        "En ella viven más de 50 pueblos indígenas. Leticia y Puerto Nariño son la puerta de entrada para ver delfines rosados, lagos y selva, y el Parque Nacional Natural Chiribiquete es Patrimonio de la Humanidad."
+      ],
+      "alt": "Vista aérea de un río que serpentea entre la selva amazónica"
+    },
+    "en": {
+      "name": "Amazon",
+      "summary": "The world's largest tropical rainforest: huge rivers, pink dolphins, Indigenous communities and Chiribiquete.",
+      "body": [
+        "The Amazon covers about 40% of Colombia and is its least populated region. Here the forest and the rivers are everything: the Amazon, the Caquetá and the Putumayo are the region's highways.",
+        "More than 50 Indigenous peoples live here. Leticia and Puerto Nariño are the gateway to pink dolphins, lakes and rainforest, and Chiribiquete National Park is a World Heritage Site."
+      ],
+      "alt": "Aerial view of a river winding through the Amazon rainforest"
+    }
+  },
+  {
+    "slug": "insular",
+    "departments": ["San Andrés, Providencia y Santa Catalina"],
+    "photo": "File:Johny Cay.jpg",
+    "es": {
+      "name": "Insular",
+      "summary": "Islas del Caribe con el mar de los siete colores, arrecifes de coral y la cultura raizal, que habla creole.",
+      "body": [
+        "La región Insular reúne las islas de Colombia. Las más conocidas forman el archipiélago de San Andrés, Providencia y Santa Catalina, en el Caribe, dentro de la Reserva de Biosfera Seaflower. En el Pacífico están Gorgona y Malpelo.",
+        "En el archipiélago vive el pueblo raizal, que habla creole sanandresano, inglés y español. Sus aguas de muchos tonos de azul y sus arrecifes lo hacen ideal para bucear."
+      ],
+      "alt": "Johnny Cay, un islote con palmeras rodeado de agua turquesa"
+    },
+    "en": {
+      "name": "Islands",
+      "summary": "Caribbean islands with the sea of seven colors, coral reefs and the Raizal culture, which speaks Creole.",
+      "body": [
+        "The Insular region brings together Colombia's islands. The best known form the archipelago of San Andrés, Providencia and Santa Catalina, in the Caribbean, within the Seaflower Biosphere Reserve. Gorgona and Malpelo lie in the Pacific.",
+        "The archipelago is home to the Raizal people, who speak San Andrés Creole, English and Spanish. Its many shades of blue water and its reefs make it ideal for diving."
+      ],
+      "alt": "Johnny Cay, a small island with palm trees surrounded by turquoise water"
+    }
+  }
+]

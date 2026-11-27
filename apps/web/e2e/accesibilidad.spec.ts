@@ -1,7 +1,25 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const routes = ['./', 'sitios', 'fiestas', 'platos', 'en', 'en/sitios', 'en/fiestas', 'en/platos'];
+const routes = [
+  './',
+  'sitios',
+  'fiestas',
+  'platos',
+  'experiencias',
+  'regiones',
+  'noticias',
+  'creditos',
+  'sitios/valle-de-cocora',
+  'fiestas/carnaval-de-barranquilla',
+  'regiones/pacifica',
+  'noticias/nace-el-catalogo',
+  'en',
+  'en/sitios',
+  'en/fiestas',
+  'en/platos/bandeja-paisa',
+  'en/experiencias/salsa-en-cali',
+];
 const tags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
 test.describe('HU5 · Teclado y lector de pantalla', () => {

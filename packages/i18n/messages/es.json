@@ -6,16 +6,17 @@
   },
   "common": {
     "skipToContent": "Saltar al contenido",
-    "comingSoon": "Próximamente",
-    "inProgress": "En construcción"
+    "comingSoon": "Próximamente"
   },
   "nav": {
     "label": "Navegación principal",
     "home": "Viaja Colombia, ir a la portada",
-    "noticias": "Noticias",
     "sitios": "Sitios",
     "fiestas": "Fiestas",
     "platos": "Platos",
+    "experiencias": "Experiencias",
+    "regiones": "Regiones",
+    "noticias": "Noticias",
     "guias": "Guías",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
@@ -34,11 +35,14 @@
   "home": {
     "eyebrow": "Turismo en Colombia",
     "title": "Viaja Colombia",
-    "tagline": "Sitios, fiestas, platos y experiencias para planear tu próximo viaje.",
-    "infoTitle": "Información de la app",
-    "infoBody": "Encuentra información sobre lugares, platos y fiestas de Colombia para planear tus visitas.",
+    "tagline": "Sitios, fiestas, platos y experiencias de las seis regiones para planear tu próximo viaje.",
+    "ctaPrimary": "Explorar sitios",
+    "ctaSecondary": "Ver fiestas por mes",
+    "regionsTitle": "Explora por región",
+    "regionsIntro": "Del Caribe a la Amazonía, cada región tiene su paisaje, su música y su cocina.",
+    "featuredTitle": "Para empezar",
     "newsTitle": "Noticias",
-    "newsEmpty": "Pronto publicaremos las primeras noticias."
+    "seeAll": "Ver todo"
   },
   "sections": {
     "sitios": {
@@ -47,18 +51,119 @@
     },
     "fiestas": {
       "title": "Fiestas",
-      "intro": "Carnavales, ferias y festivales por ciudad y por mes."
+      "intro": "Carnavales, ferias y festivales, por región y por mes."
     },
     "platos": {
       "title": "Platos",
       "intro": "Sabores típicos de cada región para probar en tu viaje."
+    },
+    "experiencias": {
+      "title": "Experiencias",
+      "intro": "Actividades para vivir el país: de la selva al mar y del café a la salsa."
+    },
+    "regiones": {
+      "title": "Regiones",
+      "intro": "Las seis regiones naturales de Colombia y lo que encuentras en cada una."
+    },
+    "noticias": {
+      "title": "Noticias",
+      "intro": "Novedades del sitio y de la temporada de viaje."
+    },
+    "creditos": {
+      "title": "Créditos de las fotos",
+      "intro": "Todas las fotos vienen de Wikimedia Commons y tienen licencia libre. Se publican redimensionadas, con su autor, su licencia y su fuente."
     }
+  },
+  "catalog": {
+    "category": {
+      "sitios": "Sitio",
+      "fiestas": "Fiesta",
+      "platos": "Plato",
+      "experiencias": "Experiencia",
+      "regiones": "Región",
+      "noticias": "Noticia"
+    },
+    "filters": {
+      "label": "Filtros de la lista",
+      "region": "Región",
+      "allRegions": "Todas",
+      "month": "Mes",
+      "allMonths": "Todos los meses",
+      "query": "Buscar en la lista",
+      "queryPlaceholder": "Nombre, lugar o región",
+      "results": "{count, plural, =0 {Ninguna ficha} one {# ficha} other {# fichas}} de {total}",
+      "clear": "Quitar filtros",
+      "empty": "No hay fichas con esos filtros."
+    },
+    "facts": {
+      "title": "Datos",
+      "region": "Región",
+      "place": "Lugar",
+      "when": "Época",
+      "unesco": "Reconocimiento",
+      "unescoValue": "Patrimonio Cultural Inmaterial de la Humanidad (UNESCO)",
+      "kind": "Tipo",
+      "origin": "Origen",
+      "ingredients": "Ingredientes principales",
+      "season": "Temporada",
+      "duration": "Duración",
+      "departments": "Departamentos",
+      "date": "Publicada"
+    },
+    "siteKind": {
+      "naturaleza": "Naturaleza",
+      "historia": "Historia",
+      "ciudad": "Ciudad",
+      "arqueologia": "Arqueología",
+      "playa": "Playa",
+      "cultura": "Cultura",
+      "parque": "Parque temático"
+    },
+    "dishKind": {
+      "sopa": "Sopa",
+      "plato-fuerte": "Plato fuerte",
+      "desayuno": "Desayuno",
+      "postre": "Postre",
+      "acompanamiento": "Acompañamiento",
+      "pasabocas": "Pasabocas"
+    },
+    "related": "En la misma región",
+    "regionContent": "Qué hay en la región",
+    "seeRegion": "Ver la región {region}",
+    "back": "Volver a {section}",
+    "demo": "Demostración",
+    "demoNote": "Esta noticia es de demostración: muestra cómo funciona el prototipo y no es una noticia real.",
+    "photoCredit": "Foto: {author}",
+    "photoSource": "Ver la foto de «{name}» en Wikimedia Commons",
+    "noPhoto": "Foto no disponible",
+    "fullDetail": "Ver la ficha completa",
+    "close": "Cerrar"
+  },
+  "credits": {
+    "item": "Ficha",
+    "author": "Autor",
+    "license": "Licencia",
+    "source": "Fuente",
+    "count": "{count} fotos",
+    "resized": "Todas las fotos están redimensionadas respecto al original."
+  },
+  "search": {
+    "label": "Buscar en Viaja Colombia",
+    "placeholder": "Buscar sitios, fiestas, platos…",
+    "hint": "Escribe el nombre de un sitio, una fiesta, un plato o una región.",
+    "loading": "Cargando el buscador…",
+    "error": "No se pudo cargar el buscador.",
+    "retry": "Reintentar",
+    "noResults": "Sin resultados para «{query}».",
+    "results": "{count, plural, one {# sugerencia} other {# sugerencias}}"
   },
   "footer": {
     "project": "Prototipo académico de la asignatura Arquitectura Front-End.",
     "license": "Código bajo licencia MIT.",
     "repo": "Repositorio en GitHub",
-    "credits": "Las imágenes conservan sus licencias originales."
+    "credits": "Las fotos conservan sus licencias originales.",
+    "creditsLink": "Créditos de las fotos",
+    "guides": "Guías: próximamente"
   },
   "notFound": {
     "title": "Página no encontrada",

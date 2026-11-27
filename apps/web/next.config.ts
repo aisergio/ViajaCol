@@ -12,7 +12,24 @@ const nextConfig: NextConfig = {
   env: { APP_VERSION: process.env.APP_VERSION ?? 'dev' },
   reactCompiler: true,
   poweredByHeader: false,
-  transpilePackages: ['@viajacol/ui', '@viajacol/i18n'],
+  transpilePackages: ['@viajacol/ui', '@viajacol/i18n', '@viajacol/content'],
+  // Fotos pregeneradas en S3 (spec 004, D-02): el cargador elige el archivo de cada ancho y Lambda
+  // nunca procesa imágenes. Cada ancho del srcset corresponde a una variante real.
+  images: {
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
+    deviceSizes: [480, 960, 1600],
+    imageSizes: [],
+  },
+  // sharp solo se usa en el build (imágenes de vista previa prerenderizadas): fuera del paquete de Lambda.
+  outputFileTracingExcludes: {
+    '*': ['node_modules/sharp/**', 'node_modules/@img/**'],
+  },
+  experimental: {
+    // El CSS (unos 8 KB con gzip) va en el HTML: la página pinta sin esperar otra petición
+    // (spec 004, D-11). La CSP ya admite estilos en línea (`style-src 'unsafe-inline'`).
+    inlineCss: true,
+  },
 };
 
 export default withNextIntl(nextConfig);

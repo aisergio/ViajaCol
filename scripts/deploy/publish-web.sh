@@ -15,8 +15,16 @@ BASE_PATH="ViajaCol"
 COMMIT="$(cat "$DIST/VERSION")"
 
 echo "::group::1. Estáticos"
-aws s3 sync "$DIST/static/" "s3://$STATIC_BUCKET/" \
-  --cache-control "public, max-age=31536000, immutable" --only-show-errors
+# El CLI adivina el Content-Type con la tabla de Python, que no trae .webp ni .woff2: quedarían como
+# binary/octet-stream. Esos dos tipos se suben aparte, con el tipo explícito (la prueba de humo
+# exige image/webp en las fotos, FR-018).
+CACHE="public, max-age=31536000, immutable"
+aws s3 sync "$DIST/static/" "s3://$STATIC_BUCKET/" --exclude '*.webp' --exclude '*.woff2' \
+  --cache-control "$CACHE" --only-show-errors
+aws s3 sync "$DIST/static/" "s3://$STATIC_BUCKET/" --exclude '*' --include '*.webp' \
+  --content-type image/webp --cache-control "$CACHE" --only-show-errors
+aws s3 sync "$DIST/static/" "s3://$STATIC_BUCKET/" --exclude '*' --include '*.woff2' \
+  --content-type font/woff2 --cache-control "$CACHE" --only-show-errors
 echo "::endgroup::"
 
 echo "::group::2. Código y versión"

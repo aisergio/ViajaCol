@@ -37,6 +37,8 @@ override.tf.json
 *_override.tf.json
 .terraform.lock.hcl.bak
 infra/**/.build/
+# Hojas de contacto y otros artefactos de los scripts de contenido
+.build/
 
 # Documentos con datos personales (se generan en OneDrive, no aquí)
 *.docx

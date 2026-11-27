@@ -6,7 +6,7 @@ test.describe('HU2 · Cambiar de idioma sin perder el lugar', () => {
     await page.getByRole('link', { name: 'English' }).click();
     await expect(page).toHaveURL(/\/ViajaCol\/en\/sitios$/);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
-    await expect(page.getByRole('heading', { level: 1, name: 'Sites' })).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1, name: 'Places' })).toBeVisible();
   });
 
   test('volver a español quita el prefijo de idioma', async ({ page }) => {

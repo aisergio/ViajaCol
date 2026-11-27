@@ -1,0 +1,702 @@
+[
+  {
+    "slug": "carnaval-de-negros-y-blancos",
+    "region": "andina",
+    "department": "Nariño",
+    "municipality": "Pasto",
+    "coords": [1.2136, -77.2811],
+    "months": [1],
+    "unesco": true,
+    "photo": "File:Genova en Carnaval de Negros y Blancos.jpg",
+    "es": {
+      "name": "Carnaval de Negros y Blancos",
+      "summary": "A comienzos de enero, Pasto se llena de carrozas gigantes, maquillaje negro, talco blanco y desfiles.",
+      "body": [
+        "Es la fiesta más grande del sur de Colombia y Patrimonio Cultural Inmaterial de la Humanidad desde 2009. El 4 de enero llega la Familia Castañeda; el 5 es el día de los Negros, cuando la gente se pinta la cara con cosmético negro, y el 6, el de los Blancos, con talco.",
+        "El 6 de enero también sale el Gran Desfile de carrozas: enormes figuras de papel y madera que los artesanos de Pasto construyen durante meses. Es una celebración de la diversidad y la convivencia."
+      ],
+      "alt": "Comparsa con trajes de colores bailando en el Carnaval de Negros y Blancos de Pasto",
+      "when": "Del 2 al 7 de enero"
+    },
+    "en": {
+      "name": "Blacks and Whites' Carnival",
+      "summary": "In early January, Pasto fills with giant floats, black face paint, white talc and parades.",
+      "body": [
+        "It is the biggest festival in southern Colombia and Intangible Cultural Heritage of Humanity since 2009. On January 4 the Castañeda Family arrives; the 5th is the Day of the Blacks, when people paint their faces with black cosmetic, and the 6th the Day of the Whites, with talc.",
+        "January 6 also brings the Grand Parade of floats: huge papier-mâché and wood figures that Pasto's artisans build over months. It celebrates diversity and coexistence."
+      ],
+      "alt": "Dance troupe in colorful costumes at the Blacks and Whites' Carnival in Pasto",
+      "when": "January 2 to 7"
+    }
+  },
+  {
+    "slug": "feria-de-manizales",
+    "region": "andina",
+    "department": "Caldas",
+    "municipality": "Manizales",
+    "coords": [5.0703, -75.5138],
+    "months": [1],
+    "photo": "File:MonsieurPeriné.JPG",
+    "es": {
+      "name": "Feria de Manizales",
+      "summary": "La feria de enero del Eje Cafetero: Reinado Internacional del Café, conciertos y desfiles en la ciudad de montaña.",
+      "body": [
+        "La Feria de Manizales se celebra cada enero desde 1955 en la capital de Caldas. Su evento más conocido es el Reinado Internacional del Café, con candidatas de países cafeteros de todo el mundo.",
+        "Durante una semana hay desfiles, conciertos en tarimas públicas, muestras artesanales y gastronomía cafetera, con la ciudad de montaña como escenario."
+      ],
+      "alt": "Concierto de Monsieur Periné en una tarima de la Feria de Manizales",
+      "when": "Primera semana de enero"
+    },
+    "en": {
+      "name": "Manizales Fair",
+      "summary": "The Coffee Region's January fair: the International Coffee Pageant, concerts and parades in a mountain city.",
+      "body": [
+        "The Manizales Fair has been held every January since 1955 in the capital of Caldas. Its best-known event is the International Coffee Pageant, with contestants from coffee-growing countries around the world.",
+        "For a week there are parades, concerts on public stages, craft fairs and coffee-region food, with the mountain city as the backdrop."
+      ],
+      "alt": "Monsieur Periné in concert on a stage at the Manizales Fair",
+      "when": "First week of January"
+    }
+  },
+  {
+    "slug": "festival-de-la-bandola-llanera",
+    "region": "orinoquia",
+    "department": "Casanare",
+    "municipality": "Maní",
+    "coords": [4.8169, -72.2797],
+    "months": [1],
+    "photo": "File:04162012Bailes071.JPG",
+    "es": {
+      "name": "Festival Internacional de la Bandola Llanera",
+      "summary": "En enero, Maní (Casanare) celebra la bandola, uno de los sonidos tradicionales de la música de los Llanos.",
+      "body": [
+        "El Festival Internacional de la Bandola Llanera Pedro Flórez se celebra desde 1982 en Maní, Casanare. Reúne a intérpretes de bandola, el instrumento de cuerdas pulsadas que es uno de los sonidos tradicionales de la música llanera.",
+        "Además de los concursos de bandola hay joropo, coplas, cabalgatas y comida llanera, en uno de los encuentros culturales más antiguos de la Orinoquía."
+      ],
+      "alt": "Pareja bailando joropo frente a músicos llaneros",
+      "when": "Enero"
+    },
+    "en": {
+      "name": "International Llanero Bandola Festival",
+      "summary": "In January, Maní (Casanare) celebrates the bandola, one of the traditional sounds of Plains music.",
+      "body": [
+        "The Pedro Flórez International Llanero Bandola Festival has been held in Maní, Casanare, since 1982. It brings together players of the bandola, the plucked string instrument that is one of the traditional sounds of llanero music.",
+        "Besides the bandola contests there is joropo dancing, sung verses, horseback parades and plains food, at one of the oldest cultural gatherings in the Orinoquía."
+      ],
+      "alt": "Couple dancing joropo in front of llanero musicians",
+      "when": "January"
+    }
+  },
+  {
+    "slug": "carnaval-de-barranquilla",
+    "region": "caribe",
+    "department": "Atlántico",
+    "municipality": "Barranquilla",
+    "coords": [10.9685, -74.7813],
+    "months": [2, 3],
+    "unesco": true,
+    "photo": "File:Bailarines del Carnaval de Barranquilla.jpg",
+    "es": {
+      "name": "Carnaval de Barranquilla",
+      "summary": "Cuatro días de desfiles, comparsas, marimondas y cumbia antes del Miércoles de Ceniza.",
+      "body": [
+        "El Carnaval de Barranquilla es la fiesta popular más grande de Colombia y fue proclamado Obra Maestra del Patrimonio Oral e Inmaterial de la Humanidad en 2003. Empieza el sábado con la Batalla de Flores y termina el martes con el entierro de Joselito Carnaval.",
+        "En sus desfiles se mezclan tradiciones indígenas, africanas y europeas: danzas del garabato, del congo y de la cumbia, y disfraces como la marimonda y el torito. «Quien lo vive es quien lo goza» es su lema."
+      ],
+      "alt": "Bailarines con plumas y trajes de colores en el Carnaval de Barranquilla",
+      "when": "Febrero o marzo, los cuatro días antes del Miércoles de Ceniza"
+    },
+    "en": {
+      "name": "Barranquilla Carnival",
+      "summary": "Four days of parades, dance troupes, marimondas and cumbia before Ash Wednesday.",
+      "body": [
+        "The Barranquilla Carnival is Colombia's biggest popular festival and was proclaimed a Masterpiece of the Oral and Intangible Heritage of Humanity in 2003. It starts on Saturday with the Battle of Flowers and ends on Tuesday with the burial of Joselito Carnaval.",
+        "Its parades blend Indigenous, African and European traditions: garabato, congo and cumbia dances, and costumes such as the marimonda and the torito. Its motto: “Those who live it are those who enjoy it.”"
+      ],
+      "alt": "Dancers with feathers and colorful costumes at the Barranquilla Carnival",
+      "when": "February or March, the four days before Ash Wednesday"
+    }
+  },
+  {
+    "slug": "carnaval-del-perdon",
+    "region": "amazonia",
+    "department": "Putumayo",
+    "municipality": "Sibundoy",
+    "coords": [1.2036, -76.9192],
+    "months": [2, 3],
+    "photo": "File:SanFranciscoPutumayo.JPG",
+    "es": {
+      "name": "Carnaval del Perdón (Bëtscnaté)",
+      "summary": "El Día Grande de los pueblos kamëntsá e inga del valle de Sibundoy, el lunes antes del Miércoles de Ceniza.",
+      "body": [
+        "El Bëtscnaté, o Día Grande, es la celebración más importante del pueblo kamëntsá en el valle de Sibundoy, en el Putumayo; el pueblo inga celebra el Atun Puncha en la misma época. Es una fiesta de agradecimiento por las cosechas, de reconciliación y de perdón.",
+        "Las familias recorren el pueblo con coronas de plumas y música de flautas y tambores, y comparten chicha. Es una oportunidad de conocer una de las culturas indígenas vivas de la Amazonía andina."
+      ],
+      "alt": "El valle de Sibundoy, en el Putumayo, visto desde San Francisco",
+      "when": "Febrero o marzo, el lunes antes del Miércoles de Ceniza"
+    },
+    "en": {
+      "name": "Carnival of Forgiveness (Bëtscnaté)",
+      "summary": "The Great Day of the Kamëntsá and Inga peoples of the Sibundoy Valley, on the Monday before Ash Wednesday.",
+      "body": [
+        "Bëtscnaté, or the Great Day, is the most important celebration of the Kamëntsá people in the Sibundoy Valley, in Putumayo; the Inga people celebrate Atun Puncha around the same time. It gives thanks for the harvest and celebrates reconciliation and forgiveness.",
+        "Families walk through town wearing feather crowns, to the music of flutes and drums, and share chicha. It is a chance to get to know one of the living Indigenous cultures of the Andean Amazon."
+      ],
+      "alt": "The Sibundoy Valley, in Putumayo, seen from San Francisco",
+      "when": "February or March, the Monday before Ash Wednesday"
+    }
+  },
+  {
+    "slug": "festival-nacional-de-la-musica-colombiana",
+    "region": "andina",
+    "department": "Tolima",
+    "municipality": "Ibagué",
+    "coords": [4.4389, -75.2322],
+    "months": [3],
+    "photo": "File:SALA ALBERTO CASTILLA -CONSERVATORIO DE MUSICA DEL TOLIMA.jpg",
+    "es": {
+      "name": "Festival Nacional de la Música Colombiana",
+      "summary": "En marzo, Ibagué, la capital musical de Colombia, reúne a duetos y grupos de música andina tradicional.",
+      "body": [
+        "Ibagué es conocida como la capital musical de Colombia por su conservatorio, uno de los más antiguos del país. Cada marzo celebra el Festival Nacional de la Música Colombiana, que organiza desde 1987 la Fundación Musical de Colombia.",
+        "Su eje es el Concurso Nacional de Duetos Príncipes de la Canción, dedicado a bambucos, pasillos y guabinas, con conciertos en teatros, parques y calles de la ciudad."
+      ],
+      "alt": "Sala de conciertos Alberto Castilla del Conservatorio del Tolima",
+      "when": "Marzo"
+    },
+    "en": {
+      "name": "National Colombian Music Festival",
+      "summary": "In March, Ibagué, Colombia's musical capital, gathers duos and groups playing traditional Andean music.",
+      "body": [
+        "Ibagué is known as Colombia's musical capital thanks to its conservatory, one of the oldest in the country. Every March it hosts the National Colombian Music Festival, organized since 1987 by the Fundación Musical de Colombia.",
+        "Its centerpiece is the national duo contest, Príncipes de la Canción, devoted to bambucos, pasillos and guabinas, with concerts in theaters, parks and streets."
+      ],
+      "alt": "Alberto Castilla concert hall at the Tolima Conservatory",
+      "when": "March"
+    }
+  },
+  {
+    "slug": "semana-santa-de-popayan",
+    "region": "andina",
+    "department": "Cauca",
+    "municipality": "Popayán",
+    "coords": [2.4448, -76.6147],
+    "months": [3, 4],
+    "unesco": true,
+    "photo": "File:Proseción Semana Santa en Popayán..jpg",
+    "es": {
+      "name": "Semana Santa en Popayán",
+      "summary": "Procesiones nocturnas con pasos centenarios por las calles blancas de Popayán, una tradición de más de 450 años.",
+      "body": [
+        "Desde mediados del siglo XVI, cada Semana Santa salen de las iglesias de Popayán procesiones nocturnas con pasos: imágenes religiosas de madera tallada que los cargueros llevan en hombros por las calles del centro histórico.",
+        "Las procesiones, iluminadas con velas, son Patrimonio Cultural Inmaterial de la Humanidad desde 2009. En las mismas fechas se celebra el Festival de Música Religiosa de Popayán."
+      ],
+      "alt": "Procesión nocturna de Semana Santa en Popayán con un paso iluminado",
+      "when": "Marzo o abril, durante la Semana Santa"
+    },
+    "en": {
+      "name": "Holy Week in Popayán",
+      "summary": "Night processions with centuries-old floats through Popayán's white streets, a tradition of more than 450 years.",
+      "body": [
+        "Since the mid-16th century, every Holy Week night processions leave Popayán's churches carrying pasos: carved wooden religious images borne on the shoulders of the cargueros through the historic center.",
+        "The candlelit processions have been Intangible Cultural Heritage of Humanity since 2009. The Popayán Religious Music Festival is held at the same time."
+      ],
+      "alt": "Holy Week night procession in Popayán with an illuminated float",
+      "when": "March or April, during Holy Week"
+    }
+  },
+  {
+    "slug": "festival-de-la-leyenda-vallenata",
+    "region": "caribe",
+    "department": "Cesar",
+    "municipality": "Valledupar",
+    "coords": [10.4631, -73.2532],
+    "months": [4, 5],
+    "photo": "File:Festival vallenato.jpg",
+    "es": {
+      "name": "Festival de la Leyenda Vallenata",
+      "summary": "A finales de abril, Valledupar corona a los reyes del vallenato en acordeón, canción inédita y piqueria.",
+      "body": [
+        "El Festival de la Leyenda Vallenata nació en 1968 por iniciativa de Consuelo Araújo Noguera, Rafael Escalona y Alfonso López Michelsen, y se celebra en Valledupar a finales de abril. Recrea la leyenda de la Virgen del Rosario y los indígenas.",
+        "Durante varios días se eligen el rey vallenato del acordeón, el de la canción inédita y el de la piqueria, en el Parque de la Leyenda Vallenata y en las calles. La música vallenata tradicional es Patrimonio Cultural Inmaterial de la Humanidad desde 2015."
+      ],
+      "alt": "Tarima del Festival de la Leyenda Vallenata iluminada de noche",
+      "when": "Finales de abril o comienzos de mayo"
+    },
+    "en": {
+      "name": "Vallenato Legend Festival",
+      "summary": "In late April, Valledupar crowns the kings of vallenato in accordion, new song and piqueria verse duels.",
+      "body": [
+        "The Vallenato Legend Festival was founded in 1968 by Consuelo Araújo Noguera, Rafael Escalona and Alfonso López Michelsen, and is held in Valledupar in late April. It reenacts the legend of the Virgin of the Rosary and the Indigenous people.",
+        "Over several days the vallenato kings of accordion, new song and piqueria are chosen at the Vallenato Legend Park and in the streets. Traditional vallenato music has been Intangible Cultural Heritage of Humanity since 2015."
+      ],
+      "alt": "Vallenato Legend Festival stage lit up at night",
+      "when": "Late April or early May"
+    }
+  },
+  {
+    "slug": "festival-de-la-cultura-wayuu",
+    "region": "caribe",
+    "department": "La Guajira",
+    "municipality": "Uribia",
+    "coords": [11.7139, -72.2661],
+    "months": [5, 6],
+    "photo": "File:Baile de cortejo Wayuu.jpg",
+    "es": {
+      "name": "Festival de la Cultura Wayuu",
+      "summary": "En Uribia, la capital indígena de Colombia, el pueblo wayuu muestra su danza, sus tejidos y sus tradiciones.",
+      "body": [
+        "El Festival de la Cultura Wayuu se celebra cada año en Uribia, conocida como la capital indígena de Colombia, entre mayo y junio. Es una vitrina de la cultura del pueblo indígena más numeroso del país.",
+        "Hay yonna, la danza de cortejo en la que la mujer, con su manta roja, avanza hacia el hombre hasta hacerlo caer; concursos de tejido de mochilas y chinchorros, música de kasha y comida tradicional."
+      ],
+      "alt": "Pareja wayuu bailando la yonna; la mujer lleva una manta roja",
+      "when": "Mayo o junio"
+    },
+    "en": {
+      "name": "Wayuu Culture Festival",
+      "summary": "In Uribia, Colombia's Indigenous capital, the Wayuu people show their dance, weaving and traditions.",
+      "body": [
+        "The Wayuu Culture Festival is held every year in Uribia, known as Colombia's Indigenous capital, between May and June. It showcases the culture of the country's largest Indigenous people.",
+        "There is yonna, the courtship dance in which the woman, in her red shawl, advances on the man until he falls; contests for weaving mochila bags and hammocks, kasha drum music and traditional food."
+      ],
+      "alt": "Wayuu couple dancing the yonna; the woman wears a red shawl",
+      "when": "May or June"
+    }
+  },
+  {
+    "slug": "festival-del-bambuco",
+    "region": "andina",
+    "department": "Huila",
+    "municipality": "Neiva",
+    "coords": [2.9273, -75.2819],
+    "months": [6],
+    "photo": "File:Fiestas de San Pedro en Neiva 06.JPG",
+    "es": {
+      "name": "Festival Folclórico y Reinado Nacional del Bambuco",
+      "summary": "Las fiestas de San Juan y San Pedro en Neiva, con el sanjuanero huilense, desfiles y el Reinado Nacional del Bambuco.",
+      "body": [
+        "Neiva celebra en junio las fiestas de San Juan y San Pedro con el Festival Folclórico, Reinado Nacional y Muestra Internacional del Bambuco, que se realiza desde 1960. Candidatas de todo el país compiten bailando el sanjuanero huilense.",
+        "Hay desfiles de carrozas, comparsas y cabalgatas, música de rajaleña y asado huilense, una de las comidas típicas de la temporada."
+      ],
+      "alt": "Comparsa con trajes típicos bailando en las fiestas de San Pedro en Neiva",
+      "when": "Junio"
+    },
+    "en": {
+      "name": "Bambuco Folk Festival and National Pageant",
+      "summary": "The feasts of Saint John and Saint Peter in Neiva, with the sanjuanero dance, parades and the National Bambuco Pageant.",
+      "body": [
+        "In June, Neiva celebrates the feasts of Saint John and Saint Peter with the Folk Festival, National Pageant and International Bambuco Showcase, held since 1960. Contestants from all over the country compete dancing the sanjuanero huilense.",
+        "There are parades of floats, dance troupes and horseback riders, rajaleña music and asado huilense, one of the season's typical dishes."
+      ],
+      "alt": "Dance troupe in traditional costumes at the Saint Peter festivities in Neiva",
+      "when": "June"
+    }
+  },
+  {
+    "slug": "festival-folclorico-colombiano",
+    "region": "andina",
+    "department": "Tolima",
+    "municipality": "Ibagué",
+    "coords": [4.4389, -75.2322],
+    "months": [6],
+    "photo": "File:Fiestas en Ibagué (623970960).jpg",
+    "es": {
+      "name": "Festival Folclórico Colombiano",
+      "summary": "En junio, Ibagué celebra a San Juan y San Pedro con desfiles de danzas, música y comparsas de todo el país.",
+      "body": [
+        "El Festival Folclórico Colombiano se celebra en Ibagué desde 1959, alrededor de las fiestas de San Juan y San Pedro. Reúne a grupos de danza y de música de todas las regiones del país.",
+        "Hay desfiles de comparsas y carrozas, el Reinado Nacional del Folclor y conciertos. Es buena época para probar la lechona y el tamal tolimenses."
+      ],
+      "alt": "Grupo de danza con faldas azules desfilando por una calle de Ibagué",
+      "when": "Junio, alrededor de San Juan y San Pedro"
+    },
+    "en": {
+      "name": "Colombian Folk Festival",
+      "summary": "In June, Ibagué celebrates Saint John and Saint Peter with parades of dance, music and troupes from all over the country.",
+      "body": [
+        "The Colombian Folk Festival has been held in Ibagué since 1959, around the feasts of Saint John and Saint Peter. It brings together dance and music groups from every region of the country.",
+        "There are parades of dance troupes and floats, the National Folklore Pageant and concerts. It is a good time to try Tolima's lechona and tamales."
+      ],
+      "alt": "Dance group in blue skirts parading down a street in Ibagué",
+      "when": "June, around Saint John's and Saint Peter's days"
+    }
+  },
+  {
+    "slug": "festival-nacional-del-porro",
+    "region": "caribe",
+    "department": "Córdoba",
+    "municipality": "San Pelayo",
+    "coords": [8.9582, -75.8391],
+    "months": [6, 7],
+    "photo": "File:Banda 14 de Septiembre.jpg",
+    "es": {
+      "name": "Festival Nacional del Porro",
+      "summary": "A finales de junio, San Pelayo reúne a las bandas de viento que tocan porro, el ritmo bandero de Córdoba.",
+      "body": [
+        "San Pelayo, en Córdoba, es la cuna del porro, un ritmo de bandas de viento y percusión nacido en las sabanas del Caribe. Desde 1977 celebra el Festival Nacional del Porro, a finales de junio.",
+        "Decenas de bandas pelayeras compiten en tarima y recorren las calles con clarinetes, trompetas, bombardinos y redoblantes, mientras el público baila en fandango alrededor de los músicos."
+      ],
+      "alt": "Banda de porro tocando instrumentos de viento en el festival de San Pelayo",
+      "when": "Finales de junio o comienzos de julio"
+    },
+    "en": {
+      "name": "National Porro Festival",
+      "summary": "In late June, San Pelayo gathers the brass bands that play porro, the band rhythm of Córdoba.",
+      "body": [
+        "San Pelayo, in Córdoba, is the birthplace of porro, a rhythm for brass bands and percussion born in the Caribbean savannas. It has hosted the National Porro Festival in late June since 1977.",
+        "Dozens of pelayera bands compete on stage and parade through the streets with clarinets, trumpets, euphoniums and snare drums, while people dance the fandango around the musicians."
+      ],
+      "alt": "Porro band playing wind instruments at the San Pelayo festival",
+      "when": "Late June or early July"
+    }
+  },
+  {
+    "slug": "fiestas-del-mar",
+    "region": "caribe",
+    "department": "Magdalena",
+    "municipality": "Santa Marta",
+    "coords": [11.2408, -74.199],
+    "months": [7],
+    "photo": "File:Santa Marta beach.jpg",
+    "es": {
+      "name": "Fiestas del Mar",
+      "summary": "A finales de julio, Santa Marta celebra su relación con el mar con deportes náuticos, desfiles y conciertos.",
+      "body": [
+        "Las Fiestas del Mar se celebran en Santa Marta, la ciudad más antigua de Colombia que sigue en pie, fundada en 1525. Coinciden con el aniversario de su fundación, a finales de julio.",
+        "Hay competencias de deportes náuticos, desfiles frente a la bahía, conciertos y el Reinado Nacional del Mar."
+      ],
+      "alt": "Bahía de Santa Marta con su playa y edificios frente al mar",
+      "when": "Finales de julio"
+    },
+    "en": {
+      "name": "Festivals of the Sea",
+      "summary": "In late July, Santa Marta celebrates its bond with the sea with water sports, parades and concerts.",
+      "body": [
+        "The Festivals of the Sea take place in Santa Marta, Colombia's oldest surviving city, founded in 1525. They coincide with the anniversary of its founding in late July.",
+        "There are water sports competitions, parades along the bay, concerts and the National Sea Pageant."
+      ],
+      "alt": "Santa Marta bay with its beach and buildings facing the sea",
+      "when": "Late July"
+    }
+  },
+  {
+    "slug": "festival-de-la-confraternidad-amazonica",
+    "region": "amazonia",
+    "department": "Amazonas",
+    "municipality": "Leticia",
+    "coords": [-4.2153, -69.9406],
+    "months": [7],
+    "photo": "File:Leticia.jpg",
+    "es": {
+      "name": "Festival de la Confraternidad Amazónica",
+      "summary": "En julio, Leticia celebra con Brasil y Perú la hermandad de los pueblos de la triple frontera amazónica.",
+      "body": [
+        "El Festival Internacional de la Confraternidad Amazónica se celebra cada julio en Leticia y reúne a Colombia, Brasil y Perú. La Ley 1706 de 2014 lo declaró patrimonio cultural de la Nación.",
+        "Hay música, danzas indígenas y mestizas, reinados, comida amazónica y un desfile de cierre con los tres países, en la ciudad de la triple frontera."
+      ],
+      "alt": "Puerto de Leticia sobre el río Amazonas, con lanchas y construcciones flotantes",
+      "when": "Del 15 al 20 de julio"
+    },
+    "en": {
+      "name": "Amazon Brotherhood Festival",
+      "summary": "In July, Leticia celebrates with Brazil and Peru the brotherhood of the peoples of the Amazon triple border.",
+      "body": [
+        "The International Amazon Brotherhood Festival is held every July in Leticia and brings together Colombia, Brazil and Peru. Law 1706 of 2014 declared it part of the nation's cultural heritage.",
+        "There is music, Indigenous and mestizo dance, pageants, Amazon food and a closing parade with the three countries, in the triple-border city."
+      ],
+      "alt": "Port of Leticia on the Amazon River, with boats and floating buildings",
+      "when": "July 15 to 20"
+    }
+  },
+  {
+    "slug": "feria-de-las-flores",
+    "region": "andina",
+    "department": "Antioquia",
+    "municipality": "Medellín",
+    "coords": [6.2442, -75.5812],
+    "months": [8],
+    "photo": "File:DESFILE DE SILLETEROS - 2014 - Flickr - ^Iván Erre Jota.jpg",
+    "es": {
+      "name": "Feria de las Flores",
+      "summary": "Diez días de flores en Medellín, con el Desfile de Silleteros, la tradición campesina de Santa Elena.",
+      "body": [
+        "La Feria de las Flores nació en 1957 en Medellín como homenaje a la tradición floricultora del Valle de Aburrá. Hoy dura alrededor de diez días a comienzos de agosto.",
+        "Su evento central es el Desfile de Silleteros: campesinos del corregimiento de Santa Elena cargan en la espalda silletas, estructuras de madera cubiertas de flores que pueden pesar decenas de kilos."
+      ],
+      "alt": "Silleta cubierta de flores de colores en el Desfile de Silleteros de Medellín",
+      "when": "Comienzos de agosto"
+    },
+    "en": {
+      "name": "Flower Festival",
+      "summary": "Ten days of flowers in Medellín, with the Silleteros Parade, the farming tradition of Santa Elena.",
+      "body": [
+        "The Flower Festival began in Medellín in 1957 as a tribute to the flower-growing tradition of the Aburrá Valley. Today it lasts about ten days in early August.",
+        "Its main event is the Silleteros Parade: farmers from Santa Elena carry silletas on their backs, wooden frames covered in flowers that can weigh dozens of kilos."
+      ],
+      "alt": "Silleta covered in colorful flowers at Medellín's Silleteros Parade",
+      "when": "Early August"
+    }
+  },
+  {
+    "slug": "festival-petronio-alvarez",
+    "region": "andina",
+    "department": "Valle del Cauca",
+    "municipality": "Cali",
+    "coords": [3.4516, -76.532],
+    "months": [8],
+    "photo": "File:Petronio Wikivacaciones 2018 58.jpg",
+    "es": {
+      "name": "Festival Petronio Álvarez",
+      "summary": "En agosto, Cali se llena de marimba, cununos y viche en uno de los festivales afro más grandes de América Latina.",
+      "body": [
+        "El Festival de Música del Pacífico Petronio Álvarez se celebra en Cali desde 1997 y lleva el nombre del compositor de «Mi Buenaventura». Grupos del litoral compiten en marimba y cantos tradicionales, chirimía, violines caucanos y versión libre.",
+        "Además de los conciertos, es una feria de la cultura del Pacífico: viche y sus bebidas, cocina de coco y mariscos, peinados y moda afro. Lo visitan cientos de miles de personas cada año."
+      ],
+      "alt": "Público frente al escenario del Festival Petronio Álvarez en Cali",
+      "when": "Agosto"
+    },
+    "en": {
+      "name": "Petronio Álvarez Festival",
+      "summary": "In August, Cali fills with marimba, cununo drums and viche at one of the largest Afro festivals in Latin America.",
+      "body": [
+        "The Petronio Álvarez Pacific Music Festival has been held in Cali since 1997 and is named after the composer of “Mi Buenaventura.” Groups from the coast compete in marimba and traditional chants, chirimía, Cauca violins and free version.",
+        "Beyond the concerts, it is a fair of Pacific culture: viche and its drinks, coconut and seafood cooking, Afro hairstyles and fashion. Hundreds of thousands of people attend every year."
+      ],
+      "alt": "Crowd in front of the stage at the Petronio Álvarez Festival in Cali",
+      "when": "August"
+    }
+  },
+  {
+    "slug": "fiestas-de-san-pacho",
+    "region": "pacifica",
+    "department": "Chocó",
+    "municipality": "Quibdó",
+    "coords": [5.6947, -76.6611],
+    "months": [9, 10],
+    "unesco": true,
+    "photo": "File:Vista lateral de la Catedral de San Francisco de Asís de Quibdó, 2015.jpg",
+    "es": {
+      "name": "Fiestas de San Pacho",
+      "summary": "Entre septiembre y octubre, Quibdó honra a San Francisco de Asís con desfiles, chirimía y comparsas por barrios.",
+      "body": [
+        "Las fiestas franciscanas de Quibdó, conocidas como San Pacho, se celebran desde 1648 en honor a San Francisco de Asís, patrono de la ciudad. Durante dos semanas, cada barrio franciscano sale a la calle con su desfile, sus disfraces y su chirimía.",
+        "Mezclan la tradición católica con la cultura afrochocoana y terminan el 4 de octubre, día del santo, con procesiones por el río Atrato y por las calles. Son Patrimonio Cultural Inmaterial de la Humanidad desde 2012."
+      ],
+      "alt": "Catedral de San Francisco de Asís, en Quibdó",
+      "when": "Finales de septiembre hasta el 4 de octubre"
+    },
+    "en": {
+      "name": "San Pacho Festival",
+      "summary": "Between September and October, Quibdó honors Saint Francis of Assisi with neighborhood parades, chirimía bands and troupes.",
+      "body": [
+        "Quibdó's Franciscan festivities, known as San Pacho, have been held since 1648 in honor of Saint Francis of Assisi, the city's patron saint. For two weeks each Franciscan neighborhood takes to the streets with its parade, costumes and chirimía band.",
+        "They blend Catholic tradition with Afro-Chocoan culture and end on October 4, the saint's day, with processions on the Atrato River and through the streets. They have been Intangible Cultural Heritage of Humanity since 2012."
+      ],
+      "alt": "Cathedral of Saint Francis of Assisi, in Quibdó",
+      "when": "Late September to October 4"
+    }
+  },
+  {
+    "slug": "feria-bonita",
+    "region": "andina",
+    "department": "Santander",
+    "municipality": "Bucaramanga",
+    "coords": [7.1193, -73.1227],
+    "months": [9],
+    "photo": "File:Bucaramanga v cu.JPG",
+    "es": {
+      "name": "Feria Bonita",
+      "summary": "En septiembre, Bucaramanga, la ciudad de los parques, celebra su feria con desfiles, conciertos y muestras artesanales.",
+      "body": [
+        "La Feria Bonita es la fiesta más grande de Bucaramanga, la capital de Santander, conocida como la ciudad de los parques. Se celebra en septiembre con desfiles, conciertos, cabalgatas y muestras artesanales y ganaderas.",
+        "Es una buena ocasión para probar la cocina santandereana: carne oreada, mute y pepitoria, y, en temporada, hormigas culonas."
+      ],
+      "alt": "Vista panorámica de Bucaramanga con la cordillera al fondo",
+      "when": "Septiembre"
+    },
+    "en": {
+      "name": "Feria Bonita",
+      "summary": "In September, Bucaramanga, the city of parks, holds its fair with parades, concerts and craft shows.",
+      "body": [
+        "Feria Bonita is the biggest festival in Bucaramanga, the capital of Santander, known as the city of parks. It takes place in September with parades, concerts, horseback rides and craft and livestock shows.",
+        "It is a good chance to try Santander food: carne oreada, mute soup and pepitoria, and, in season, hormigas culonas."
+      ],
+      "alt": "Panoramic view of Bucaramanga with the mountains in the background",
+      "when": "September"
+    }
+  },
+  {
+    "slug": "encuentro-mundial-de-coleo",
+    "region": "orinoquia",
+    "department": "Meta",
+    "municipality": "Villavicencio",
+    "coords": [4.142, -73.6266],
+    "months": [10],
+    "photo": "File:Coleo en Arauca - Detalle.jpg",
+    "es": {
+      "name": "Encuentro Mundial de Coleo",
+      "summary": "En octubre, los mejores coleadores compiten en Villavicencio derribando novillos en la manga de coleo.",
+      "body": [
+        "El coleo es el deporte de los Llanos: un jinete persigue a un novillo a lo largo de una pista llamada manga, lo toma por la cola y lo derriba. Nació del trabajo diario de los vaqueros con el ganado.",
+        "Desde 1997, Villavicencio celebra cada octubre el Encuentro Mundial de Coleo en la manga Benedicto Cely, con coleadores de Colombia y Venezuela, música llanera y reinado."
+      ],
+      "alt": "Jinete llanero tomando a un novillo por la cola en una manga de coleo",
+      "when": "Octubre"
+    },
+    "en": {
+      "name": "World Coleo Gathering",
+      "summary": "In October, the best coleo riders compete in Villavicencio, bringing down young bulls in the coleo arena.",
+      "body": [
+        "Coleo is the sport of the Plains: a rider chases a young bull along a track called the manga, grabs it by the tail and topples it. It grew out of the cowhands' daily work with cattle.",
+        "Since 1997, Villavicencio has hosted the World Coleo Gathering every October at the Benedicto Cely arena, with riders from Colombia and Venezuela, plains music and a pageant."
+      ],
+      "alt": "Plains rider grabbing a young bull by the tail in a coleo arena",
+      "when": "October"
+    }
+  },
+  {
+    "slug": "fiestas-de-la-independencia-de-cartagena",
+    "region": "caribe",
+    "department": "Bolívar",
+    "municipality": "Cartagena",
+    "coords": [10.4236, -75.5512],
+    "months": [11],
+    "photo": "File:Torre del reloj, Cartagena de Indias - Colombia.JPG",
+    "es": {
+      "name": "Fiestas de la Independencia de Cartagena",
+      "summary": "En noviembre, Cartagena celebra su independencia de 1811 con desfiles, el cabildo de Getsemaní y música en las calles.",
+      "body": [
+        "El 11 de noviembre de 1811, Cartagena declaró su independencia absoluta de España, una de las primeras ciudades del virreinato en hacerlo. Desde entonces lo celebra con fiestas populares.",
+        "Hay desfiles de comparsas, el cabildo de Getsemaní, música de tambores y verbenas en los barrios. En las mismas fechas se realiza el Concurso Nacional de Belleza."
+      ],
+      "alt": "La Torre del Reloj de Cartagena iluminada de noche",
+      "when": "Primera quincena de noviembre, hasta el 11"
+    },
+    "en": {
+      "name": "Cartagena Independence Festivities",
+      "summary": "In November, Cartagena celebrates its 1811 independence with parades, the Getsemaní cabildo and music in the streets.",
+      "body": [
+        "On November 11, 1811, Cartagena declared its absolute independence from Spain, one of the first cities in the viceroyalty to do so. It has celebrated with popular festivities ever since.",
+        "There are parades of dance troupes, the Getsemaní cabildo, drum music and street parties in the neighborhoods. The National Beauty Pageant takes place on the same dates."
+      ],
+      "alt": "Cartagena's Clock Tower lit up at night",
+      "when": "First half of November, until the 11th"
+    }
+  },
+  {
+    "slug": "festival-el-garcero-del-llano",
+    "region": "orinoquia",
+    "department": "Casanare",
+    "municipality": "Yopal",
+    "coords": [5.3378, -72.3959],
+    "months": [11],
+    "photo": "File:Baile de joropo.jpg",
+    "es": {
+      "name": "Festival El Garcero del Llano",
+      "summary": "En noviembre, Yopal reúne a cantantes, arpistas y bailadores de joropo en un festival de música llanera.",
+      "body": [
+        "El Garcero del Llano es el festival de música llanera de Yopal, capital del Casanare. Cada noviembre reúne a intérpretes de arpa, cuatro y maracas, y a cantantes de las modalidades de voz recia y pasaje.",
+        "También hay concursos de baile de joropo y la cocina llanera, con la ternera a la llanera como protagonista."
+      ],
+      "alt": "Pareja bailando joropo con traje típico llanero",
+      "when": "Noviembre"
+    },
+    "en": {
+      "name": "El Garcero del Llano Festival",
+      "summary": "In November, Yopal brings together singers, harpists and joropo dancers at a festival of plains music.",
+      "body": [
+        "El Garcero del Llano is the plains music festival of Yopal, the capital of Casanare. Every November it gathers harp, cuatro and maraca players, and singers in the voz recia and pasaje styles.",
+        "There are also joropo dance contests and plains cooking, starring beef roasted llanero style."
+      ],
+      "alt": "Couple dancing joropo in traditional plains clothing",
+      "when": "November"
+    }
+  },
+  {
+    "slug": "festival-del-currulao",
+    "region": "pacifica",
+    "department": "Nariño",
+    "municipality": "Tumaco",
+    "coords": [1.7986, -78.8156],
+    "months": [11, 12],
+    "photo": "File:Tumaco from Air.jpg",
+    "es": {
+      "name": "Festival del Currulao",
+      "summary": "Entre noviembre y diciembre, Tumaco celebra el currulao, la música y el baile de marimba del Pacífico Sur.",
+      "body": [
+        "El Festival del Currulao se celebra en Tumaco, en la costa pacífica de Nariño, entre finales de noviembre y comienzos de diciembre. Rinde homenaje al currulao, el baile y la música de marimba de chonta, cununos, bombos y guasás.",
+        "Grupos de Colombia y Ecuador comparten tarimas, talleres y desfiles. La música de marimba y los cantos tradicionales del Pacífico Sur son Patrimonio Cultural Inmaterial de la Humanidad."
+      ],
+      "alt": "Vista aérea de Tumaco, con sus casas junto al mar",
+      "when": "Finales de noviembre o comienzos de diciembre"
+    },
+    "en": {
+      "name": "Currulao Festival",
+      "summary": "Between November and December, Tumaco celebrates currulao, the marimba music and dance of the South Pacific.",
+      "body": [
+        "The Currulao Festival is held in Tumaco, on the Pacific coast of Nariño, between late November and early December. It honors currulao, the dance and music of the chonta marimba, cununo drums, bombo drums and guasá rattles.",
+        "Groups from Colombia and Ecuador share stages, workshops and parades. The marimba music and traditional chants of the South Pacific are Intangible Cultural Heritage of Humanity."
+      ],
+      "alt": "Aerial view of Tumaco, with its houses by the sea",
+      "when": "Late November or early December"
+    }
+  },
+  {
+    "slug": "festival-de-luces-de-villa-de-leyva",
+    "region": "andina",
+    "department": "Boyacá",
+    "municipality": "Villa de Leyva",
+    "coords": [5.6339, -73.524],
+    "months": [12],
+    "photo": "File:Plaza de Villa de Leyva - Boyacá.JPG",
+    "es": {
+      "name": "Festival de Luces de Villa de Leyva",
+      "summary": "A comienzos de diciembre, la plaza empedrada de Villa de Leyva se ilumina con fuegos artificiales.",
+      "body": [
+        "Villa de Leyva, un pueblo colonial de Boyacá fundado en 1572, tiene una de las plazas mayores más grandes del país, empedrada y rodeada de casas blancas. A comienzos de diciembre la llena el Festival de Luces.",
+        "Durante el festival, los juegos pirotécnicos iluminan el cielo sobre la plaza, en una fiesta que abre la temporada navideña en la región."
+      ],
+      "alt": "Plaza mayor de Villa de Leyva de noche, con la iglesia iluminada",
+      "when": "Primer fin de semana de diciembre"
+    },
+    "en": {
+      "name": "Villa de Leyva Festival of Lights",
+      "summary": "In early December, Villa de Leyva's cobblestone square lights up with fireworks.",
+      "body": [
+        "Villa de Leyva, a colonial town in Boyacá founded in 1572, has one of the largest main squares in the country, cobbled and lined with white houses. In early December it fills up for the Festival of Lights.",
+        "During the festival, fireworks light up the sky over the square, in a celebration that opens the Christmas season in the region."
+      ],
+      "alt": "Villa de Leyva's main square at night, with the church lit up",
+      "when": "First weekend of December"
+    }
+  },
+  {
+    "slug": "feria-de-cali",
+    "region": "andina",
+    "department": "Valle del Cauca",
+    "municipality": "Cali",
+    "coords": [3.4516, -76.532],
+    "months": [12],
+    "photo": "File:Salsódromo, Feria de Cali, Colombia.JPG",
+    "es": {
+      "name": "Feria de Cali",
+      "summary": "Del 25 al 30 de diciembre, la capital de la salsa la celebra con el Salsódromo, conciertos y el Superconcierto.",
+      "body": [
+        "La Feria de Cali se celebra desde finales de 1957 entre el 25 y el 30 de diciembre. La abre el Salsódromo, un desfile de miles de bailarines de las escuelas de salsa de la ciudad.",
+        "Siguen el Encuentro de Melómanos y Coleccionistas, el Carnaval del Cali Viejo, el Superconcierto y verbenas en los barrios. Es la mejor época para ver por qué a Cali la llaman la capital mundial de la salsa."
+      ],
+      "alt": "Bailarines de salsa con trajes de colores en el Salsódromo de la Feria de Cali",
+      "when": "Del 25 al 30 de diciembre"
+    },
+    "en": {
+      "name": "Cali Fair",
+      "summary": "From December 25 to 30, the salsa capital celebrates with the Salsódromo, concerts and the Superconcierto.",
+      "body": [
+        "The Cali Fair has been held since late 1957 between December 25 and 30. It opens with the Salsódromo, a parade of thousands of dancers from the city's salsa schools.",
+        "It continues with the Music Lovers and Collectors Gathering, the Old Cali Carnival, the Superconcierto and street parties in the neighborhoods. It is the best time to see why Cali is called the world capital of salsa."
+      ],
+      "alt": "Salsa dancers in colorful costumes at the Cali Fair's Salsódromo",
+      "when": "December 25 to 30"
+    }
+  }
+]

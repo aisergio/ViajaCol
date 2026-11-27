@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "nace-el-catalogo",
+    "date": "2026-11-20",
+    "demo": true,
+    "photo": "File:Cañón del Chicamocha 2014-09-21 (2).jpg",
+    "es": {
+      "name": "Viaja Colombia estrena su catálogo de 96 fichas",
+      "summary": "Sitios, fiestas, platos, experiencias y regiones del país, en español e inglés y con fotos de licencia libre.",
+      "body": [
+        "El prototipo de Viaja Colombia ya tiene su catálogo completo: 30 sitios, 24 fiestas, 18 platos, 12 experiencias y las 6 regiones naturales, cada uno con su ficha en español y en inglés.",
+        "Las fotos vienen de Wikimedia Commons, y la página de créditos dice quién las tomó y con qué licencia. Esta noticia es de demostración: forma parte del prototipo académico."
+      ],
+      "alt": "Cañón del Chicamocha con montañas y el río al fondo"
+    },
+    "en": {
+      "name": "Viaja Colombia launches its 96-entry catalog",
+      "summary": "Places, festivals, dishes, experiences and regions of the country, in Spanish and English and with freely licensed photos.",
+      "body": [
+        "The Viaja Colombia prototype now has its full catalog: 30 places, 24 festivals, 18 dishes, 12 experiences and the 6 natural regions, each with its own entry in Spanish and English.",
+        "The photos come from Wikimedia Commons, and the credits page shows who took them and under which license. This is a demo news story, part of the academic prototype."
+      ],
+      "alt": "Chicamocha Canyon with mountains and the river in the background"
+    }
+  },
+  {
+    "slug": "version-en-ingles",
+    "date": "2026-11-21",
+    "demo": true,
+    "photo": "File:Calle del Camarin del Carmen, Barrio La Candelaria (Bogotá, Colombia) 1.jpg",
+    "es": {
+      "name": "El sitio, ahora también en inglés",
+      "summary": "Todas las fichas y la interfaz tienen versión en inglés, con su propia dirección bajo /en.",
+      "body": [
+        "Cada página de Viaja Colombia tiene su versión en inglés en la misma dirección, precedida de /en. El selector de idioma del encabezado lleva a la misma ficha en el otro idioma.",
+        "Así, quien planea un viaje desde otro país puede compartir los enlaces sin perder el idioma. Esta noticia es de demostración."
+      ],
+      "alt": "Calle empedrada de La Candelaria, en Bogotá, con casas coloniales"
+    },
+    "en": {
+      "name": "The site, now also in English",
+      "summary": "Every entry and the whole interface have an English version, with its own address under /en.",
+      "body": [
+        "Every Viaja Colombia page has an English version at the same address, prefixed with /en. The language switcher in the header takes you to the same entry in the other language.",
+        "That way, anyone planning a trip from abroad can share links without losing the language. This is a demo news story."
+      ],
+      "alt": "Cobblestone street in La Candelaria, Bogotá, with colonial houses"
+    }
+  },
+  {
+    "slug": "buscador-instantaneo",
+    "date": "2026-11-24",
+    "demo": true,
+    "photo": "File:Calle 5, Salento 01.jpg",
+    "es": {
+      "name": "Nuevo buscador: resultados mientras escribes",
+      "summary": "Escribe el nombre de un sitio, una fiesta o un plato y elige con las flechas. No importan las tildes.",
+      "body": [
+        "El buscador del encabezado sugiere fichas de todas las categorías mientras escribes, agrupadas y con su región. Funciona con el teclado: las flechas recorren las sugerencias y Enter abre la elegida.",
+        "Encuentra Bogotá aunque escribas «bogota», y los sitios y las fiestas se abren en una ventana sin perder la página donde estabas. Esta noticia es de demostración."
+      ],
+      "alt": "Calle de Salento con casas de balcones de colores"
+    },
+    "en": {
+      "name": "New search: results as you type",
+      "summary": "Type the name of a place, a festival or a dish and pick one with the arrow keys. Accents don't matter.",
+      "body": [
+        "The search box in the header suggests entries from every category as you type, grouped and with their region. It works with the keyboard: the arrow keys move through the suggestions and Enter opens the one you pick.",
+        "It finds Bogotá even if you type “bogota”, and places and festivals open in a window without losing the page you were on. This is a demo news story."
+      ],
+      "alt": "Street in Salento with houses and colorful balconies"
+    }
+  },
+  {
+    "slug": "temporada-de-ballenas",
+    "date": "2026-07-01",
+    "region": "pacifica",
+    "demo": true,
+    "photo": "File:Humpback whale breaching off the coast of Choco, Colombia.jpg",
+    "es": {
+      "name": "Empieza la temporada de ballenas en el Pacífico",
+      "summary": "Entre julio y octubre, las ballenas jorobadas llegan a las aguas cálidas del Pacífico colombiano a tener sus crías.",
+      "body": [
+        "Cada año, las ballenas jorobadas viajan miles de kilómetros desde las aguas frías del sur del continente hasta el Pacífico colombiano, donde nacen sus crías. Bahía Solano, Nuquí y Bahía Málaga son algunos de los mejores lugares para verlas.",
+        "Los avistamientos se hacen en lancha, con operadores que respetan la distancia a los animales. Esta noticia es de demostración: la temporada es real, pero la nota no."
+      ],
+      "alt": "Ballena jorobada saltando fuera del agua"
+    },
+    "en": {
+      "name": "Whale season begins on the Pacific coast",
+      "summary": "Between July and October, humpback whales reach the warm waters of Colombia's Pacific to give birth.",
+      "body": [
+        "Every year humpback whales travel thousands of kilometers from the cold waters of the south of the continent to Colombia's Pacific coast, where their calves are born. Bahía Solano, Nuquí and Bahía Málaga are some of the best places to see them.",
+        "Whale watching is done by boat, with operators who keep a safe distance from the animals. This is a demo news story: the season is real, the article is not."
+      ],
+      "alt": "Humpback whale leaping out of the water"
+    }
+  },
+  {
+    "slug": "calendario-de-fiestas-pronto",
+    "date": "2026-11-25",
+    "demo": true,
+    "photo": "File:CARNAVAL DEL CALI VIEJO, FERIA DE CALI 2015.JPG",
+    "es": {
+      "name": "Muy pronto: el calendario de fiestas con fechas exactas",
+      "summary": "Las 24 fiestas del catálogo tendrán sus fechas de cada año, una cuenta regresiva y la opción de agregarlas a tu viaje.",
+      "body": [
+        "Hoy cada fiesta muestra su época y sus meses, y la lista de Fiestas se puede filtrar por mes. La siguiente versión del prototipo agregará un calendario con las fechas exactas de cada edición.",
+        "Tendrá una cuenta regresiva para cada fiesta y, con una cuenta de usuario, la opción de agregarla a tu viaje. Esta noticia es de demostración."
+      ],
+      "alt": "Bailarinas con vestidos amarillos en el Carnaval del Cali Viejo, durante la Feria de Cali"
+    },
+    "en": {
+      "name": "Coming soon: the festival calendar with exact dates",
+      "summary": "The catalog's 24 festivals will get their dates for each year, a countdown and the option to add them to your trip.",
+      "body": [
+        "Today each festival shows its season and months, and the Festivals list can be filtered by month. The next version of the prototype will add a calendar with the exact dates of each edition.",
+        "It will include a countdown for every festival and, with a user account, the option to add it to your trip. This is a demo news story."
+      ],
+      "alt": "Dancers in yellow dresses at the Carnaval del Cali Viejo, during the Cali Fair"
+    }
+  },
+  {
+    "slug": "diciembre-de-fiestas",
+    "date": "2026-11-26",
+    "demo": true,
+    "photo": "File:ALUMBRADOS 2008.jpg",
+    "es": {
+      "name": "Diciembre se llena de fiestas y luces",
+      "summary": "La Feria de Cali, el Festival de Luces de Villa de Leyva y el Festival del Currulao cierran el año.",
+      "body": [
+        "Diciembre es uno de los meses más festivos del país. En Cali, la feria llena la ciudad de salsa del 25 al 30 de diciembre; en Villa de Leyva, el Festival de Luces ilumina la plaza a comienzos del mes, y en Tumaco el Festival del Currulao celebra la música del Pacífico.",
+        "Además, muchas ciudades encienden sus alumbrados navideños. Esta noticia es de demostración."
+      ],
+      "alt": "Puente decorado con luces navideñas, en los alumbrados de Medellín"
+    },
+    "en": {
+      "name": "December fills up with festivals and lights",
+      "summary": "The Cali Fair, the Festival of Lights in Villa de Leyva and the Currulao Festival close the year.",
+      "body": [
+        "December is one of the most festive months in the country. In Cali the fair fills the city with salsa from December 25 to 30; in Villa de Leyva the Festival of Lights brightens the main square early in the month, and in Tumaco the Currulao Festival celebrates Pacific music.",
+        "Many cities also switch on their Christmas lights. This is a demo news story."
+      ],
+      "alt": "Bridge decorated with Christmas lights during Medellín's light displays"
+    }
+  }
+]

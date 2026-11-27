@@ -10,7 +10,7 @@ export function MobileNav() {
   const { open, toggle } = useMobileNavViewModel();
 
   return (
-    <div className="md:hidden">
+    <div className="xl:hidden">
       <button
         type="button"
         onClick={toggle}

@@ -2,9 +2,14 @@
 
 import { cn } from '@viajacol/ui';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { localizedPath } from '@/i18n/metadata';
 import { useLanguageSwitcherViewModel } from '../viewmodel/useLanguageSwitcherViewModel';
 
+/**
+ * Selector de idioma. Usa enlaces normales (navegación completa): con un enlace del enrutador, ir de
+ * `/sitios/x` a `/en/sitios/x` coincide con la ruta interceptada y abriría la ficha en una ventana
+ * sobre la página en español (spec 004).
+ */
 export function LanguageSwitcher() {
   const t = useTranslations('language');
   const { options } = useLanguageSwitcherViewModel();
@@ -16,10 +21,9 @@ export function LanguageSwitcher() {
       className="inline-flex rounded-md border border-line p-0.5"
     >
       {options.map((option) => (
-        <Link
+        <a
           key={option.code}
-          href={option.href}
-          locale={option.code}
+          href={localizedPath(option.code, option.href)}
           hrefLang={option.code}
           lang={option.code}
           aria-current={option.isCurrent ? 'true' : undefined}
@@ -33,7 +37,7 @@ export function LanguageSwitcher() {
           {/* El nombre accesible contiene el texto visible (WCAG 2.5.3): «EN · English». */}
           {option.code.toUpperCase()}
           <span className="sr-only"> · {t(option.code)}</span>
-        </Link>
+        </a>
       ))}
     </div>
   );

@@ -50,7 +50,20 @@ echo "✓ POST por el borde"
 [[ $(status "$ORIGIN/viajacol") == 301 ]] || fail "/viajacol no redirige con 301"
 echo "✓ redirección canónica"
 
-# 6. Acceso directo al origen: 403 (US4).
+# 6. Catálogo (spec 004): una foto desde S3 con su tipo y caché inmutable (FR-018), el índice de
+#    búsqueda y una vista previa para redes.
+media_path=$(curl -fsS --max-time 20 "$PUBLIC_URL" | grep -o '/ViajaCol/media/[a-z0-9/-]*-960\.webp' | head -n 1 || true)
+[[ -n "$media_path" ]] || fail "la portada no enlaza ninguna foto del catálogo"
+media_headers=$(curl -sSI --max-time 20 "$ORIGIN$media_path" | tr -d '\r' | tr '[:upper:]' '[:lower:]')
+grep -q '^http/[0-9.]* 200' <<<"$media_headers" || fail "la foto $media_path no responde 200"
+grep -q '^content-type: image/webp' <<<"$media_headers" || fail "la foto $media_path no es image/webp"
+grep -q '^cache-control:.*immutable' <<<"$media_headers" || fail "la foto $media_path no tiene caché inmutable"
+[[ $(status "$PUBLIC_URL/api/search-index/es") == 200 ]] || fail "el índice de búsqueda no responde 200"
+og_type=$(curl -sS -o /dev/null -w '%{content_type}' --max-time 20 "$PUBLIC_URL/api/og/sitios/es/valle-de-cocora")
+[[ "$og_type" == image/jpeg* ]] || fail "la vista previa para redes no es image/jpeg ($og_type)"
+echo "✓ fotos, buscador y vista previa"
+
+# 7. Acceso directo al origen: 403 (US4).
 if [ -n "${CF_DOMAIN:-}" ]; then
   [[ $(status "https://$CF_DOMAIN/ViajaCol") == 403 ]] || fail "CloudFront directo no responde 403"
 fi
