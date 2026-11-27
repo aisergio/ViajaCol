@@ -11,12 +11,16 @@ describe('useNavigationViewModel', () => {
     pathname.value = '/';
   });
 
-  it('marca la portada como activa en la raíz', () => {
+  it('en la portada no marca ninguna sección (la portada se abre con el logo)', () => {
+    const { result } = renderHook(() => useNavigationViewModel());
+    expect(result.current.activeId).toBeNull();
+    expect(result.current.items.filter((item) => item.isActive)).toEqual([]);
+  });
+
+  it('marca Noticias en su lista y en sus fichas', () => {
+    pathname.value = '/noticias/nace-el-catalogo';
     const { result } = renderHook(() => useNavigationViewModel());
     expect(result.current.activeId).toBe('noticias');
-    expect(result.current.items.filter((item) => item.isActive).map((item) => item.id)).toEqual([
-      'noticias',
-    ]);
   });
 
   it('marca la sección según la ruta y deshabilita Guías', () => {

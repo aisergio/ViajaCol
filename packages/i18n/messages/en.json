@@ -6,16 +6,17 @@
   },
   "common": {
     "skipToContent": "Skip to content",
-    "comingSoon": "Coming soon",
-    "inProgress": "Under construction"
+    "comingSoon": "Coming soon"
   },
   "nav": {
     "label": "Main navigation",
     "home": "Viaja Colombia, go to the home page",
-    "noticias": "News",
-    "sitios": "Sites",
+    "sitios": "Places",
     "fiestas": "Festivals",
     "platos": "Dishes",
+    "experiencias": "Experiences",
+    "regiones": "Regions",
+    "noticias": "News",
     "guias": "Guides",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
@@ -34,31 +35,135 @@
   "home": {
     "eyebrow": "Tourism in Colombia",
     "title": "Viaja Colombia",
-    "tagline": "Places, festivals, dishes and experiences to plan your next trip.",
-    "infoTitle": "About the app",
-    "infoBody": "Find information about places, dishes and festivals in Colombia to plan your visits.",
+    "tagline": "Places, festivals, dishes and experiences from all six regions to plan your next trip.",
+    "ctaPrimary": "Explore places",
+    "ctaSecondary": "Festivals by month",
+    "regionsTitle": "Explore by region",
+    "regionsIntro": "From the Caribbean to the Amazon, every region has its own landscape, music and food.",
+    "featuredTitle": "Where to start",
     "newsTitle": "News",
-    "newsEmpty": "The first news stories are coming soon."
+    "seeAll": "See all"
   },
   "sections": {
     "sitios": {
-      "title": "Sites",
+      "title": "Places",
       "intro": "Places to visit across Colombia's six natural regions."
     },
     "fiestas": {
       "title": "Festivals",
-      "intro": "Carnivals, fairs and festivals by city and by month."
+      "intro": "Carnivals, fairs and festivals, by region and by month."
     },
     "platos": {
       "title": "Dishes",
       "intro": "Typical flavors from every region to try on your trip."
+    },
+    "experiencias": {
+      "title": "Experiences",
+      "intro": "Activities to live the country: from the rainforest to the sea, from coffee to salsa."
+    },
+    "regiones": {
+      "title": "Regions",
+      "intro": "Colombia's six natural regions and what you can find in each one."
+    },
+    "noticias": {
+      "title": "News",
+      "intro": "Updates about the site and the travel season."
+    },
+    "creditos": {
+      "title": "Photo credits",
+      "intro": "Every photo comes from Wikimedia Commons under a free license. They are published resized, with their author, license and source."
     }
+  },
+  "catalog": {
+    "category": {
+      "sitios": "Place",
+      "fiestas": "Festival",
+      "platos": "Dish",
+      "experiencias": "Experience",
+      "regiones": "Region",
+      "noticias": "News"
+    },
+    "filters": {
+      "label": "List filters",
+      "region": "Region",
+      "allRegions": "All",
+      "month": "Month",
+      "allMonths": "All months",
+      "query": "Search this list",
+      "queryPlaceholder": "Name, place or region",
+      "results": "{count, plural, =0 {No entries} one {# entry} other {# entries}} of {total}",
+      "clear": "Clear filters",
+      "empty": "No entries match those filters."
+    },
+    "facts": {
+      "title": "Facts",
+      "region": "Region",
+      "place": "Place",
+      "when": "When",
+      "unesco": "Recognition",
+      "unescoValue": "Intangible Cultural Heritage of Humanity (UNESCO)",
+      "kind": "Type",
+      "origin": "Origin",
+      "ingredients": "Main ingredients",
+      "season": "Season",
+      "duration": "Duration",
+      "departments": "Departments",
+      "date": "Published"
+    },
+    "siteKind": {
+      "naturaleza": "Nature",
+      "historia": "History",
+      "ciudad": "City",
+      "arqueologia": "Archaeology",
+      "playa": "Beach",
+      "cultura": "Culture",
+      "parque": "Theme park"
+    },
+    "dishKind": {
+      "sopa": "Soup",
+      "plato-fuerte": "Main course",
+      "desayuno": "Breakfast",
+      "postre": "Dessert",
+      "acompanamiento": "Side dish",
+      "pasabocas": "Snack"
+    },
+    "related": "In the same region",
+    "regionContent": "What the region has",
+    "seeRegion": "See the {region} region",
+    "back": "Back to {section}",
+    "demo": "Demo",
+    "demoNote": "This is a demo news story: it shows how the prototype works and is not real news.",
+    "photoCredit": "Photo: {author}",
+    "photoSource": "See the photo of “{name}” on Wikimedia Commons",
+    "noPhoto": "Photo not available",
+    "fullDetail": "See the full entry",
+    "close": "Close"
+  },
+  "credits": {
+    "item": "Entry",
+    "author": "Author",
+    "license": "License",
+    "source": "Source",
+    "count": "{count} photos",
+    "resized": "Every photo has been resized from the original."
+  },
+  "search": {
+    "label": "Search Viaja Colombia",
+    "placeholder": "Search places, festivals, dishes…",
+    "hint": "Type the name of a place, a festival, a dish or a region.",
+    "loading": "Loading search…",
+    "error": "Search could not be loaded.",
+    "retry": "Try again",
+    "noResults": "No results for “{query}”.",
+    "results": "{count, plural, one {# suggestion} other {# suggestions}}"
   },
   "footer": {
     "project": "Academic prototype for the Front-End Architecture course.",
     "license": "Code under the MIT license.",
     "repo": "GitHub repository",
-    "credits": "Images keep their original licenses."
+    "credits": "Photos keep their original licenses.",
+    "creditsLink": "Photo credits",
+    "guides": "Guides: coming soon"
   },
   "notFound": {
     "title": "Page not found",

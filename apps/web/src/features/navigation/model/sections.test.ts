@@ -3,20 +3,23 @@ import { findActiveSection, SECTIONS } from './sections';
 
 describe('findActiveSection', () => {
   it.each([
-    ['/', 'noticias'],
     ['/sitios', 'sitios'],
     ['/sitios/', 'sitios'],
     ['/sitios/parque-tayrona', 'sitios'],
     ['/fiestas', 'fiestas'],
     ['/platos', 'platos'],
+    ['/experiencias/salsa-en-cali', 'experiencias'],
+    ['/regiones/caribe', 'regiones'],
+    ['/noticias', 'noticias'],
   ])('la ruta %s activa %s', (pathname, expected) => {
     expect(findActiveSection(pathname)).toBe(expected);
   });
 
-  it('no activa secciones próximas ni rutas desconocidas', () => {
+  it('la portada, las secciones próximas y las rutas desconocidas no activan nada', () => {
+    expect(findActiveSection('/')).toBeNull();
     expect(findActiveSection('/guias')).toBeNull();
     expect(findActiveSection('/sitiosx')).toBeNull();
-    expect(findActiveSection('/otra')).toBeNull();
+    expect(findActiveSection('/creditos')).toBeNull();
   });
 
   it('expone Guías como próximamente', () => {

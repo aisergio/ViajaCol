@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import '@viajacol/ui/tokens.css';
 
+/* Tailwind solo escanea esta app: las clases de los componentes de packages/ui se declaran aquí. */
+@source '../../../../packages/ui/src';
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
@@ -54,10 +57,84 @@
   }
 }
 
-/* Transiciones entre páginas (View Transitions). */
+/* Transiciones entre páginas (View Transitions, spec 004 D-08). */
+::view-transition {
+  pointer-events: none;
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 180ms;
+}
+
+/* El encabezado queda fijo mientras el contenido se desliza. */
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+
+/* Morph de la foto de la tarjeta a la portada de la ficha. */
+::view-transition-group(.morph) {
+  animation-duration: 380ms;
+}
+::view-transition-image-pair(.morph) {
+  animation-name: vc-via-blur;
+}
+
+/* Deslizamiento direccional: hacia una ficha (nav-forward) y de regreso a la lista (nav-back). */
+::view-transition-old(.nav-forward) {
+  --vc-slide: -48px;
+  animation:
+    150ms ease-in both vc-fade reverse,
+    380ms ease-in-out both vc-slide reverse;
+}
+::view-transition-new(.nav-forward) {
+  --vc-slide: 48px;
+  animation:
+    210ms ease-out 150ms both vc-fade,
+    380ms ease-in-out both vc-slide;
+}
+::view-transition-old(.nav-back) {
+  --vc-slide: 48px;
+  animation:
+    150ms ease-in both vc-fade reverse,
+    380ms ease-in-out both vc-slide reverse;
+}
+::view-transition-new(.nav-back) {
+  --vc-slide: -48px;
+  animation:
+    210ms ease-out 150ms both vc-fade,
+    380ms ease-in-out both vc-slide;
+}
+
+@keyframes vc-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes vc-slide {
+  from {
+    translate: var(--vc-slide);
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes vc-via-blur {
+  30% {
+    filter: blur(3px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

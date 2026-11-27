@@ -27,7 +27,7 @@ La documentación detallada estará en [`docs/`](docs/); las decisiones de arqui
 flowchart LR
   U[Navegador] --> W[Cloudflare Worker<br/>aisergio.dev/ViajaCol*]
   W -->|secreto + X-Forwarded-Host<br/>+ hash del cuerpo| CF[CloudFront<br/>origin-guard]
-  CF -->|OAC| S3[(S3<br/>_next/static)]
+  CF -->|OAC| S3[(S3<br/>_next/static y media)]
   CF -->|OAC · streaming| L[Lambda arm64<br/>Next.js standalone<br/>+ Lambda Web Adapter]
 ```
 
@@ -43,6 +43,21 @@ flowchart LR
   [0004](docs/adr/0004-borde-cloudflare-y-origen-oculto.md) y
   [0005](docs/adr/0005-runner-de-codebuild-para-publicar.md).
 
+### Catálogo
+
+- **Contenido:** 96 fichas bilingües (6 regiones, 30 sitios, 24 fiestas, 18 platos, 12 experiencias y
+  6 noticias de demostración). Viven en [`packages/content`](packages/content) como JSON validado con
+  Zod.
+- **Páginas:** todas se generan en el build. Las listas se filtran por región, mes y texto, y los
+  filtros quedan en la dirección. Los sitios y las fiestas se abren en una ventana con dirección
+  propia. El buscador del encabezado sugiere al instante.
+- **Fotos:** 96 fotos de Wikimedia Commons con licencia libre, traídas por
+  [`scripts/content/fetch-commons-images.ts`](scripts/content/fetch-commons-images.ts). Se publican en S3
+  en tres anchos WebP, y sus autores y licencias están en la página de créditos.
+- **Documentos:** [spec 004](specs/004-contenido/spec.md), [quickstart](specs/004-contenido/quickstart.md),
+  [ADR 0006](docs/adr/0006-fotos-pregeneradas-en-s3.md) y la guía de
+  [rutas interceptadas y ventanas](docs/aprendizaje/rutas-interceptadas-y-ventanas.md).
+
 ## Cómo correrlo
 
 Requisitos: Node.js 22.13 o superior y npm 11.
@@ -56,7 +71,7 @@ npm run dev            # http://localhost:3030/ViajaCol
 |---|---|
 | `npm run lint` | ESLint (reglas de Next.js y TypeScript) |
 | `npm run typecheck` | TypeScript estricto |
-| `npm run test:coverage` | Vitest: ViewModels, modelos y catálogo de textos (cobertura ≥ 80 %) |
+| `npm run test:coverage` | Vitest: ViewModels, modelos, catálogo de textos (cobertura ≥ 80 %) y validación del contenido |
 | `npm run build` | Build de producción (las páginas se prerenderizan) |
 | `npm run e2e` | Playwright + axe sobre el build de producción |
 
@@ -64,10 +79,12 @@ npm run dev            # http://localhost:3030/ViajaCol
 
 ```
 apps/web/          aplicación Next.js (rutas en src/app/[locale], funcionalidades en src/features)
-packages/ui/       tokens de diseño (OKLCH) y componentes base
+packages/ui/       tokens de diseño (OKLCH) y componentes base (también la ventana)
 packages/i18n/     catálogo de textos ES/EN
+packages/content/  contenido del catálogo (JSON + Zod) y manifiesto de fotos
 specs/             especificaciones de Spec Kit (una carpeta por funcionalidad)
 infra/             Terraform (bootstrap y stacks)
+scripts/           publicación (deploy/), infraestructura (infra/) y fotos del catálogo (content/)
 docs/              ADR, guías de aprendizaje y seguridad
 ```
 

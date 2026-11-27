@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "finca-cafetera",
+    "region": "andina",
+    "department": "Quindío",
+    "municipality": "Salento",
+    "coords": [4.637, -75.57],
+    "photo": "File:Coffee farm in Colombia.jpg",
+    "es": {
+      "name": "Recorrido por una finca cafetera",
+      "summary": "Del cafeto a la taza: cosechar, despulpar, secar y tostar café en el Paisaje Cultural Cafetero.",
+      "body": [
+        "El Paisaje Cultural Cafetero, Patrimonio de la Humanidad desde 2011, cubre zonas de Caldas, Quindío, Risaralda y el norte del Valle del Cauca. Muchas fincas abren sus puertas para mostrar cómo se cultiva el café de montaña.",
+        "El recorrido pasa por los cafetales, el beneficio —donde se despulpa y se lava el grano—, el secado y el tueste, y termina con una cata. Algunas fincas ofrecen hospedaje y caminatas por el bosque."
+      ],
+      "alt": "Cafetal en una ladera con un árbol de sombra",
+      "season": "Todo el año; hay más actividad en las épocas de cosecha",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Coffee farm tour",
+      "summary": "From plant to cup: picking, pulping, drying and roasting coffee in the Coffee Cultural Landscape.",
+      "body": [
+        "The Coffee Cultural Landscape, a World Heritage Site since 2011, covers parts of Caldas, Quindío, Risaralda and northern Valle del Cauca. Many farms open their doors to show how mountain coffee is grown.",
+        "The tour goes through the coffee fields, the beneficio—where the beans are pulped and washed—the drying and the roasting, and ends with a tasting. Some farms offer lodging and forest walks."
+      ],
+      "alt": "Coffee plantation on a hillside with a shade tree",
+      "season": "Year-round; busiest during the harvests",
+      "duration": "Half a day"
+    }
+  },
+  {
+    "slug": "avistamiento-de-ballenas",
+    "region": "pacifica",
+    "department": "Chocó",
+    "municipality": "Bahía Solano",
+    "coords": [6.2167, -77.4],
+    "photo": "File:Ballena jorobada o ballena yubarta (Megaptera novaeangliae).jpg",
+    "es": {
+      "name": "Avistamiento de ballenas",
+      "summary": "Ver de cerca a las ballenas jorobadas y sus crías en el Pacífico, entre julio y octubre.",
+      "body": [
+        "Las ballenas jorobadas viajan unos 8000 kilómetros desde la Antártida hasta el Pacífico colombiano para aparearse y tener sus crías en aguas cálidas. Bahía Solano, Nuquí, Bahía Málaga y Gorgona son buenos lugares para verlas.",
+        "Las salidas se hacen en lancha con operadores locales que mantienen la distancia con los animales. Con suerte se ven saltos, aletazos y madres con sus ballenatos."
+      ],
+      "alt": "Ballena jorobada saltando fuera del agua",
+      "season": "De julio a octubre",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Whale watching",
+      "summary": "See humpback whales and their calves up close on the Pacific coast, between July and October.",
+      "body": [
+        "Humpback whales travel about 8,000 kilometers from Antarctica to Colombia's Pacific coast to mate and give birth in warm waters. Bahía Solano, Nuquí, Bahía Málaga and Gorgona are good places to see them.",
+        "Trips go out by boat with local operators who keep their distance from the animals. With luck you will see breaches, fin slaps and mothers with their calves."
+      ],
+      "alt": "Humpback whale leaping out of the water",
+      "season": "July to October",
+      "duration": "Half a day"
+    }
+  },
+  {
+    "slug": "caminata-a-ciudad-perdida",
+    "region": "caribe",
+    "department": "Magdalena",
+    "municipality": "Santa Marta",
+    "coords": [11.0381, -73.9253],
+    "photo": "File:Frondosa vegetación sobre los escalones de Piedra hacia Ciudad Perdida 16-04-2019.jpg",
+    "es": {
+      "name": "Caminata a Ciudad Perdida",
+      "summary": "Varios días de caminata por la Sierra Nevada, con ríos, comunidades indígenas y la llegada a Teyuna.",
+      "body": [
+        "La caminata a Ciudad Perdida sale de Machete Pelao, cerca de Santa Marta, y sube por la Sierra Nevada durante dos o tres días, cruzando ríos y pasando por comunidades kogui y wiwa. El último tramo es una escalera de unos 1200 escalones de piedra en medio de la selva.",
+        "Se hace solo con agencias autorizadas y guías, y se duerme en campamentos con hamacas o literas. Requiere buena condición física."
+      ],
+      "alt": "Escalones de piedra cubiertos de vegetación en el camino a Ciudad Perdida",
+      "season": "Todo el año; de diciembre a marzo llueve menos",
+      "duration": "4 a 6 días"
+    },
+    "en": {
+      "name": "Lost City trek",
+      "summary": "Several days of hiking through the Sierra Nevada, with rivers, Indigenous communities and the arrival at Teyuna.",
+      "body": [
+        "The Lost City trek starts at Machete Pelao, near Santa Marta, and climbs the Sierra Nevada for two or three days, crossing rivers and passing Kogui and Wiwa communities. The last stretch is a staircase of about 1,200 stone steps through the jungle.",
+        "It can only be done with licensed agencies and guides, sleeping in camps with hammocks or bunks. It requires good physical fitness."
+      ],
+      "alt": "Stone steps covered in vegetation on the way to the Lost City",
+      "season": "Year-round; less rain from December to March",
+      "duration": "4 to 6 days"
+    }
+  },
+  {
+    "slug": "buceo-en-seaflower",
+    "region": "insular",
+    "department": "San Andrés, Providencia y Santa Catalina",
+    "municipality": "San Andrés",
+    "coords": [12.52, -81.69],
+    "photo": "File:Acuario de San Andres Islas.jpg",
+    "es": {
+      "name": "Buceo y esnórquel en el Seaflower",
+      "summary": "Arrecifes de coral, peces de colores y aguas claras en una de las mayores reservas marinas del Caribe.",
+      "body": [
+        "La Reserva de Biosfera Seaflower rodea San Andrés, Providencia y Santa Catalina y protege arrecifes de coral, pastos marinos y manglares. Sus aguas claras y cálidas son ideales para bucear o hacer esnórquel.",
+        "En San Andrés hay escuelas de buceo para principiantes y buzos certificados. Para el esnórquel, El Acuario y Haynes Cay tienen aguas poco profundas con peces, rayas y corales."
+      ],
+      "alt": "El Acuario, en San Andrés, con agua turquesa y poco profunda junto a un islote",
+      "season": "Todo el año",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Diving and snorkeling in Seaflower",
+      "summary": "Coral reefs, colorful fish and clear water in one of the largest marine reserves in the Caribbean.",
+      "body": [
+        "The Seaflower Biosphere Reserve surrounds San Andrés, Providencia and Santa Catalina and protects coral reefs, seagrass beds and mangroves. Its clear, warm water is ideal for diving and snorkeling.",
+        "San Andrés has dive schools for beginners and certified divers. For snorkeling, El Acuario and Haynes Cay have shallow water full of fish, rays and corals."
+      ],
+      "alt": "El Acuario, in San Andrés, with shallow turquoise water next to a small island",
+      "season": "Year-round",
+      "duration": "Half a day"
+    }
+  },
+  {
+    "slug": "delfines-rosados",
+    "region": "amazonia",
+    "department": "Amazonas",
+    "municipality": "Puerto Nariño",
+    "coords": [-3.7703, -70.3831],
+    "photo": "File:Inia geofrensis río Negro.jpg",
+    "es": {
+      "name": "Delfines rosados en el Amazonas",
+      "summary": "Recorridos en lancha por los lagos de Tarapoto y el Amazonas para ver delfines rosados y grises.",
+      "body": [
+        "El delfín rosado o bufeo (Inia geoffrensis) es el delfín de río más grande del mundo, y su color se vuelve más intenso con la edad. En el Amazonas comparte ríos y lagos con el delfín gris o tucuxi.",
+        "Desde Puerto Nariño salen recorridos en lancha a los lagos de Tarapoto, uno de los mejores lugares para verlos. Las comunidades locales piden no tocarlos ni alimentarlos."
+      ],
+      "alt": "Delfín rosado asomando la cabeza fuera del agua",
+      "season": "Todo el año",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Pink river dolphins in the Amazon",
+      "summary": "Boat trips on the Tarapoto lakes and the Amazon to see pink and gray dolphins.",
+      "body": [
+        "The pink river dolphin, or boto (Inia geoffrensis), is the largest river dolphin in the world, and its color deepens with age. In the Amazon it shares rivers and lakes with the gray dolphin, or tucuxi.",
+        "Boat trips leave Puerto Nariño for the Tarapoto lakes, one of the best places to see them. Local communities ask visitors not to touch or feed them."
+      ],
+      "alt": "Pink river dolphin poking its head out of the water",
+      "season": "Year-round",
+      "duration": "Half a day"
+    }
+  },
+  {
+    "slug": "colores-de-cano-cristales",
+    "region": "orinoquia",
+    "department": "Meta",
+    "municipality": "La Macarena",
+    "coords": [2.265, -73.79],
+    "photo": "File:Caño Cristales1.JPG",
+    "es": {
+      "name": "Los colores de Caño Cristales",
+      "summary": "Caminatas guiadas por la serranía de La Macarena para ver el río teñido de rojo, amarillo y verde.",
+      "body": [
+        "Para ver Caño Cristales hay que llegar a La Macarena y, desde allí, ir en lancha por el río Guayabero y caminar con guías locales por los senderos de la serranía.",
+        "El rojo de la Macarenia clavigera se ve mejor con sol y con el agua en su nivel. Está prohibido usar bloqueador solar y repelente en el agua, para no dañar la planta."
+      ],
+      "alt": "Río de Caño Cristales con plantas rojas entre las rocas",
+      "season": "De junio a noviembre",
+      "duration": "2 o 3 días"
+    },
+    "en": {
+      "name": "The colors of Caño Cristales",
+      "summary": "Guided hikes through the La Macarena range to see the river dyed red, yellow and green.",
+      "body": [
+        "To see Caño Cristales you first reach La Macarena, then take a boat along the Guayabero River and hike with local guides on the trails of the range.",
+        "The red of Macarenia clavigera looks best in the sun and with the water at the right level. Sunscreen and insect repellent are not allowed in the water, so as not to harm the plant."
+      ],
+      "alt": "Caño Cristales river with red plants among the rocks",
+      "season": "June to November",
+      "duration": "2 or 3 days"
+    }
+  },
+  {
+    "slug": "rafting-en-san-gil",
+    "region": "andina",
+    "department": "Santander",
+    "municipality": "San Gil",
+    "coords": [6.555, -73.1336],
+    "photo": "File:Rafting San Gil - Río Fonce.jpg",
+    "es": {
+      "name": "Rafting en San Gil",
+      "summary": "Bajar en balsa los rápidos del río Fonce o del Suárez en la capital del turismo de aventura.",
+      "body": [
+        "San Gil, en Santander, es conocida como la capital del turismo de aventura de Colombia. Su plan más popular es el rafting por el río Fonce, con rápidos para principiantes; el río Suárez es para expertos.",
+        "También se puede volar en parapente sobre el cañón del Chicamocha, hacer torrentismo y espeleología, y caminar hasta pueblos coloniales como Barichara."
+      ],
+      "alt": "Grupo haciendo rafting en los rápidos del río Fonce",
+      "season": "Todo el año",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Rafting in San Gil",
+      "summary": "Raft down the rapids of the Fonce or Suárez rivers in Colombia's adventure capital.",
+      "body": [
+        "San Gil, in Santander, is known as Colombia's adventure tourism capital. Its most popular outing is rafting on the Fonce River, with rapids for beginners; the Suárez River is for experts.",
+        "You can also paraglide over the Chicamocha Canyon, go canyoning and caving, and hike to colonial towns such as Barichara."
+      ],
+      "alt": "Group rafting through the rapids of the Fonce River",
+      "season": "Year-round",
+      "duration": "Half a day"
+    }
+  },
+  {
+    "slug": "salsa-en-cali",
+    "region": "andina",
+    "department": "Valle del Cauca",
+    "municipality": "Cali",
+    "coords": [3.4516, -76.532],
+    "photo": "File:Salsa caleña.jpg",
+    "es": {
+      "name": "Clases de salsa en Cali",
+      "summary": "Aprender salsa caleña, la de los pasos rápidos, en las escuelas y salsotecas de la capital de la salsa.",
+      "body": [
+        "Cali tiene un estilo propio de salsa, rápido y lleno de pasos con los pies, que se aprende desde niño en sus escuelas. Muchas ofrecen clases para principiantes y viajeros.",
+        "De noche, las salsotecas y bares, como los de Juanchito y el barrio Obrero, llenan la ciudad de música. Los espectáculos de las escuelas, con acrobacias, son famosos en el mundo."
+      ],
+      "alt": "Bailarines de salsa caleña haciendo una acrobacia en un escenario",
+      "season": "Todo el año; en diciembre, durante la Feria de Cali",
+      "duration": "Una clase de 2 horas o una noche"
+    },
+    "en": {
+      "name": "Salsa classes in Cali",
+      "summary": "Learn salsa caleña, the fast-footwork style, at the schools and salsa clubs of the salsa capital.",
+      "body": [
+        "Cali has its own salsa style, fast and full of footwork, which people learn as children in its dance schools. Many offer classes for beginners and travelers.",
+        "At night, salsa clubs and bars, such as those in Juanchito and the Obrero neighborhood, fill the city with music. The schools' acrobatic shows are famous around the world."
+      ],
+      "alt": "Salsa caleña dancers performing an acrobatic move on stage",
+      "season": "Year-round; in December, during the Cali Fair",
+      "duration": "A 2-hour class or a night out"
+    }
+  },
+  {
+    "slug": "estrellas-en-la-tatacoa",
+    "region": "andina",
+    "department": "Huila",
+    "municipality": "Villavieja",
+    "coords": [3.2333, -75.1667],
+    "photo": "File:Vía Láctea sobre el horizonte de la Tatacoa.jpg",
+    "es": {
+      "name": "Noche de estrellas en la Tatacoa",
+      "summary": "Observar planetas, constelaciones y la Vía Láctea en uno de los cielos más limpios de Colombia.",
+      "body": [
+        "Lejos de las ciudades y con un clima seco, el desierto de la Tatacoa tiene cielos muy limpios. En el observatorio astronómico y con grupos de aficionados se pueden ver planetas, nebulosas y la Vía Láctea a simple vista.",
+        "Por la latitud de Colombia se ven constelaciones de los dos hemisferios. Vale la pena quedarse a dormir en uno de los hospedajes del desierto."
+      ],
+      "alt": "La Vía Láctea sobre el horizonte del desierto de la Tatacoa",
+      "season": "Noches despejadas, sobre todo en temporada seca",
+      "duration": "Una noche"
+    },
+    "en": {
+      "name": "Stargazing in La Tatacoa",
+      "summary": "Watch planets, constellations and the Milky Way under one of the clearest skies in Colombia.",
+      "body": [
+        "Far from cities and with a dry climate, the Tatacoa Desert has very clear skies. At the astronomical observatory and with amateur astronomers you can see planets, nebulae and the Milky Way with the naked eye.",
+        "Thanks to Colombia's latitude, constellations from both hemispheres are visible. It is worth staying overnight at one of the desert lodges."
+      ],
+      "alt": "The Milky Way over the horizon of the Tatacoa Desert",
+      "season": "Clear nights, especially in the dry season",
+      "duration": "One night"
+    }
+  },
+  {
+    "slug": "comuna-13",
+    "region": "andina",
+    "department": "Antioquia",
+    "municipality": "Medellín",
+    "coords": [6.2569, -75.6122],
+    "photo": "File:Graffiti in Comuna 13, Medellín 01.jpg",
+    "es": {
+      "name": "Recorrido de grafiti por la Comuna 13",
+      "summary": "Un barrio de Medellín que se transformó: escaleras eléctricas, murales y hip hop contados por sus habitantes.",
+      "body": [
+        "La Comuna 13, en el occidente de Medellín, fue uno de los barrios más golpeados por la violencia. Desde 2011 tiene escaleras eléctricas al aire libre que conectan sus calles empinadas, y hoy es conocida por su arte urbano.",
+        "Los recorridos que guían jóvenes del barrio muestran murales que cuentan su historia, con música hip hop y baile. Es un ejemplo de cómo el arte y la comunidad transforman un lugar."
+      ],
+      "alt": "Mural de una mujer indígena en una calle de la Comuna 13 de Medellín",
+      "season": "Todo el año",
+      "duration": "2 a 3 horas"
+    },
+    "en": {
+      "name": "Comuna 13 graffiti tour",
+      "summary": "A Medellín neighborhood that transformed itself: outdoor escalators, murals and hip hop, told by its residents.",
+      "body": [
+        "Comuna 13, in western Medellín, was one of the neighborhoods hit hardest by violence. Since 2011 it has had outdoor escalators linking its steep streets, and today it is known for its street art.",
+        "Tours led by young locals show murals that tell its story, with hip hop music and dancing. It is an example of how art and community can transform a place."
+      ],
+      "alt": "Mural of an Indigenous woman on a street in Medellín's Comuna 13",
+      "season": "Year-round",
+      "duration": "2 to 3 hours"
+    }
+  },
+  {
+    "slug": "vida-de-llano",
+    "region": "orinoquia",
+    "department": "Casanare",
+    "municipality": "Yopal",
+    "coords": [5.3378, -72.3959],
+    "photo": "File:Llanero a caballo.jpg",
+    "es": {
+      "name": "Un día de llano en un hato",
+      "summary": "Cabalgar con los llaneros, ver el trabajo de vaquería y avistar chigüiros, venados y aves en las sabanas.",
+      "body": [
+        "En los hatos del Casanare y Arauca se puede vivir el trabajo del llanero: arrear ganado a caballo, ordeñar al amanecer y escuchar los cantos de trabajo con los que se guía el ganado, Patrimonio Cultural Inmaterial de la Humanidad desde 2017.",
+        "En el verano llanero, de diciembre a abril, los animales se concentran en caños y esteros: chigüiros, venados, babillas, garzas y corocoras. Muchos hatos combinan la ganadería con la conservación."
+      ],
+      "alt": "Llanero montando a caballo en la sabana",
+      "season": "De diciembre a abril, en el verano llanero",
+      "duration": "2 o 3 días"
+    },
+    "en": {
+      "name": "A day on a plains ranch",
+      "summary": "Ride with the llaneros, watch cattle work and spot capybaras, deer and birds on the savannas.",
+      "body": [
+        "On the ranches of Casanare and Arauca you can join the llanero's work: herding cattle on horseback, milking at dawn and listening to the work songs used to guide the herd, Intangible Cultural Heritage of Humanity since 2017.",
+        "In the plains' dry season, from December to April, wildlife gathers around streams and marshes: capybaras, deer, caimans, herons and scarlet ibises. Many ranches combine cattle raising with conservation."
+      ],
+      "alt": "Llanero riding a horse on the savanna",
+      "season": "December to April, in the dry season",
+      "duration": "2 or 3 days"
+    }
+  },
+  {
+    "slug": "aves-en-minca",
+    "region": "caribe",
+    "department": "Magdalena",
+    "municipality": "Santa Marta",
+    "coords": [11.1431, -74.1188],
+    "photo": "File:Atlapetes melanocephalus.jpg",
+    "es": {
+      "name": "Aves de la Sierra Nevada en Minca",
+      "summary": "Madrugar para ver aves que solo viven en la Sierra Nevada de Santa Marta, entre cafetales y bosques de niebla.",
+      "body": [
+        "Colombia es el país con más especies de aves del mundo, y la Sierra Nevada de Santa Marta tiene más de una docena que solo viven allí, como el atlapetes de Santa Marta y el periquito de Santa Marta.",
+        "Minca, un pueblo cafetero cerca de Santa Marta, es la base para los recorridos de avistamiento, que suben hasta la reserva El Dorado y la cuchilla de San Lorenzo."
+      ],
+      "alt": "Atlapetes de Santa Marta, un pájaro gris y amarillo que solo vive en la Sierra Nevada",
+      "season": "Todo el año; mejor en la madrugada",
+      "duration": "Medio día"
+    },
+    "en": {
+      "name": "Sierra Nevada birds in Minca",
+      "summary": "Rise early to see birds found only in the Sierra Nevada de Santa Marta, among coffee farms and cloud forests.",
+      "body": [
+        "Colombia has more bird species than any other country, and the Sierra Nevada de Santa Marta has more than a dozen that live nowhere else, such as the Santa Marta brushfinch and the Santa Marta parakeet.",
+        "Minca, a coffee village near Santa Marta, is the base for birding trips that climb to the El Dorado reserve and the San Lorenzo ridge."
+      ],
+      "alt": "Santa Marta brushfinch, a gray and yellow bird found only in the Sierra Nevada",
+      "season": "Year-round; best at dawn",
+      "duration": "Half a day"
+    }
+  }
+]

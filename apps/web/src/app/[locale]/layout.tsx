@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { ViewTransition, type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SkipLink } from '@/components/layout/SkipLink';
@@ -12,14 +12,18 @@ import { htmlLang, resolveLocale } from '@/i18n/locale';
 import { routing } from '@/i18n/routing';
 import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+// `optional` con precarga (spec 004, D-11): Chrome espera hasta ~100 ms a la fuente precargada. Si
+// llega, se usa desde el primer pintado; si no, la página sigue con la de respaldo, sin reacomodar el
+// texto (CLS), y la fuente queda en caché para la próxima carga.
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'optional' });
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
-  display: 'swap',
+  display: 'optional',
 });
 
-type Props = { children: ReactNode; params: Promise<{ locale: string }> };
+/** `modal` es el slot paralelo de las fichas en ventana (rutas interceptadas, spec 004). */
+type Props = { children: ReactNode; modal: ReactNode; params: Promise<{ locale: string }> };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -50,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, modal, params }: Props) {
   const locale = resolveLocale((await params).locale);
   setRequestLocale(locale);
   const t = await getTranslations('common');
@@ -69,11 +73,12 @@ export default async function LocaleLayout({ children, params }: Props) {
           <SkipLink label={t('skipToContent')} />
           <TricolorStrip />
           <SiteHeader />
+          {/* Cada página lleva su transición (PageTransition); el layout no se desmonta al navegar. */}
           <main id="contenido" tabIndex={-1} className="outline-none">
-            {/* Transición suave entre páginas; se desactiva con prefers-reduced-motion (globals.css). */}
-            <ViewTransition>{children}</ViewTransition>
+            {children}
           </main>
           <SiteFooter />
+          {modal}
         </NextIntlClientProvider>
       </body>
     </html>
