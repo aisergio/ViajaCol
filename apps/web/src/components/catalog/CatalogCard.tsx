@@ -1,6 +1,6 @@
 import type { CardItem } from '@viajacol/content';
 import { useLocale } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { IntentLink } from '@/components/IntentLink';
 import { formatDate, monthsLabel } from '@/lib/dates';
 import { CatalogPhoto } from './CatalogPhoto';
 import { DemoBadge } from './DemoBadge';
@@ -38,13 +38,14 @@ export function CatalogCard({ card, headingLevel = 'h3', priority, sizes = DEFAU
           <p className="text-xs font-semibold tracking-wide text-link uppercase">{meta}</p>
         ) : null}
         <Heading className="font-display text-xl leading-tight font-bold">
-          <Link
+          {/* Precarga con intención: una lista de 30 tarjetas no pide 30 fichas al cargar. */}
+          <IntentLink
             href={`/${card.category}/${card.slug}`}
             transitionTypes={['nav-forward']}
             className="outline-none after:absolute after:inset-0 after:content-['']"
           >
             {card.name}
-          </Link>
+          </IntentLink>
         </Heading>
         <p className="text-sm text-muted">{card.summary}</p>
         {card.months ? (

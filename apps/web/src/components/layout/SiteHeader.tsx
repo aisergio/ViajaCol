@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
-import { AccountMenu } from '@/features/account/view/AccountMenu';
+import { AccountEntry } from '@/features/account/view/AccountEntry';
 import { LanguageSwitcher } from '@/features/language/view/LanguageSwitcher';
 import { MainNav } from '@/features/navigation/view/MainNav';
 import { MobileNav } from '@/features/navigation/view/MobileNav';
 import { SearchBox } from '@/features/search/view/SearchBox';
 import { ThemeToggle } from '@/features/theme/view/ThemeToggle';
-import { Link } from '@/i18n/navigation';
+import { IntentLink } from '@/components/IntentLink';
 import { BrandMark } from './BrandMark';
 
 /**
@@ -21,7 +21,8 @@ export async function SiteHeader() {
       className="sticky top-0 z-40 border-b border-line bg-background/90 backdrop-blur"
     >
       <div className="relative mx-auto flex h-16 max-w-7xl items-center gap-2 px-4 sm:gap-3">
-        <Link
+        {/* El logo está en todas las páginas: precargar la portada en cada una sería tráfico perdido. */}
+        <IntentLink
           href="/"
           aria-label={t('home')}
           className="flex min-h-11 shrink-0 items-center gap-2 font-display text-lg font-bold text-primary"
@@ -30,7 +31,7 @@ export async function SiteHeader() {
           {/* Con el menú completo (xl) no cabe el texto: el contenedor no pasa de 1280 px en ninguna
               pantalla, así que basta el logo (el enlace tiene nombre). */}
           <span className="hidden sm:inline xl:hidden">Viaja Colombia</span>
-        </Link>
+        </IntentLink>
         <MainNav className="ml-2 hidden xl:block" />
         <div className="ml-auto flex min-w-0 flex-1 items-center justify-end gap-2 xl:flex-none">
           <div className="min-w-0 flex-1 sm:max-w-xs xl:w-48 xl:flex-none">
@@ -38,7 +39,7 @@ export async function SiteHeader() {
           </div>
           <LanguageSwitcher />
           <ThemeToggle />
-          <AccountMenu />
+          <AccountEntry />
           <MobileNav />
         </div>
       </div>

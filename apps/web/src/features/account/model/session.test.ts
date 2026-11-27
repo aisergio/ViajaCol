@@ -1,5 +1,11 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { accountPaths, fetchAccountName, hasSessionHint, signInHref } from './session';
+import {
+  accountPaths,
+  currentSignInHref,
+  fetchAccountName,
+  hasSessionHint,
+  signInHref,
+} from './session';
 
 describe('modelo de la cuenta en el cliente', () => {
   afterEach(() => vi.unstubAllGlobals());
@@ -40,5 +46,13 @@ describe('modelo de la cuenta en el cliente', () => {
   it('sin red responde error', async () => {
     vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('offline')));
     await expect(fetchAccountName()).resolves.toEqual({ status: 'error' });
+  });
+});
+
+describe('currentSignInHref', () => {
+  it('arma el regreso con el basePath y el idioma, sin barra final en la portada', () => {
+    expect(currentSignInHref('es', '/sitios')).toBe('/ViajaCol/entrar?volver=%2FViajaCol%2Fsitios');
+    expect(currentSignInHref('en', '/')).toBe('/ViajaCol/en/entrar?volver=%2FViajaCol%2Fen');
+    expect(currentSignInHref('es', '/')).toBe('/ViajaCol/entrar?volver=%2FViajaCol');
   });
 });

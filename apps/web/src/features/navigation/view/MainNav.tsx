@@ -2,7 +2,7 @@
 
 import { cn } from '@viajacol/ui';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { IntentLink } from '@/components/IntentLink';
 import { useNavigationViewModel } from '../viewmodel/useNavigationViewModel';
 
 type Props = { className?: string; orientation?: 'horizontal' | 'vertical'; id?: string };
@@ -28,7 +28,7 @@ export function MainNav({ className, orientation = 'horizontal', id }: Props) {
                 </span>
               </span>
             ) : (
-              <Link
+              <IntentLink
                 href={item.href}
                 aria-current={item.isActive ? 'page' : undefined}
                 className={cn(
@@ -39,7 +39,7 @@ export function MainNav({ className, orientation = 'horizontal', id }: Props) {
                 )}
               >
                 {t(item.id)}
-              </Link>
+              </IntentLink>
             )}
           </li>
         ))}

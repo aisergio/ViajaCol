@@ -6,12 +6,11 @@ import { usePathname } from '@/i18n/navigation';
 import { useAccountStore } from '../model/accountStore';
 import {
   type AccountLocale,
-  BASE_PATH,
   accountPaths,
   clearSessionHint,
+  currentSignInHref,
   fetchAccountName,
   hasSessionHint,
-  signInHref,
 } from '../model/session';
 
 /**
@@ -21,10 +20,7 @@ import {
  */
 export function useAccountMenuViewModel() {
   const locale = useLocale() as AccountLocale;
-  // Ruta sin basePath ni idioma (`/sitios`), igual en el servidor y en el cliente: «Entrar» trae su
-  // regreso aun sin JavaScript. El prefijo del idioma se agrega aquí.
   const pathname = usePathname();
-  const localePrefix = locale === 'en' ? '/en' : '';
   const status = useAccountStore((state) => state.status);
   const name = useAccountStore((state) => state.name);
   const [open, setOpen] = useState(false);
@@ -59,10 +55,7 @@ export function useAccountMenuViewModel() {
     open,
     toggle,
     close,
-    signInHref: signInHref(
-      locale,
-      `${BASE_PATH}${localePrefix}${pathname === '/' ? '' : pathname}`,
-    ),
+    signInHref: currentSignInHref(locale, pathname),
     signOutAction: accountPaths(locale).signOut,
   };
 }

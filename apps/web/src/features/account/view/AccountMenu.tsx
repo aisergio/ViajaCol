@@ -1,18 +1,16 @@
 'use client';
 
-import { CircleUserRound, LogOut, UserRound } from 'lucide-react';
+import { CircleUserRound, LogOut } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef } from 'react';
 import { Link } from '@/i18n/navigation';
 import { useAccountMenuViewModel } from '../viewmodel/useAccountMenuViewModel';
-
-const BUTTON =
-  'inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-line px-3 text-sm font-semibold hover:bg-surface';
+import { ACCOUNT_BUTTON as BUTTON, SignInLink } from './SignInLink';
 
 /**
- * Menú de cuenta del encabezado (US1, US2). Sin sesión es un enlace a «Entrar», que funciona sin
- * JavaScript. Con sesión muestra el nombre y un menú con «Mi cuenta» y el formulario de «Cerrar
- * sesión» (POST, mismo origen).
+ * Menú de cuenta del encabezado (US1, US2). Lo carga `AccountEntry` solo con indicador de sesión.
+ * Mientras confirma la sesión, o si venció, muestra «Entrar». Con sesión muestra el nombre y un menú
+ * con «Mi cuenta» y el formulario de «Cerrar sesión» (POST, mismo origen).
  */
 export function AccountMenu() {
   const t = useTranslations('account');
@@ -30,12 +28,7 @@ export function AccountMenu() {
   }, [open, close]);
 
   if (vm.status !== 'signed-in') {
-    return (
-      <a href={vm.signInHref} className={BUTTON} aria-busy={vm.status === 'loading'}>
-        <UserRound aria-hidden="true" className="size-5" />
-        <span className="sr-only sm:not-sr-only">{t('signIn')}</span>
-      </a>
-    );
+    return <SignInLink href={vm.signInHref} label={t('signIn')} busy={vm.status === 'loading'} />;
   }
 
   return (
