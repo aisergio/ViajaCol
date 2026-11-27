@@ -175,5 +175,55 @@
     "body": "No pudimos cargar esta sección. Intenta de nuevo.",
     "retry": "Reintentar",
     "back": "Volver a la portada"
+  },
+  "account": {
+    "signIn": "Entrar",
+    "signInLabel": "Entrar o crear una cuenta",
+    "menuLabel": "Cuenta de {name}",
+    "myAccount": "Mi cuenta",
+    "signOut": "Cerrar sesión",
+    "loading": "Cargando la cuenta",
+    "page": {
+      "title": "Mi cuenta",
+      "intro": "Tu perfil en Viaja Colombia.",
+      "profileTitle": "Perfil",
+      "displayName": "Nombre visible",
+      "displayNameHint": "De 1 a 50 caracteres. Es el nombre que aparece en el encabezado.",
+      "email": "Correo",
+      "memberSince": "Cuenta creada",
+      "save": "Guardar",
+      "saving": "Guardando…",
+      "saved": "Listo: guardamos tu nombre.",
+      "errors": {
+        "nombre-invalido": "Escribe un nombre de 1 a 50 caracteres.",
+        "sin-sesion": "Tu sesión terminó. Vuelve a entrar.",
+        "no-disponible": "No pudimos guardar el cambio. Intenta de nuevo en un momento."
+      },
+      "privacyTitle": "Tus datos",
+      "privacy": "Guardamos solo tu correo (en Amazon Cognito), tu nombre visible y la fecha en que creaste la cuenta. Los usamos para que inicies sesión y para tus planes de viaje, y puedes eliminarlos cuando quieras.",
+      "deleteTitle": "Eliminar la cuenta",
+      "deleteIntro": "Se borran tu usuario y tu perfil, y se cierra la sesión. No se puede deshacer.",
+      "deleteOpen": "Eliminar mi cuenta",
+      "deleteConfirmLabel": "Escribe «eliminar» para confirmar",
+      "deleteConfirm": "Eliminar para siempre",
+      "deleteCancel": "Cancelar",
+      "deleting": "Eliminando…",
+      "deleteErrors": {
+        "confirmacion": "Escribe «eliminar» para confirmar.",
+        "sin-sesion": "Tu sesión terminó. Vuelve a entrar.",
+        "no-disponible": "No pudimos eliminar la cuenta. Intenta de nuevo en un momento."
+      }
+    },
+    "signInError": {
+      "title": "No pudimos iniciar sesión",
+      "text": "La pantalla de inicio de sesión no respondió o se canceló. Puedes intentarlo de nuevo.",
+      "retry": "Intentar de nuevo",
+      "home": "Ir a la portada"
+    },
+    "deleted": {
+      "title": "Tu cuenta fue eliminada",
+      "text": "Borramos tu usuario y tu perfil, y cerramos la sesión.",
+      "home": "Ir a la portada"
+    }
   }
 }
